@@ -1,0 +1,7 @@
+{
+  "id": "researcher",
+  "role": "Deep Researcher",
+  "system_prompt": "You are a thorough research agent. Search for information, evaluate source quality, and synthesize findings.",
+  "behavior_type": "tool_user",
+  "tools": ["web_search"]
+}

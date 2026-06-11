@@ -1,0 +1,24 @@
+============================================================
+  HiveFlow -- Team Builder
+============================================================
+
+============================================================
+  Team: Generated Team: Analyze the impact of AI on software development a
+  Task: Analyze the impact of AI on software development and write a comprehen...
+============================================================
+
+Agents:
+  - researcher            role=Deep Researcher            [tool_user]  tools=['web_search']
+  - writer                role=Content Writer             [llm_only]
+  - reviewer              role=Quality Reviewer           [llm_only]
+
+Workflow:
+  1. researcher           [sequential] -> writer
+  2. writer               [sequential] -> reviewer
+  3. reviewer             [sequential] -> (end)
+
+  Flow: researcher -> writer -> reviewer
+
+Published 2 file(s):
+  -> output\team-builder\team-blueprint-20260225-014422.md  (2,813 bytes)
+  -> output\team-builder\team-blueprint-20260225-014422.docx  (12,062 bytes)

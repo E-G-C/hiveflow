@@ -1,0 +1,90 @@
+Product Requirements - Mobile App v3.0
+Document Owner: Bob Martinez (Product Manager)
+Last Updated: 2025-12-01
+Status: Approved
+
+1. OVERVIEW
+
+The v3.0 release of the FieldTrack mobile application focuses on offline-first
+capabilities, improved GPS tracking accuracy, and integration with the new
+Atlas IoT platform for real-time equipment monitoring.
+
+Target platforms: iOS 16+ and Android 13+
+Target release: Q1 2026
+Development team: 4 mobile engineers, 1 backend engineer, 1 QA
+
+2. USER STORIES
+
+US-001: Offline Data Collection
+As a field technician, I want to collect inspection data without cellular
+connectivity, so that I can work in remote locations without losing work.
+
+Acceptance criteria:
+- App functions fully without network connectivity
+- Data syncs automatically when connectivity is restored
+- Conflict resolution follows last-write-wins with manual override option
+- Maximum offline storage: 500MB per device
+- Sync progress indicator shown in status bar
+
+US-002: Enhanced GPS Tracking
+As a fleet manager, I want sub-meter GPS accuracy for vehicle tracking, so
+that I can optimize route planning and verify job completion.
+
+Acceptance criteria:
+- GPS accuracy within 1 meter when GNSS corrections available
+- Fallback to standard GPS (3-5m accuracy) without corrections
+- Track recording at configurable intervals (1s to 60s)
+- Battery usage not to exceed 15% per 8-hour shift with 5s intervals
+- Geofence alerting with 10m precision
+
+US-003: IoT Equipment Dashboard
+As a site supervisor, I want to view real-time equipment telemetry on my phone,
+so that I can monitor asset health without returning to the office.
+
+Acceptance criteria:
+- Display live sensor readings (temperature, pressure, vibration, RPM)
+- Update frequency: every 5 seconds when on-screen
+- Historical charts for last 24 hours, 7 days, 30 days
+- Push notification when any sensor exceeds threshold
+- Support for up to 200 monitored devices per site
+
+US-004: Digital Forms Engine
+As an operations manager, I want to create custom inspection forms without
+developer involvement, so that I can adapt to changing regulatory requirements.
+
+Acceptance criteria:
+- Drag-and-drop form builder in web admin portal
+- Form types: text, number, date, photo, signature, GPS stamp, barcode scan
+- Conditional logic (show/hide fields based on answers)
+- Form versioning with migration of in-progress submissions
+- PDF export of completed forms with photos and signatures
+
+3. NON-FUNCTIONAL REQUIREMENTS
+
+Performance:
+- App cold start: under 3 seconds on mid-range devices
+- Screen transitions: under 300ms
+- Offline database queries: under 100ms for up to 10,000 records
+- Background sync: minimal battery impact (<2% per hour)
+
+Security:
+- Biometric authentication (Face ID / fingerprint)
+- All local data encrypted at rest (AES-256)
+- Certificate pinning for API communication
+- Remote wipe capability for lost/stolen devices
+- Session timeout: 30 minutes of inactivity
+
+Accessibility:
+- WCAG 2.1 AA compliance
+- VoiceOver and TalkBack support
+- Minimum touch target: 44x44 points
+- High contrast mode support
+
+4. TECHNICAL CONSTRAINTS
+
+- Offline storage: SQLite with WAL mode
+- Sync protocol: CRDTs for conflict-free merge where possible
+- GPS: CoreLocation (iOS) / Fused Location Provider (Android)
+- IoT integration: WebSocket connection to Atlas platform
+- Minimum supported devices: iPhone 12 / Pixel 6 equivalent
+- Maximum APK/IPA size: 80MB

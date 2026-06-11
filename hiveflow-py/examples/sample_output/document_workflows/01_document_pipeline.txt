@@ -1,0 +1,84 @@
+============================================================
+  HiveFlow -- Document Pipeline (No LLM Required)
+============================================================
+
+============================================================
+  1. Load documents from files
+============================================================
+
+Summary: 2 documents loaded: transcript.txt (1 chunks, ~113 tokens), meeting-notes.md (1 chunks, ~81 tokens) (~194 total tokens)
+
+  Name:   transcript.txt
+  Format: txt
+  Size:   700 bytes
+  Chunks: 1
+  Tokens: ~113
+
+  Name:   meeting-notes.md
+  Format: md
+  Size:   398 bytes
+  Chunks: 1
+  Tokens: ~81
+
+
+============================================================
+  2. State dict shape (what agents see)
+============================================================
+
+{
+  "name": "transcript.txt",
+  "format": "txt",
+  "size_bytes": 700,
+  "chunk_count": 1,
+  "total_tokens_estimate": 113,
+  "chunks": [
+    {
+      "index": 0,
+      "content": "Welcome to today's session on artificial intelligence.\nWe'll cover three main to..."
+    }
+  ]
+}
+
+============================================================
+  3. Load inline content (no files needed)
+============================================================
+
+Summary: 2 documents loaded: user-feedback.txt (1 chunks, ~10 tokens), metrics.txt (1 chunks, ~10 tokens) (~20 total tokens)
+
+  user-feedback.txt: 1 chunk(s), ~10 tokens
+  metrics.txt: 1 chunk(s), ~10 tokens
+
+============================================================
+  4. Instructions from file
+============================================================
+
+Instructions (142 chars):
+  Analyze the provided documents thoroughly.
+Identify key themes, decisions, and action items.
+Produce a structured summary with clear sections.
+
+============================================================
+  5. Per-agent document scoping
+============================================================
+
+  summarizer   mode=full          
+               -> sees 2 doc(s): ['transcript.txt', 'meeting-notes.md']
+  planner      mode=full          , filter=['meeting-notes.md']
+               -> sees 1 doc(s): ['meeting-notes.md']
+  router       mode=metadata_only 
+               -> sees 2 doc(s): ['transcript.txt', 'meeting-notes.md']
+  editor       mode=none          
+               -> sees 0 doc(s): []
+
+============================================================
+  6. Token budget enforcement
+============================================================
+
+  reviewer (max_document_tokens=20): 1 doc(s), 1 chunk(s) kept
+
+  Token budgets prevent context overflow by trimming chunks that
+  exceed the agent's declared limit.
+
+============================================================
+  Supported formats: txt, md, csv, json, xml, html, pdf, docx, xlsx, pptx
+============================================================

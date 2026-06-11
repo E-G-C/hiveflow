@@ -1,0 +1,39 @@
+Workflow Checkpointing Example
+============================================================
+1. Saved checkpoint for session: session-abc-123
+   Checkpoint ID: f5c7560b-0384-446e-96c1-a2bb187e3f20
+   Step index: 2
+   Agent: review_gate
+   State keys: ['task', 'researcher_output', 'pending_gate_id', 'awaiting_gate_approval']
+
+2. Checkpoint dict keys: ['session_id', 'step_index', 'state', 'checkpoint_id', 'current_agent_id', 'current_step_type', 'pending_requests', 'iteration_counts', 'team_config', 'task', 'created_at', 'version']
+   Version: 1
+
+3. Loaded latest checkpoint: session-abc-123
+   Checkpoint ID: f5c7560b-0384-446e-96c1-a2bb187e3f20
+   Step index: 2
+   Task: Analyze competitor pricing
+   State matches: True
+
+4. Saved second checkpoint (same session)
+   Checkpoint ID: 7d0ceefe-b60e-4c84-b824-cedea568bae2
+   Step index: 3
+   Agent: deploy_gate
+
+5. Checkpoints for session (oldest first): 2
+   [0] id=f5c7560b-038... step=2 agent=review_gate
+   [1] id=7d0ceefe-b60... step=3 agent=deploy_gate
+
+6. Rewound to specific checkpoint: f5c7560b-038...
+   Step index: 2
+   Agent: review_gate
+   Still at gate: True
+
+7. Load nonexistent checkpoint_id: None
+
+8. Checkpointed sessions: ['session-abc-123', 'session-def-456']
+9. After deletion: ['session-def-456']
+   Checkpoints remaining: 0
+
+Done. In production, use FileCheckpointStorage('.hiveflow/checkpoints')
+to persist across process restarts.

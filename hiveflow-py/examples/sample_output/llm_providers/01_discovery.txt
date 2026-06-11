@@ -1,0 +1,25 @@
+Discovered providers: ['anthropic', 'azure', 'openai']
+
+Provider capabilities:
+  anthropic:
+    description: Anthropic API provider (Claude models)
+    capabilities: streaming, tools, json_mode, vision
+    models: claude-sonnet-4-20250514, claude-haiku-4-20250414, claude-3-5-sonnet-20241022
+  azure:
+    description: Azure OpenAI Service provider (Entra ID RBAC + API key)
+    capabilities: streaming, tools, json_mode, vision
+    models: (deployment names)
+  openai:
+    description: OpenAI API provider (GPT-4o, o3-mini, etc.)
+    capabilities: streaming, tools, json_mode, vision
+    models: gpt-4o, gpt-4o-mini, o3-mini, gpt-4-turbo
+
+Model resolution:
+  'openai:gpt-4o' -> provider=openai, model=gpt-4o
+  'anthropic:claude-sonnet-4-20250514' -> provider=anthropic, model=claude-sonnet-4-20250514
+  'azure:my-deployment' -> provider=azure, model=my-deployment
+
+Missing provider errors:
+  'google:gemini-2.0-flash': "Provider 'google' not found. Available: anthropic, azure, openai.\n  Install with: uv add hiveflow[llm-google]"
+  'ollama:llama3.3': "Provider 'ollama' not found. Available: anthropic, azure, openai.\n  Install with: uv add hiveflow[llm-ollama]"
+  'badformat': Invalid model reference 'badformat'. Expected format: 'provider:model' (e.g., 'openai:gpt-4o')

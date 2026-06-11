@@ -1,0 +1,22 @@
+1. Default tier values
+   $FAST_LLM        -> openai:gpt-4o-mini
+   $SMART_LLM       -> openai:gpt-4o
+   $STRATEGIC_LLM   -> openai:o3-mini
+
+2. Direct references (no tier)
+   openai:gpt-4o-mini                       -> openai:gpt-4o-mini
+   azure:my-deployment                      -> azure:my-deployment
+   anthropic:claude-haiku-4-20250414        -> anthropic:claude-haiku-4-20250414
+
+3. Environment variable override
+   HIVEFLOW_SMART_LLM=azure:gpt-4o-eastus
+   $SMART_LLM -> azure:gpt-4o-eastus
+
+4. Programmatic override
+   $FAST_LLM        -> anthropic:claude-haiku-4-20250414
+   $SMART_LLM       -> anthropic:claude-sonnet-4-20250514
+   $STRATEGIC_LLM   -> openai:o3-mini
+
+5. End-to-end: tier -> provider instance
+   $SMART_LLM -> 'openai:gpt-4o' -> provider=openai, model=gpt-4o
+   $FAST_LLM  -> 'openai:gpt-4o-mini' -> provider=openai, model=gpt-4o-mini

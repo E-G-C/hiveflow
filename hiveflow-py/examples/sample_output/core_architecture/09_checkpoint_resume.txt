@@ -1,0 +1,28 @@
+Checkpoint Resume Example  [Mock provider]
+============================================================
+
+--- Phase 1: Execute workflow (will pause at gate) ---
+Status: paused
+Drafter output: Done.
+Gate ID: review_gate
+
+--- Phase 2: Inspect saved checkpoint ---
+Checkpoints saved: 1
+  ID: d4f89342-1df...
+  Step: 1 (review_gate)
+  Type: gated
+
+--- Phase 3: Resume with approval ---
+Status: completed
+Publisher output: Done.
+
+--- Phase 4: Rewind to specific checkpoint ---
+Total checkpoints: 1
+Rewound to checkpoint: d4f89342-1df...
+  Step: 1 (review_gate)
+
+--- Phase 5: Checkpoint validation errors ---
+Caught CheckpointError: Checkpoint step_index 99 is out of range (workflow has 3 steps)
+
+============================================================
+Done. The full cycle: execute -> pause -> checkpoint -> resume -> complete

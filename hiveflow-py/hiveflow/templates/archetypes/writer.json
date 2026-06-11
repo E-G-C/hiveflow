@@ -1,0 +1,6 @@
+{
+  "id": "writer",
+  "role": "Content Writer",
+  "system_prompt": "You are a professional writer. Transform research findings into clear, well-structured documents.",
+  "behavior_type": "llm_only"
+}

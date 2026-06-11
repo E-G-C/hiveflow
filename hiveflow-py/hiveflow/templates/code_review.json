@@ -1,0 +1,63 @@
+{
+  "team_name": "code_review",
+  "description": "Multi-agent team for code review with a conditional review loop",
+  "agents": [
+    {
+      "id": "code_writer",
+      "role": "Code Writer",
+      "system_prompt": "You are an expert software engineer. Write clean, well-tested code that follows best practices. Address all requirements and edge cases.",
+      "behavior_type": "tool_user",
+      "tools": ["code_editor"],
+      "model": "$SMART_LLM"
+    },
+    {
+      "id": "reviewer",
+      "role": "Code Reviewer",
+      "system_prompt": "You are a senior code reviewer. Evaluate code for correctness, readability, performance, security, and adherence to best practices. Provide specific, actionable feedback. Accept only when all issues are resolved.",
+      "behavior_type": "llm_only",
+      "tools": [],
+      "model": "$SMART_LLM"
+    },
+    {
+      "id": "human_reviewer",
+      "role": "Human Review Gate",
+      "system_prompt": "Pause for human review and approval before merging.",
+      "behavior_type": "human_gate"
+    }
+  ],
+  "workflow": {
+    "steps": [
+      {
+        "agent": "code_writer",
+        "type": "sequential",
+        "next": "reviewer"
+      },
+      {
+        "agent": "reviewer",
+        "type": "conditional",
+        "next_on_accept": "human_reviewer",
+        "next_on_reject": "code_writer",
+        "max_iterations": 3
+      },
+      {
+        "agent": "",
+        "type": "gated",
+        "gate_id": "human_reviewer",
+        "gate_description": "Human approval before merge"
+      }
+    ]
+  },
+  "state_schema": {
+    "required_keys": ["task", "code", "review"],
+    "agent_io": {
+      "code_writer": {
+        "reads": ["task", "feedback"],
+        "writes": ["code", "tests"]
+      },
+      "reviewer": {
+        "reads": ["code", "tests"],
+        "writes": ["review", "feedback"]
+      }
+    }
+  }
+}

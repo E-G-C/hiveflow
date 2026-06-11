@@ -1,0 +1,4312 @@
+WEBVTT
+
+983c415e-2181-494f-88e3-e08e7cc69a54/434-0
+00:00:00.000 --> 00:00:05.057
+<v Stacey Mulcahy>few minutes. So if you're just joining,
+put stuff in the chat. Guess what?</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/434-1
+00:00:05.057 --> 00:00:09.979
+<v Stacey Mulcahy>This call is going to be. Yay, Swati.
+This call is going to be recorded.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/434-2
+00:00:09.979 --> 00:00:14.834
+<v Stacey Mulcahy>So if anyone asks, we all know the answer.
+This call is being recorded.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/434-3
+00:00:14.834 --> 00:00:16.047
+<v Stacey Mulcahy>You can see it up.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/484-0
+00:00:16.047 --> 00:00:19.194
+<v Stacey Mulcahy>In the top left.
+So we'll give it just one minute and then</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/484-1
+00:00:19.194 --> 00:00:23.621
+<v Stacey Mulcahy>we'll go over just the start of this and
+I'm going to hand it over to our speaker.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/484-2
+00:00:23.621 --> 00:00:27.141
+<v Stacey Mulcahy>I'm I'm super stoked for this session.
+Every time I talk to Peli,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/484-3
+00:00:27.141 --> 00:00:30.501
+<v Stacey Mulcahy>I learn something new and then he sends
+me off into a radical.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/484-4
+00:00:30.501 --> 00:00:32.687
+<v Stacey Mulcahy>Thank you very much, Peli. Yesterday was.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/524-0
+00:00:32.807 --> 00:00:37.218
+<v Stacey Mulcahy>Yesterday was the worst.
+I talked to Peli yesterday and then I was</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/493-0
+00:00:36.447 --> 00:00:36.727
+<v Peli de Halleux>Yeah.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/524-1
+00:00:37.218 --> 00:00:40.510
+<v Stacey Mulcahy>like deliverables.
+I don't got more deliverables.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/524-2
+00:00:40.510 --> 00:00:44.986
+<v Stacey Mulcahy>I'm down the rabbit hole. OK,
+this is when we start these sessions.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/524-3
+00:00:44.986 --> 00:00:48.804
+<v Stacey Mulcahy>So welcome folks.
+I know a few of you will be joining in.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/524-4
+00:00:48.804 --> 00:00:50.647
+<v Stacey Mulcahy>So let's start off with our.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/575-0
+00:00:50.927 --> 00:00:55.896
+<v Stacey Mulcahy>This is our knowledge share sessions,
+employee-led sessions. Peli is out of,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/575-1
+00:00:55.896 --> 00:00:59.059
+<v Stacey Mulcahy>you know,
+MSR and he's going to be talking about</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/575-2
+00:00:59.059 --> 00:01:03.318
+<v Stacey Mulcahy>GitHub agentic workflows.
+If you happen to follow stuff happening</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/575-3
+00:01:03.318 --> 00:01:08.287
+<v Stacey Mulcahy>on on GitHub, you can go to GitHub.
+It's like GitHub next is where you see a</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/575-4
+00:01:08.287 --> 00:01:10.287
+<v Stacey Mulcahy>lot of these things showing up.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/628-0
+00:01:10.287 --> 00:01:14.669
+<v Stacey Mulcahy>And there's a ton of stuff that we do
+around this. There's a link at the bottom.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/628-1
+00:01:14.669 --> 00:01:17.103
+<v Stacey Mulcahy>I see that the laser pointer is going
+crazy.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/628-2
+00:01:17.103 --> 00:01:20.132
+<v Stacey Mulcahy>Keep your cats out of the camera in case
+they see this.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/628-3
+00:01:20.132 --> 00:01:23.540
+<v Stacey Mulcahy>There's a link at the bottom.
+There's more sessions as always.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/628-4
+00:01:23.540 --> 00:01:27.056
+<v Stacey Mulcahy>You can follow them there.
+I'm going to go to the right and just</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/628-5
+00:01:27.056 --> 00:01:29.327
+<v Stacey Mulcahy>talk about meeting norms for a minute, so.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/681-0
+00:01:29.887 --> 00:01:33.374
+<v Stacey Mulcahy>Well, listen,
+Peli is an expert and he has lots of</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/681-1
+00:01:33.374 --> 00:01:37.955
+<v Stacey Mulcahy>expertise, right? But you know,
+if you stump him, don't judge him.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/681-2
+00:01:37.955 --> 00:01:42.809
+<v Stacey Mulcahy>He'll figure it out, right?
+This is the attitude we want to cultivate.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/681-3
+00:01:42.809 --> 00:01:47.253
+<v Stacey Mulcahy>Is that like, you know,
+curiosity over expertise? In that sense,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/681-4
+00:01:47.253 --> 00:01:49.167
+<v Stacey Mulcahy>these sessions are recorded.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/731-0
+00:01:49.567 --> 00:01:52.727
+<v Stacey Mulcahy>If anyone asks,
+they will join and they will ask.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/731-1
+00:01:52.727 --> 00:01:56.267
+<v Stacey Mulcahy>I will bet a coffee on it.
+We can all answer that. Yes,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/731-2
+00:01:56.267 --> 00:01:59.995
+<v Stacey Mulcahy>it's being recorded.
+We do a session recap and we post the</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/731-3
+00:01:59.995 --> 00:02:02.776
+<v Stacey Mulcahy>recording.
+Do not ask us for the recording.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/731-4
+00:02:02.776 --> 00:02:05.999
+<v Stacey Mulcahy>Do not say, hey,
+I can't access it from the teams.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/731-5
+00:02:05.999 --> 00:02:08.527
+<v Stacey Mulcahy>There's like been a long-term bug there.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/780-0
+00:02:09.087 --> 00:02:12.305
+<v Stacey Mulcahy>We post it shortly after,
+so it does become available.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/780-1
+00:02:12.305 --> 00:02:16.633
+<v Stacey Mulcahy>It won't be on the Viva Engage,
+so you don't need to Stacy Engage and you</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/780-2
+00:02:16.633 --> 00:02:21.488
+<v Stacey Mulcahy>don't need to Allie Engage or Peli Engage
+for the recording. It is on Viva Engage,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/780-3
+00:02:21.488 --> 00:02:25.407
+<v Stacey Mulcahy>OK? And it's Allie's super quick at this.
+She does it almost like.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/801-0
+00:02:26.527 --> 00:02:30.647
+<v Stacey Mulcahy>Half an hour after, you know,
+like I think she even gives up her lunch</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/801-1
+00:02:30.647 --> 00:02:32.967
+<v Stacey Mulcahy>hour for you all right to go do that so.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/824-0
+00:02:32.207 --> 00:02:36.901
+<v Alexandria Johnson (BRICKRED SYSTEMS LLC)>And I will say if you put it in the chat,
+hey, where's the recap?</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/824-1
+00:02:36.901 --> 00:02:41.523
+<v Alexandria Johnson (BRICKRED SYSTEMS LLC)>The teams is not working.
+I will go slower intentionally just to</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/824-2
+00:02:41.523 --> 00:02:43.087
+<v Alexandria Johnson (BRICKRED SYSTEMS LLC)>bother you. So please.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/871-0
+00:02:44.487 --> 00:02:48.939
+<v Alexandria Johnson (BRICKRED SYSTEMS LLC)>Please and another please.
+The link is right here. Viva engage,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/831-0
+00:02:47.407 --> 00:02:48.087
+<v Peli de Halleux>That's.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/846-0
+00:02:48.447 --> 00:02:52.527
+<v Stacey Mulcahy>We were engaged. Yeah, we were engaged.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/871-1
+00:02:48.939 --> 00:02:52.833
+<v Alexandria Johnson (BRICKRED SYSTEMS LLC)>not Stacy engage.
+Please not Peli engage cause he's our</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/871-2
+00:02:52.833 --> 00:02:57.563
+<v Alexandria Johnson (BRICKRED SYSTEMS LLC)>guest and we want to be nice,
+but especially not Ali engage cause I</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/871-3
+00:02:57.563 --> 00:02:59.927
+<v Alexandria Johnson (BRICKRED SYSTEMS LLC)>will go slower just to bother you.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/877-0
+00:03:00.367 --> 00:03:03.527
+<v Alexandria Johnson (BRICKRED SYSTEMS LLC)>This link right here. OK, now go ahead,
+Stacy.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/937-0
+00:03:02.647 --> 00:03:06.473
+<v Stacey Mulcahy>Yeah. And we know sometimes these things,
+you forget where to find them.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/937-1
+00:03:06.473 --> 00:03:09.250
+<v Stacey Mulcahy>That's fine.
+But but we're going to point you to the</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/937-2
+00:03:09.250 --> 00:03:13.389
+<v Stacey Mulcahy>Viva Engage. OK, just, just, just, just,
+just trying to be friendly questions.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/937-3
+00:03:13.389 --> 00:03:17.057
+<v Stacey Mulcahy>Put them in the, put them in the Q&amp;
+A app. There's a Q&amp;A app.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/937-4
+00:03:17.057 --> 00:03:21.301
+<v Stacey Mulcahy>We ask you to do that so that they're all
+aggregated and it's natural for you to</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/937-5
+00:03:21.301 --> 00:03:22.087
+<v Stacey Mulcahy>just put it in.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1036-0
+00:03:22.207 --> 00:03:24.805
+<v Stacey Mulcahy>In the chat,
+don't be offended when we say, hey,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1036-1
+00:03:24.805 --> 00:03:27.402
+<v Stacey Mulcahy>can you put in the Q&amp;A?
+That's just our job.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1036-2
+00:03:27.402 --> 00:03:30.688
+<v Stacey Mulcahy>We're just PMing this.
+So if you ask in the chat, no worries.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1036-3
+00:03:30.688 --> 00:03:34.134
+<v Stacey Mulcahy>But we are going to ask you to put in the
+Q&amp;A. Don't be mad.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1036-4
+00:03:34.134 --> 00:03:37.897
+<v Stacey Mulcahy>Just embrace the process. Finally,
+the last thing is, is like, listen,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1036-5
+00:03:37.897 --> 00:03:41.607
+<v Stacey Mulcahy>you know we're sitting here from,
+I think you're at your home office.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1147-0
+00:03:41.807 --> 00:03:46.118
+<v Stacey Mulcahy>Kelly, I know I'm at my Home Office.
+We might not have talking to colleagues</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1147-1
+00:03:46.118 --> 00:03:50.652
+<v Stacey Mulcahy>in person today, maybe not this week.
+We don't know who we're talking to, right?</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1147-2
+00:03:50.652 --> 00:03:54.962
+<v Stacey Mulcahy>And so the way that we know that you
+didn't send your digital avatar to this</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1147-3
+00:03:54.962 --> 00:03:59.328
+<v Stacey Mulcahy>session and then go off to Chipotle to
+get your lunch is that you participate</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1147-4
+00:03:59.328 --> 00:04:01.287
+<v Stacey Mulcahy>and you'd be present. So reactions.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1241-0
+00:04:01.647 --> 00:04:04.831
+<v Stacey Mulcahy>Add your own quips, share your gifts,
+add your commentary,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1241-1
+00:04:04.831 --> 00:04:07.366
+<v Stacey Mulcahy>show your own understanding,
+all that we love.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1241-2
+00:04:07.366 --> 00:04:11.143
+<v Stacey Mulcahy>Like we totally embrace a really rich
+chat session during this stuff.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1241-3
+00:04:11.143 --> 00:04:15.136
+<v Stacey Mulcahy>There's nothing wrong with that.
+So just we ask you to be engaged in that</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1241-4
+00:04:15.136 --> 00:04:18.697
+<v Stacey Mulcahy>way because that just helps,
+especially for a speaker. Otherwise,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1241-5
+00:04:18.697 --> 00:04:20.207
+<v Stacey Mulcahy>you know, for all they know.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1343-0
+00:04:20.927 --> 00:04:25.790
+<v Stacey Mulcahy>Again, world of avatars.
+That's our future in six months. So like,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1343-1
+00:04:25.790 --> 00:04:30.653
+<v Stacey Mulcahy>let's let's embrace the now. OK,
+do we have another slide or am I?</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1343-2
+00:04:30.653 --> 00:04:34.426
+<v Stacey Mulcahy>I think I'm handing it over. So can we?
+Yeah, cool.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1294-0
+00:04:32.207 --> 00:04:33.567
+<v Alexandria Johnson (BRICKRED SYSTEMS LLC)>We are passing the torch.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1343-3
+00:04:34.426 --> 00:04:40.087
+<v Stacey Mulcahy>So can we do a warm welcome for Peli?
+Peli, I'm gonna be quiet, surprisingly.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1390-0
+00:04:40.767 --> 00:04:44.855
+<v Stacey Mulcahy>I'll be in the chat. You can.
+If you need anything, you just call Stacy.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1390-1
+00:04:44.855 --> 00:04:48.887
+<v Stacey Mulcahy>I show up. This is all yours.
+Super excited on behalf of everyone here.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1390-2
+00:04:48.887 --> 00:04:53.087
+<v Stacey Mulcahy>Super excited to to learn what you're
+working on. So Peli, it's all yours.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1492-0
+00:04:54.287 --> 00:04:59.927
+<v Peli de Halleux>And I'm not muted, so that's pretty good.
+Thank you. Thank you everybody. Thank you,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1492-1
+00:04:59.927 --> 00:05:04.571
+<v Peli de Halleux>Stacey, for reminding about all the rules,
+which I didn't know. Yeah,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1492-2
+00:05:04.571 --> 00:05:07.690
+<v Peli de Halleux>my name is Peli.
+I work in Microsoft Research.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1492-3
+00:05:07.690 --> 00:05:12.865
+<v Peli de Halleux>I've been at Microsoft for 20 years and
+I've been looking at AI and developer</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1492-4
+00:05:12.865 --> 00:05:13.727
+<v Peli de Halleux>productivity.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1544-0
+00:05:13.887 --> 00:05:18.031
+<v Peli de Halleux>AD for a while now.
+So this is a new work we're doing with</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1544-1
+00:05:18.031 --> 00:05:22.525
+<v Peli de Halleux>GitHub Next and it's quite exciting.
+It's around automating AI,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1544-2
+00:05:22.525 --> 00:05:27.301
+<v Peli de Halleux>so we're going to go into that.
+I'm not sharing my screen, so yeah,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1544-3
+00:05:27.301 --> 00:05:29.407
+<v Peli de Halleux>I'm going to start doing that.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1615-0
+00:05:30.087 --> 00:05:34.482
+<v Peli de Halleux>That's going to help.
+This stuff is public. If you're you know,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1615-1
+00:05:34.482 --> 00:05:39.288
+<v Peli de Halleux>if you want to talk about it,
+feel free to go ahead. The open source.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1615-2
+00:05:39.288 --> 00:05:43.820
+<v Peli de Halleux>The project here is open source,
+so we can go in and take a look,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1615-3
+00:05:43.820 --> 00:05:47.047
+<v Peli de Halleux>even play with it.
+This is research prototype.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1678-0
+00:05:47.127 --> 00:05:52.742
+<v Peli de Halleux>It does work and some things don't work
+and I'll talk about what doesn't work,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1678-1
+00:05:52.742 --> 00:05:57.148
+<v Peli de Halleux>but the future is bright and GitHub
+universe is in one month,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1678-2
+00:05:57.148 --> 00:06:02.407
+<v Peli de Halleux>so everything from the GitHub side,
+everything should be working by then.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1721-0
+00:06:03.727 --> 00:06:10.327
+<v Peli de Halleux>Yeah, so GitHub agentic workflows.
+What is that? Yeah,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1721-1
+00:06:10.327 --> 00:06:15.607
+<v Peli de Halleux>so there's a thing we started looking
+into.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1820-0
+00:06:16.567 --> 00:06:20.604
+<v Peli de Halleux>Which is called continuous A I.
+So if you think about CICD,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1820-1
+00:06:20.604 --> 00:06:23.766
+<v Peli de Halleux>continuous integration,
+continuous deployment,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1820-2
+00:06:23.766 --> 00:06:26.861
+<v Peli de Halleux>these are things we know and do now at
+scale.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1820-3
+00:06:26.861 --> 00:06:31.234
+<v Peli de Halleux>We run builds in the cloud and all this
+stuff. We we do linters,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1820-4
+00:06:31.234 --> 00:06:35.607
+<v Peli de Halleux>we do static checkers,
+we do security linters, all these things.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1887-0
+00:06:35.607 --> 00:06:41.251
+<v Peli de Halleux>But what you get with AI is that you get
+an opportunity to do new challenges.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1887-1
+00:06:41.251 --> 00:06:46.821
+<v Peli de Halleux>You can go in and tackle things that a
+traditional compiler could not go and</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1887-2
+00:06:46.821 --> 00:06:49.932
+<v Peli de Halleux>check,
+and this kind of whole new space of</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1887-3
+00:06:49.932 --> 00:06:52.247
+<v Peli de Halleux>potential tools you could write.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1980-0
+00:06:52.447 --> 00:06:56.656
+<v Peli de Halleux>So for example,
+think about issue triage or labeling.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1980-1
+00:06:56.656 --> 00:07:01.723
+<v Peli de Halleux>If you get a, you know,
+maintainers in GitHub or open source get</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1980-2
+00:07:01.723 --> 00:07:07.958
+<v Peli de Halleux>slammed by hundreds of bugs from users
+who write good or bad description of the</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/1980-3
+00:07:07.958 --> 00:07:12.167
+<v Peli de Halleux>bug and they could use maybe AI to kind
+of pre-treat.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2038-0
+00:07:12.167 --> 00:07:17.495
+<v Peli de Halleux>Label the bugs, ask for more information,
+things like that. Continuous QA.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2038-1
+00:07:17.495 --> 00:07:22.964
+<v Peli de Halleux>You could leverage AI to explore your
+website on the fly and check that it's</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2038-2
+00:07:22.964 --> 00:07:27.367
+<v Peli de Halleux>still clickable and things like that.
+So there's a whole new.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2134-0
+00:07:27.687 --> 00:07:32.767
+<v Peli de Halleux>Space of problems that the new wave of LM
+and especially now the agents who are</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2134-1
+00:07:32.767 --> 00:07:36.768
+<v Peli de Halleux>really getting super good is opening.
+So accessibility review,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2134-2
+00:07:36.768 --> 00:07:40.324
+<v Peli de Halleux>keeping your documentation in check with
+your products,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2134-3
+00:07:40.324 --> 00:07:44.959
+<v Peli de Halleux>making test improvements as it goes,
+you know, filling up your coverage,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2134-4
+00:07:44.959 --> 00:07:46.927
+<v Peli de Halleux>making sure you have good code.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2193-0
+00:07:47.207 --> 00:07:51.561
+<v Peli de Halleux>Coverage on the fly.
+There's a whole slew of new tasks that</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2193-1
+00:07:51.561 --> 00:07:54.898
+<v Peli de Halleux>think about what we had as tools in the
+past,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2193-2
+00:07:54.898 --> 00:08:00.847
+<v Peli de Halleux>all these deterministic compiler based
+tools. These are the stuff we couldn't do.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2245-0
+00:08:02.007 --> 00:08:11.375
+<v Peli de Halleux>So there's a new term here called CA.
+So CICDCA and CA is continuous A I and in</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2245-1
+00:08:11.375 --> 00:08:16.527
+<v Peli de Halleux>that space of exploration we have,
+we have.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2321-0
+00:08:17.887 --> 00:08:24.200
+<v Peli de Halleux>Agentic workflows. But before we go there,
+just as a reminder for people who are not</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2321-1
+00:08:24.200 --> 00:08:30.215
+<v Peli de Halleux>so much on the GitHub side of the house,
+GitHub has a product called Actions and</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2321-2
+00:08:30.215 --> 00:08:35.487
+<v Peli de Halleux>it's it's their platform to run compute
+and jobs and build jobs. It's.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2389-0
+00:08:36.327 --> 00:08:39.933
+<v Peli de Halleux>Works by defining YAML files in the
+GitHub repositories.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2389-1
+00:08:39.933 --> 00:08:44.805
+<v Peli de Halleux>You put them in a special folder which
+has special rights and you can define</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2389-2
+00:08:44.805 --> 00:08:47.905
+<v Peli de Halleux>triggers.
+So in this case you know I define that</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2389-3
+00:08:47.905 --> 00:08:51.447
+<v Peli de Halleux>it'll trigger when there's a push to the
+to any branch.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2460-0
+00:08:52.367 --> 00:08:58.309
+<v Peli de Halleux>And you can actually specify specific
+permissions for the for the token.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2460-1
+00:08:58.309 --> 00:09:04.738
+<v Peli de Halleux>So GitHub will mint a permission token
+that is time scoped and also permission</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2460-2
+00:09:04.738 --> 00:09:06.447
+<v Peli de Halleux>scoped for the build.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2579-0
+00:09:07.687 --> 00:09:10.300
+<v Peli de Halleux>So there's a very nice model of security
+there.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2579-1
+00:09:10.300 --> 00:09:13.674
+<v Peli de Halleux>And then you have jobs and think of jobs
+that just, you know,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2579-2
+00:09:13.674 --> 00:09:16.994
+<v Peli de Halleux>containerize execution.
+Every job runs in its own container.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2579-3
+00:09:16.994 --> 00:09:19.389
+<v Peli de Halleux>You get a fresh,
+you get a fresh container,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2579-4
+00:09:19.389 --> 00:09:21.947
+<v Peli de Halleux>you can check out your repo,
+you can run node,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2579-5
+00:09:21.947 --> 00:09:24.777
+<v Peli de Halleux>maybe set up node and then you know run
+your build.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2579-6
+00:09:24.777 --> 00:09:27.607
+<v Peli de Halleux>So that's a typical things that has been
+happening.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2676-0
+00:09:27.807 --> 00:09:31.266
+<v Peli de Halleux>In action,
+Hacktion has been around for quite a bit</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2676-1
+00:09:31.266 --> 00:09:36.787
+<v Peli de Halleux>of time now. It's enabled in every repo,
+it's very popular and it's a great way to</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2676-2
+00:09:36.787 --> 00:09:40.113
+<v Peli de Halleux>implement CI/CD. So that's CI/CD,
+the GitHub way.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2676-3
+00:09:40.113 --> 00:09:45.367
+<v Peli de Halleux>If you're on the ADO Azure DevOps side of
+the house, you know about pipelines.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2774-0
+00:09:46.207 --> 00:09:49.255
+<v Peli de Halleux>And roughly,
+they're kind of related cousins,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2774-1
+00:09:49.255 --> 00:09:54.158
+<v Peli de Halleux>but slightly different as well. All right,
+so, but anything we show here,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2774-2
+00:09:54.158 --> 00:09:58.067
+<v Peli de Halleux>if you're an Azure DevOps user,
+you're thinking, you know,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2774-3
+00:09:58.067 --> 00:10:02.705
+<v Peli de Halleux>can I apply this to Azure DevOps?
+I think a lot of ideas can migrate,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2774-4
+00:10:02.705 --> 00:10:05.487
+<v Peli de Halleux>but we haven't done the work of trying to.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2797-0
+00:10:05.527 --> 00:10:08.664
+<v Peli de Halleux>In both worlds.
+So this is all the demos are purely</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2797-1
+00:10:08.664 --> 00:10:12.162
+<v Peli de Halleux>GitHub centric,
+but a lot of stuff would actually migrate</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2797-2
+00:10:12.162 --> 00:10:13.127
+<v Peli de Halleux>to to pipelines.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2872-0
+00:10:14.847 --> 00:10:17.730
+<v Peli de Halleux>OK,
+so back to continuous AI and the dream</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2872-1
+00:10:17.730 --> 00:10:23.093
+<v Peli de Halleux>and the promise that AI will solve our
+problems and you know and do everything.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2872-2
+00:10:23.093 --> 00:10:28.590
+<v Peli de Halleux>So in this case we create new automation.
+This is the example where when an issue</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2872-3
+00:10:28.590 --> 00:10:29.327
+<v Peli de Halleux>is created.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2947-0
+00:10:29.687 --> 00:10:34.297
+<v Peli de Halleux>We what do we want to do?
+We want to label it.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2947-1
+00:10:34.297 --> 00:10:42.242
+<v Peli de Halleux>So we're telling we're using here get a
+models which is an inference wired up in</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/2947-2
+00:10:42.242 --> 00:10:47.047
+<v Peli de Halleux>GitHub.
+It it lets you run LM's like GPT 4 or 5.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3041-0
+00:10:47.527 --> 00:10:52.296
+<v Peli de Halleux>Through access to the GitHub token.
+But most interestingly, you're telling it,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3041-1
+00:10:52.296 --> 00:10:56.702
+<v Peli de Halleux>OK, go and label the current issue.
+So it's going to use the GitHub MCP.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3041-2
+00:10:56.702 --> 00:11:01.410
+<v Peli de Halleux>It's going to fetch the available labels
+and hopefully it's and it's going to</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3041-3
+00:11:01.410 --> 00:11:04.247
+<v Peli de Halleux>decide to add them to the issue and I
+gave it.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3069-0
+00:11:04.487 --> 00:11:08.425
+<v Peli de Halleux>Write access to the issues.
+So in a good scenario,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3069-1
+00:11:08.425 --> 00:11:12.207
+<v Peli de Halleux>the LM should not elucinate and should
+actually.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3136-0
+00:11:13.407 --> 00:11:19.717
+<v Peli de Halleux>Add labels to the issue.
+This is a great happy path scenario.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3136-1
+00:11:19.717 --> 00:11:27.554
+<v Peli de Halleux>However, there's a few caveat to this,
+and the biggest one is that AI can be</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3136-2
+00:11:27.554 --> 00:11:29.487
+<v Peli de Halleux>abused and in fact.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3182-0
+00:11:29.607 --> 00:11:35.842
+<v Peli de Halleux>The right mental model here is that every
+piece of text is adversarial, in fact,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3182-1
+00:11:35.842 --> 00:11:40.767
+<v Peli de Halleux>also images. So in this case,
+what's happening is you've got a.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3265-0
+00:11:41.847 --> 00:11:46.819
+<v Peli de Halleux>You've got an image,
+you've got a piece of text coming from a</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3265-1
+00:11:46.819 --> 00:11:50.587
+<v Peli de Halleux>user or actually maybe even images in the
+bug.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3265-2
+00:11:50.587 --> 00:11:56.280
+<v Peli de Halleux>So somebody writes third party an issue
+in your repo and that and that</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3265-3
+00:11:56.280 --> 00:11:59.647
+<v Peli de Halleux>description may may have prompt injection.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3340-0
+00:11:59.967 --> 00:12:04.642
+<v Peli de Halleux>It may have a adversarial text that tries
+to take over your agent,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3340-1
+00:12:04.642 --> 00:12:10.223
+<v Peli de Halleux>reprogram your agent who has write access
+on all your issues and you know go to</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3340-2
+00:12:10.223 --> 00:12:13.292
+<v Peli de Halleux>town on your while you're running the
+bill.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3340-3
+00:12:13.292 --> 00:12:17.687
+<v Peli de Halleux>So that's a that's a real danger and
+that's something that is.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3414-0
+00:12:17.767 --> 00:12:21.728
+<v Peli de Halleux>Very real.
+There are lots of ways and there's lots</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3414-1
+00:12:21.728 --> 00:12:25.223
+<v Peli de Halleux>of tools to try to prevent prompt
+injection,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3414-2
+00:12:25.223 --> 00:12:30.969
+<v Peli de Halleux>but there is actually there is no
+bulletproof way to kind of forbid that.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3414-3
+00:12:30.969 --> 00:12:33.687
+<v Peli de Halleux>So anytime you work with an LM and.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3489-0
+00:12:34.007 --> 00:12:39.589
+<v Peli de Halleux>Even if you're running Copilot locally on
+your dev box and you're doing MC PS and</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3489-1
+00:12:39.589 --> 00:12:43.741
+<v Peli de Halleux>you're loading web pages,
+you're at the risk of being pawned</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3489-2
+00:12:43.741 --> 00:12:47.690
+<v Peli de Halleux>because you just downloaded rogue text
+from the Internet.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3489-3
+00:12:47.690 --> 00:12:49.527
+<v Peli de Halleux>So that's all good and fun.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3593-0
+00:12:49.847 --> 00:12:54.459
+<v Peli de Halleux>And you can see there's a link to some of
+the threats. So for example,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3593-1
+00:12:54.459 --> 00:12:59.460
+<v Peli de Halleux>if you if you go to the OWASP list,
+you'll see that prompt ejection is a big</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3593-2
+00:12:59.460 --> 00:13:02.448
+<v Peli de Halleux>issue.
+If you think about GitHub and actions,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3593-3
+00:13:02.448 --> 00:13:06.085
+<v Peli de Halleux>we got GitHub issues,
+we got pull request descriptions,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3593-4
+00:13:06.085 --> 00:13:09.527
+<v Peli de Halleux>we got all the files in the pull request,
+so we got.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3670-0
+00:13:09.847 --> 00:13:14.260
+<v Peli de Halleux>But anything in the code could be
+actually an injection of prompt.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3670-1
+00:13:14.260 --> 00:13:18.673
+<v Peli de Halleux>You may want to fetch some pages to read
+some documentation. Well,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3670-2
+00:13:18.673 --> 00:13:23.481
+<v Peli de Halleux>those may be weaponized as well.
+And of course you can hide stuff in the</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3670-3
+00:13:23.481 --> 00:13:25.127
+<v Peli de Halleux>package system so we can.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3744-0
+00:13:25.327 --> 00:13:29.613
+<v Peli de Halleux>Put adversarial text in maybe NPM
+packages and so forth.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3744-1
+00:13:29.613 --> 00:13:35.552
+<v Peli de Halleux>So it's a brave new world out there and
+there's definitely opportunities to be</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3744-2
+00:13:35.552 --> 00:13:40.513
+<v Peli de Halleux>attacked and it is happening for sure.
+So how do we prevent that?</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3744-3
+00:13:40.513 --> 00:13:42.167
+<v Peli de Halleux>How do we create this?</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3825-0
+00:13:42.287 --> 00:13:46.173
+<v Peli de Halleux>This idea of continuous AI,
+but also we don't get kind of screwed</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3825-1
+00:13:46.173 --> 00:13:50.175
+<v Peli de Halleux>down down the road and that's one of the
+goal of agentic workflows.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3825-2
+00:13:50.175 --> 00:13:54.767
+<v Peli de Halleux>We want to go and we want to make it
+extremely easy to write workflows and we</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3825-3
+00:13:54.767 --> 00:13:58.887
+<v Peli de Halleux>want to leverage the new hottest language
+in town, which is Markdown.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3921-0
+00:13:59.407 --> 00:14:03.045
+<v Peli de Halleux>Trade markdown as a first class
+programming language.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3921-1
+00:14:03.045 --> 00:14:07.087
+<v Peli de Halleux>By now the the agents are pretty good and
+it's going to be.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3921-2
+00:14:07.087 --> 00:14:12.341
+<v Peli de Halleux>It's probably going to be in the top 10
+programming language soon. Who knows?</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3921-3
+00:14:12.341 --> 00:14:16.652
+<v Peli de Halleux>We want it to be automated, async.
+We want to run in the cloud.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/3921-4
+00:14:16.652 --> 00:14:18.807
+<v Peli de Halleux>We don't want a human to try to.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4025-0
+00:14:19.047 --> 00:14:23.977
+<v Peli de Halleux>Trigger those. We want to be safe,
+so we don't want to be abused by by some.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4025-1
+00:14:23.977 --> 00:14:28.907
+<v Peli de Halleux>We know we want to detect adversarial
+inputs and kind of stop the execution,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4025-2
+00:14:28.907 --> 00:14:34.158
+<v Peli de Halleux>but we also want to have something useful.
+So usually automated, safe and useful.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4025-3
+00:14:34.158 --> 00:14:38.767
+<v Peli de Halleux>Maybe you get you can pick two but not
+three and we're going to try to.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4030-0
+00:14:39.367 --> 00:14:40.447
+<v Peli de Halleux>See. What's the?</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4035-0
+00:14:42.007 --> 00:14:43.887
+<v Peli de Halleux>What's the middle ground between?</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4111-0
+00:14:45.047 --> 00:14:48.597
+<v Peli de Halleux>Being automated, being super powerful,
+but yet being safe.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4111-1
+00:14:48.597 --> 00:14:51.785
+<v Peli de Halleux>And there's there's going to be things
+you can't do.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4111-2
+00:14:51.785 --> 00:14:56.117
+<v Peli de Halleux>There's going to be things you cannot let.
+You cannot give ride access,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4111-3
+00:14:56.117 --> 00:14:59.967
+<v Peli de Halleux>rogue ride access to your entire system
+with an AI, with MC PS.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4152-0
+00:15:00.327 --> 00:15:05.947
+<v Peli de Halleux>And taking third party text and inputs,
+because then there's a risk that you lose</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4152-1
+00:15:05.947 --> 00:15:09.647
+<v Peli de Halleux>the brain of your agent and then your
+agent goes and.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4167-0
+00:15:11.047 --> 00:15:15.087
+<v Peli de Halleux>And that's the thing you don't want it to
+do. You know, think about this, this.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4261-0
+00:15:16.567 --> 00:15:21.076
+<v Peli de Halleux>This permission issue right lets you
+delete all the issues in the repo or just</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4261-1
+00:15:21.076 --> 00:15:24.044
+<v Peli de Halleux>replace them all with emojis or you know,
+whatever.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4261-2
+00:15:24.044 --> 00:15:28.667
+<v Peli de Halleux>There's there's absolutely this is this
+is a pretty big permission that you get.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4261-3
+00:15:28.667 --> 00:15:32.376
+<v Peli de Halleux>It's not that granular.
+It doesn't tell you that it's only issue</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4261-4
+00:15:32.376 --> 00:15:34.887
+<v Peli de Halleux>123 or something like that.
+It's basically.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4266-0
+00:15:34.927 --> 00:15:36.887
+<v Peli de Halleux>Everything can be touched. Um.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4313-0
+00:15:38.367 --> 00:15:41.112
+<v Peli de Halleux>All right.
+So so that's the goal of organic</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4313-1
+00:15:41.112 --> 00:15:45.915
+<v Peli de Halleux>workflows and that's what we set out to
+to build with GitHub next and that's</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4313-2
+00:15:45.915 --> 00:15:50.967
+<v Peli de Halleux>where we're kind of looking into what can
+be done and really one of the goal is.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4399-0
+00:15:51.727 --> 00:15:56.314
+<v Peli de Halleux>To allow engineers to write these without
+fearing that they're gonna, you know,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4399-1
+00:15:56.314 --> 00:16:00.271
+<v Peli de Halleux>do something really dangerous.
+So we want them to be in the driver's</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4399-2
+00:16:00.271 --> 00:16:04.112
+<v Peli de Halleux>seat thinking I'm gonna be,
+I'm gonna be safe here if I, you know,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4399-3
+00:16:04.112 --> 00:16:06.807
+<v Peli de Halleux>if I use the tool properly and I don't
+try to.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4462-0
+00:16:07.167 --> 00:16:12.106
+<v Peli de Halleux>To get off the the guardrail.
+So we'll we'll produce as many guardrails</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4462-1
+00:16:12.106 --> 00:16:17.114
+<v Peli de Halleux>as we can to keep you safe, right?
+So an ejecting workflow is a markdown</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4462-2
+00:16:17.114 --> 00:16:21.847
+<v Peli de Halleux>file and it has this pre presection in
+YAML called the front matter.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4541-0
+00:16:22.487 --> 00:16:27.994
+<v Peli de Halleux>It was very typical in in markdown.
+You can see that the the GitHub action</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4541-1
+00:16:27.994 --> 00:16:33.280
+<v Peli de Halleux>stuff is back. So you get your triggers,
+you get your permissions here.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4541-2
+00:16:33.280 --> 00:16:38.199
+<v Peli de Halleux>You can see now it's read,
+it's change and then we have new things</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4541-3
+00:16:38.199 --> 00:16:39.447
+<v Peli de Halleux>that we've added.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4632-0
+00:16:39.727 --> 00:16:45.210
+<v Peli de Halleux>Like the concept of safe outputs and I'll
+I'll talk more about safe outputs,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4632-1
+00:16:45.210 --> 00:16:50.549
+<v Peli de Halleux>but in the case in this case it means
+that this workflow is allowed to add</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4632-2
+00:16:50.549 --> 00:16:54.394
+<v Peli de Halleux>labels to issues.
+And then we have a natural language</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4632-3
+00:16:54.394 --> 00:16:58.167
+<v Peli de Halleux>section which is really the the meat of
+your prompt.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4713-0
+00:16:58.847 --> 00:17:02.516
+<v Peli de Halleux>And that is, you know,
+it's very convenient to be marked down</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4713-1
+00:17:02.516 --> 00:17:06.184
+<v Peli de Halleux>because we've got really good authoring
+tool there. You know,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4713-2
+00:17:06.184 --> 00:17:10.622
+<v Peli de Halleux>trying to author markdown inside of
+another language like Jason or YAMO is</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4713-3
+00:17:10.622 --> 00:17:13.047
+<v Peli de Halleux>just right there. So you got your prompt.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4743-0
+00:17:14.207 --> 00:17:18.355
+<v Peli de Halleux>And you've got your configuration and
+we'll talk about MCP and and more details,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4743-1
+00:17:18.355 --> 00:17:20.607
+<v Peli de Halleux>but in a nutshell,
+that's what a user sees.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4775-0
+00:17:23.687 --> 00:17:26.259
+<v Peli de Halleux>And don't worry,
+you don't have to type it,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4775-1
+00:17:26.259 --> 00:17:30.407
+<v Peli de Halleux>because today you'll have an LM write
+that for you and just review it.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4779-0
+00:17:31.487 --> 00:17:32.407
+<v Peli de Halleux>OK, so.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4865-0
+00:17:34.127 --> 00:17:37.490
+<v Peli de Halleux>Internally,
+what we do with Agentic workflows is that</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4865-1
+00:17:37.490 --> 00:17:42.286
+<v Peli de Halleux>we are a compiler, A deterministic,
+old school compiler that takes this file</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4865-2
+00:17:42.286 --> 00:17:46.832
+<v Peli de Halleux>and turns it into, let's say,
+a GitHub action 1.0 YAML. So in this case,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4865-3
+00:17:46.832 --> 00:17:49.447
+<v Peli de Halleux>when you think about the previous example.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4944-0
+00:17:51.247 --> 00:17:56.461
+<v Peli de Halleux>We we want to add labels,
+so we typically are gonna generate one</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4944-1
+00:17:56.461 --> 00:18:02.636
+<v Peli de Halleux>job that's gonna check that the user is
+authorized to run the to run the the</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4944-2
+00:18:02.636 --> 00:18:06.486
+<v Peli de Halleux>action.
+So while GitHub action gives us filters</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/4944-3
+00:18:06.486 --> 00:18:07.047
+<v Peli de Halleux>to run.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5016-0
+00:18:07.327 --> 00:18:11.687
+<v Peli de Halleux>Events we can layer on top of that things
+like are you an admin?</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5016-1
+00:18:11.687 --> 00:18:17.254
+<v Peli de Halleux>Are you a maintainer? In this case, Yep,
+you're allowed to run this AI, otherwise,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5016-2
+00:18:17.254 --> 00:18:20.942
+<v Peli de Halleux>you know, bad luck.
+So these are added for you on top.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5016-3
+00:18:20.942 --> 00:18:22.887
+<v Peli de Halleux>Then we have the agentic job.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5041-0
+00:18:23.247 --> 00:18:29.247
+<v Peli de Halleux>Which runs in its own container and then
+in this case we only give it read access.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5099-0
+00:18:30.527 --> 00:18:34.941
+<v Peli de Halleux>And we'll talk about also firewalling
+that stuff. But in this case, OK,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5099-1
+00:18:34.941 --> 00:18:39.907
+<v Peli de Halleux>we run Copilot, we ask for the labels,
+and then we extract the labels through an</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5099-2
+00:18:39.907 --> 00:18:41.807
+<v Peli de Halleux>MCP. Then we're going to layer.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5188-0
+00:18:43.047 --> 00:18:47.776
+<v Peli de Halleux>Detection of threats.
+So this could be running Azure prompt</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5188-1
+00:18:47.776 --> 00:18:51.401
+<v Peli de Halleux>shield.
+We currently just run copilot another</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5188-2
+00:18:51.401 --> 00:18:56.365
+<v Peli de Halleux>time asking whether the outputs are you
+know are legit or not.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5188-3
+00:18:56.365 --> 00:19:01.487
+<v Peli de Halleux>This is not bulletproof and this is as
+good as prompt shield or.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5227-0
+00:19:01.567 --> 00:19:06.529
+<v Peli de Halleux>These kind of LM as judge techniques will
+be, but the more you layer it,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5227-1
+00:19:06.529 --> 00:19:11.287
+<v Peli de Halleux>the harder it gets to go through all the
+the layers and then finally.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5338-0
+00:19:12.367 --> 00:19:15.298
+<v Peli de Halleux>We give,
+we have a job that has permission right</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5338-1
+00:19:15.298 --> 00:19:19.246
+<v Peli de Halleux>and then has a deterministic code that's
+going to add the labels.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5338-2
+00:19:19.246 --> 00:19:22.835
+<v Peli de Halleux>So we've extracted a list of labels
+that's being, you know,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5338-3
+00:19:22.835 --> 00:19:27.800
+<v Peli de Halleux>invented by the LM and now we're going to
+go through multiple layers of validation</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5338-4
+00:19:27.800 --> 00:19:31.807
+<v Peli de Halleux>and then eventually we're going to,
+we're going to add the labels.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5402-0
+00:19:31.807 --> 00:19:35.033
+<v Peli de Halleux>In this case, in the case of labels,
+it's it's, you know,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5402-1
+00:19:35.033 --> 00:19:38.703
+<v Peli de Halleux>it's done immediately. But for example,
+when you do code changes,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5402-2
+00:19:38.703 --> 00:19:43.151
+<v Peli de Halleux>typically what we'll do is we'll create a
+pull request and then there's yet one</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5402-3
+00:19:43.151 --> 00:19:46.487
+<v Peli de Halleux>more human validation,
+which is go review the pull request.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5485-0
+00:19:46.847 --> 00:19:52.483
+<v Peli de Halleux>And then ensure that it's it's correct.
+Other things we do are deterministic</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5485-1
+00:19:52.483 --> 00:19:56.069
+<v Peli de Halleux>validation.
+When we look for special characters,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5485-2
+00:19:56.069 --> 00:19:59.802
+<v Peli de Halleux>we look for links to domains that are not
+allowed.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5485-3
+00:19:59.802 --> 00:20:03.607
+<v Peli de Halleux>So what you can do is you can create an
+image link.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5550-0
+00:20:03.887 --> 00:20:08.961
+<v Peli de Halleux>To a malicious domain that encodes
+secrets you stole on the agent job. So no,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5550-1
+00:20:08.961 --> 00:20:11.823
+<v Peli de Halleux>if you assume that the agent job is
+pawned,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5550-2
+00:20:11.823 --> 00:20:15.400
+<v Peli de Halleux>if you lost it every time because it went
+through you,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5550-3
+00:20:15.400 --> 00:20:18.847
+<v Peli de Halleux>you swallowed some some bad prompt then
+potentially.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5630-0
+00:20:19.247 --> 00:20:24.213
+<v Peli de Halleux>Any secret into that is that wasn't this
+job has been encoded into the text that</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5630-1
+00:20:24.213 --> 00:20:27.891
+<v Peli de Halleux>goes into the AI,
+and then it's the job of the detection to</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5630-2
+00:20:27.891 --> 00:20:31.385
+<v Peli de Halleux>shut that door.
+And there's there's multiple techniques.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5630-3
+00:20:31.385 --> 00:20:34.327
+<v Peli de Halleux>We apply them all to keep that safe,
+all right.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5733-0
+00:20:35.407 --> 00:20:41.067
+<v Peli de Halleux>And hopefully nobody's too freaked out,
+but that's just the reality of of working</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5733-1
+00:20:41.067 --> 00:20:44.517
+<v Peli de Halleux>with a I these days.
+So just to give you an idea,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5733-2
+00:20:44.517 --> 00:20:47.623
+<v Peli de Halleux>typically we have 4 phases.
+We we authorize,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5733-3
+00:20:47.623 --> 00:20:53.075
+<v Peli de Halleux>we run the agent and we try to apply as
+much detection as we can to, you know,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5733-4
+00:20:53.075 --> 00:20:55.007
+<v Peli de Halleux>give a high confidence that.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5798-0
+00:20:55.087 --> 00:21:00.102
+<v Peli de Halleux>This is, this is a good change.
+And then we provide these sets of pretty</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5798-1
+00:21:00.102 --> 00:21:05.461
+<v Peli de Halleux>fine safe outputs, create pull requests,
+add comment, you know, create issue,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5798-2
+00:21:05.461 --> 00:21:09.514
+<v Peli de Halleux>all these things.
+And then we also on top of that sanitize</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5798-3
+00:21:09.514 --> 00:21:10.407
+<v Peli de Halleux>the markdown.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5884-0
+00:21:10.847 --> 00:21:15.017
+<v Peli de Halleux>So that it doesn't leak secrets
+accidentally and so forth. All right,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5884-1
+00:21:15.017 --> 00:21:18.770
+<v Peli de Halleux>we'll talk about about security because
+security is paramount.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5884-2
+00:21:18.770 --> 00:21:22.940
+<v Peli de Halleux>And then once you have that,
+you can really go to town doing all kind</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5884-3
+00:21:22.940 --> 00:21:26.277
+<v Peli de Halleux>of crazy AI stuff. Safe output.
+I'm going way too fast,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5884-4
+00:21:26.277 --> 00:21:30.327
+<v Peli de Halleux>so I should probably answer as a question,
+but we'll go into demos.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5886-0
+00:21:30.807 --> 00:21:30.967
+<v Peli de Halleux>Um.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5960-0
+00:21:32.607 --> 00:21:35.692
+<v Peli de Halleux>Safe outputs.
+So this is a concept we came up, you know,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5960-1
+00:21:35.692 --> 00:21:39.425
+<v Peli de Halleux>because we wanted, you know,
+we want this trade off between you want</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5960-2
+00:21:39.425 --> 00:21:43.429
+<v Peli de Halleux>to be able to do a lot of things and
+eventually you have to create stuff.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5960-3
+00:21:43.429 --> 00:21:46.027
+<v Peli de Halleux>So but also you cannot give DLM the right
+keys,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/5960-4
+00:21:46.027 --> 00:21:48.407
+<v Peli de Halleux>you cannot give them the keys of the
+house.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6025-0
+00:21:48.527 --> 00:21:52.790
+<v Peli de Halleux>So when you run agentic workflows,
+you have read permissions.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6025-1
+00:21:52.790 --> 00:21:57.603
+<v Peli de Halleux>You don't want to give an agent right
+permission. Otherwise you have.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6025-2
+00:21:57.603 --> 00:22:01.660
+<v Peli de Halleux>You basically have no control how much
+damage they can do.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6025-3
+00:22:01.660 --> 00:22:03.447
+<v Peli de Halleux>And then we have a set of.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6088-0
+00:22:04.087 --> 00:22:10.488
+<v Peli de Halleux>Specifically crafted outputs that are
+specific to GitHub in terms of how you</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6088-1
+00:22:10.488 --> 00:22:16.058
+<v Peli de Halleux>you create a new asset.
+So create an issue, create a pull request,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6088-2
+00:22:16.058 --> 00:22:18.967
+<v Peli de Halleux>upload assets. This means creating.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6148-0
+00:22:19.167 --> 00:22:24.605
+<v Peli de Halleux>Files in orphan branches, adding comments.
+All of these are very common operation</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6148-1
+00:22:24.605 --> 00:22:29.976
+<v Peli de Halleux>you would do to kind of communicate a
+result of a computation. If you're linter,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6148-2
+00:22:29.976 --> 00:22:34.087
+<v Peli de Halleux>you're probably going to create pull
+request review comments.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6198-0
+00:22:34.447 --> 00:22:39.906
+<v Peli de Halleux>If you're something that fixes code,
+you might create a pull request.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6198-1
+00:22:39.906 --> 00:22:43.492
+<v Peli de Halleux>If you're taking screenshots for web
+testing,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6198-2
+00:22:43.492 --> 00:22:46.767
+<v Peli de Halleux>you might upload screenshots and so forth.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6294-0
+00:22:47.727 --> 00:22:52.371
+<v Peli de Halleux>And then every time you've got,
+you've got the natural language.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6294-1
+00:22:52.371 --> 00:22:56.014
+<v Peli de Halleux>This is what the user programs,
+so very intuitive.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6294-2
+00:22:56.014 --> 00:23:00.587
+<v Peli de Halleux>This part is deterministic.
+This part is reviewable, auditable.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6294-3
+00:23:00.587 --> 00:23:06.087
+<v Peli de Halleux>You know exactly what the rights are.
+And again, this gets compiled down to.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6350-0
+00:23:07.207 --> 00:23:12.023
+<v Peli de Halleux>GitHub Action 1.
+0 and this runs today in GitHub.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6350-1
+00:23:12.023 --> 00:23:19.247
+<v Peli de Halleux>This little guy will probably render to
+100 KB of YAML because of all the.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6407-0
+00:23:19.967 --> 00:23:24.609
+<v Peli de Halleux>The glue that we have to inject to make
+it to make this this machinery work.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6407-1
+00:23:24.609 --> 00:23:29.311
+<v Peli de Halleux>But again, this is a compiler. You don't.
+You don't need to worry about that.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6407-2
+00:23:29.311 --> 00:23:32.807
+<v Peli de Halleux>We we don't read assembly code these days.
+All right, so.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6486-0
+00:23:33.807 --> 00:23:38.028
+<v Peli de Halleux>Most importantly,
+you end up with a in a world where the</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6486-1
+00:23:38.028 --> 00:23:42.915
+<v Peli de Halleux>agent has read-only access to your keys
+and we're getting closer,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6486-2
+00:23:42.915 --> 00:23:47.876
+<v Peli de Halleux>closer to a point where you have,
+you know, zero trust, zero keys,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6486-3
+00:23:47.876 --> 00:23:49.727
+<v Peli de Halleux>0 secrets with the agent.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6543-0
+00:23:50.927 --> 00:23:53.383
+<v Peli de Halleux>And that's where you want to you want to
+be,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6543-1
+00:23:53.383 --> 00:23:56.167
+<v Peli de Halleux>because you want to assume that in the
+worst case,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6543-2
+00:23:56.167 --> 00:23:59.060
+<v Peli de Halleux>the agent has been taken over by a
+malicious prompt,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6543-3
+00:23:59.060 --> 00:24:02.607
+<v Peli de Halleux>and now it's behaving in a way that you
+don't really want it to.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6613-0
+00:24:03.647 --> 00:24:08.902
+<v Peli de Halleux>All right, just a quick note,
+this work builds on the new wave of</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6613-1
+00:24:08.902 --> 00:24:12.882
+<v Peli de Halleux>agentic CLI.
+So you have anthropic cloud code who</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6613-2
+00:24:12.882 --> 00:24:17.499
+<v Peli de Halleux>really kind of started. Well, many,
+many of them started,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6613-3
+00:24:17.499 --> 00:24:19.887
+<v Peli de Halleux>but cloud code really kind of.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6673-0
+00:24:20.127 --> 00:24:23.812
+<v Peli de Halleux>When hockey stick exponential in terms of
+growth,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6673-1
+00:24:23.812 --> 00:24:29.927
+<v Peli de Halleux>then you know Open AI Codex is there and
+then last week we announced and everybody</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6673-2
+00:24:29.927 --> 00:24:34.348
+<v Peli de Halleux>can try GitHub Copilot CLI.
+So if you haven't tried it yet,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6673-3
+00:24:34.348 --> 00:24:35.527
+<v Peli de Halleux>you can install.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6757-0
+00:24:35.847 --> 00:24:41.538
+<v Peli de Halleux>At GitHub slash Copilot and you can do
+all the Copilot stuff from the command</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6757-1
+00:24:41.538 --> 00:24:45.696
+<v Peli de Halleux>line. It's super fun.
+I will show them of that and these</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6757-2
+00:24:45.696 --> 00:24:51.167
+<v Peli de Halleux>command line tools are headless,
+so you can actually go and automate them.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6832-0
+00:24:51.247 --> 00:24:56.356
+<v Peli de Halleux>They have a danger mode,
+which is the mode we we use to say you</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6832-1
+00:24:56.356 --> 00:25:00.267
+<v Peli de Halleux>don't.
+You don't need to ask a permission to the</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6832-2
+00:25:00.267 --> 00:25:04.018
+<v Peli de Halleux>user to run something,
+you can just refuse it.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6832-3
+00:25:04.018 --> 00:25:08.727
+<v Peli de Halleux>And what we do is we provide a very
+precise list of tools.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6929-0
+00:25:09.007 --> 00:25:13.616
+<v Peli de Halleux>That DLM is allowed to use in the
+container, and mind you,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6929-1
+00:25:13.616 --> 00:25:18.928
+<v Peli de Halleux>we're already in a container.
+If you're running AI on your dev box,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6929-2
+00:25:18.928 --> 00:25:24.084
+<v Peli de Halleux>you are basically one bad web page away
+from the agent, you know,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6929-3
+00:25:24.084 --> 00:25:28.927
+<v Peli de Halleux>trying to being being abused.
+It's not that obvious, but you.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6998-0
+00:25:28.927 --> 00:25:32.832
+<v Peli de Halleux>You kind of want to run containerized in
+environment that don't have too many</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6998-1
+00:25:32.832 --> 00:25:36.737
+<v Peli de Halleux>secrets with these things and the cloud
+and things like GitHub Actions really</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6998-2
+00:25:36.737 --> 00:25:40.492
+<v Peli de Halleux>give you kind of that that great
+environment and this is a great fabric to</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6998-3
+00:25:40.492 --> 00:25:44.547
+<v Peli de Halleux>orchestrate multiple containers talking
+to each other and I'm going to go deeper</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/6998-4
+00:25:44.547 --> 00:25:45.047
+<v Peli de Halleux>into that.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7069-0
+00:25:45.087 --> 00:25:50.779
+<v Peli de Halleux>All right, one important thing,
+if you're familiar with the GitHub</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7069-1
+00:25:50.779 --> 00:25:54.941
+<v Peli de Halleux>Copilot agent,
+Padawan is that all that all this</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7069-2
+00:25:54.941 --> 00:26:00.887
+<v Peli de Halleux>execution is firewalled and the reason is
+it would an agent can tell.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7141-0
+00:26:01.007 --> 00:26:06.103
+<v Peli de Halleux>A malicious prompt can tell your agent to
+read your secrets and curl them away.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7141-1
+00:26:06.103 --> 00:26:09.925
+<v Peli de Halleux>Do a fetch web request to a malicious
+domain and then boom,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7141-2
+00:26:09.925 --> 00:26:14.129
+<v Peli de Halleux>all your secrets are gone and you're
+still running the container,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7141-3
+00:26:14.129 --> 00:26:16.167
+<v Peli de Halleux>but your secrets are still gone.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7218-0
+00:26:16.567 --> 00:26:20.332
+<v Peli de Halleux>So what?
+What happens if you run GitHub Copilot is</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7218-1
+00:26:20.332 --> 00:26:25.942
+<v Peli de Halleux>that you run behind a firewall and
+there's a there's a known set of domains</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7218-2
+00:26:25.942 --> 00:26:31.552
+<v Peli de Halleux>that are allowed to make sure still
+things work like you need access to the</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7218-3
+00:26:31.552 --> 00:26:31.847
+<v Peli de Halleux>NPM.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7292-0
+00:26:32.287 --> 00:26:37.992
+<v Peli de Halleux>Domain so that you can install your MPM
+packages. I probably API github.com,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7292-1
+00:26:37.992 --> 00:26:43.029
+<v Peli de Halleux>but then you know badwebsite.
+com doesn't get that gets firewalled.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7292-2
+00:26:43.029 --> 00:26:46.807
+<v Peli de Halleux>We are working currently to bring this
+feature to.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7374-0
+00:26:48.247 --> 00:26:53.817
+<v Peli de Halleux>Agentic workflows so that you get this
+kind of experience when you're designing</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7374-1
+00:26:53.817 --> 00:26:58.342
+<v Peli de Halleux>what your AI is allowed to to access.
+There's a set of defaults,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7374-2
+00:26:58.342 --> 00:27:04.260
+<v Peli de Halleux>so the defaults usually will work for you,
+but also you've got maybe a custom domain</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7374-3
+00:27:04.260 --> 00:27:06.487
+<v Peli de Halleux>that you need that you can edit.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7454-0
+00:27:06.607 --> 00:27:11.221
+<v Peli de Halleux>The the networking is and all this
+technology can can be very tricky.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7454-1
+00:27:11.221 --> 00:27:16.691
+<v Peli de Halleux>So this this is also a value add where as
+an engineer I don't need to be an expert</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7454-2
+00:27:16.691 --> 00:27:20.447
+<v Peli de Halleux>in containerization and network protocols
+and firewalls.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7514-0
+00:27:22.487 --> 00:27:28.697
+<v Peli de Halleux>We already figured out for you we were
+leveraging the the GitHub firewall here</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7514-1
+00:27:28.697 --> 00:27:34.357
+<v Peli de Halleux>and again focus on security and
+guarantees about what what's running AI</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7514-2
+00:27:34.357 --> 00:27:38.287
+<v Peli de Halleux>in the background can can mean to to my
+security.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7547-0
+00:27:40.207 --> 00:27:44.879
+<v Peli de Halleux>Alright,
+actually let me do a little demo before</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7547-1
+00:27:44.879 --> 00:27:48.407
+<v Peli de Halleux>we go more into more details. OK, so.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7553-0
+00:27:50.127 --> 00:27:50.967
+<v Peli de Halleux>Let's see.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7580-0
+00:27:51.967 --> 00:27:58.287
+<v Peli de Halleux>If just to give you an idea, I'm in,
+I'm in my little demo project here and.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7588-0
+00:28:00.927 --> 00:28:04.487
+<v Peli de Halleux>This is a typical.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7662-0
+00:28:05.407 --> 00:28:10.593
+<v Peli de Halleux>Oh, that's too big. Not big enough.
+This is a typical GitHub Action script.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7662-1
+00:28:10.593 --> 00:28:14.483
+<v Peli de Halleux>You can see that it's this YAML and then
+there are jobs,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7662-2
+00:28:14.483 --> 00:28:19.805
+<v Peli de Halleux>there's a build and there are steps.
+And this is what it's called CICD and in</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7662-3
+00:28:19.805 --> 00:28:20.487
+<v Peli de Halleux>fact it's.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7697-0
+00:28:21.407 --> 00:28:25.201
+<v Peli de Halleux>Installing extensions and in building.
+So this is, you know,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7697-1
+00:28:25.201 --> 00:28:30.301
+<v Peli de Halleux>traditional build automation that runs on
+whenever one of these files is touched.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7697-2
+00:28:30.301 --> 00:28:30.487
+<v Peli de Halleux>OK.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7699-0
+00:28:32.087 --> 00:28:32.527
+<v Peli de Halleux>Now.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7783-0
+00:28:33.847 --> 00:28:38.996
+<v Peli de Halleux>Here's my little issue triage example,
+so that's a bit more involved,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7783-1
+00:28:38.996 --> 00:28:44.366
+<v Peli de Halleux>but whenever we create the issue,
+we're going to add an eyes reaction to</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7783-2
+00:28:44.366 --> 00:28:48.117
+<v Peli de Halleux>the issue.
+We're giving read read access to to the</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7783-3
+00:28:48.117 --> 00:28:49.367
+<v Peli de Halleux>Agentic workflow.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7819-0
+00:28:50.687 --> 00:28:55.391
+<v Peli de Halleux>We don't need anything else.
+We don't even need access to the repo,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7819-1
+00:28:55.391 --> 00:29:00.647
+<v Peli de Halleux>so you can't even check out the files
+here. Claude. We're using Claude and.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7908-0
+00:29:01.807 --> 00:29:05.557
+<v Peli de Halleux>You know, we Scroll down here,
+there's there's the tools we need.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7908-1
+00:29:05.557 --> 00:29:10.216
+<v Peli de Halleux>We need access to the GitHub MCP and then
+we're going to have a safe output which</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7908-2
+00:29:10.216 --> 00:29:13.341
+<v Peli de Halleux>is at comment.
+Now you can see we have here the prompt</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7908-3
+00:29:13.341 --> 00:29:16.807
+<v Peli de Halleux>and the prompt uses the GitHub action
+templating system, so.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7976-0
+00:29:17.167 --> 00:29:20.196
+<v Peli de Halleux>We have.
+We're running in the context of the</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7976-1
+00:29:20.196 --> 00:29:23.831
+<v Peli de Halleux>GitHub action,
+so we have access to the issue number.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7976-2
+00:29:23.831 --> 00:29:29.284
+<v Peli de Halleux>This saves us one call to the MTPS and
+this great thing is gonna summarize it in</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/7976-3
+00:29:29.284 --> 00:29:32.447
+<v Peli de Halleux>three emojis and we also have a pre
+sanitized.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8021-0
+00:29:32.527 --> 00:29:37.482
+<v Peli de Halleux>Version of the text where we removed
+otentially malicious text. All right,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8021-1
+00:29:37.482 --> 00:29:40.984
+<v Peli de Halleux>so this guy's running.
+It's now just as I mentioned,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8021-2
+00:29:40.984 --> 00:29:42.767
+<v Peli de Halleux>it gets compiled into this.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8026-0
+00:29:44.327 --> 00:29:45.527
+<v Peli de Halleux>Monster YAML file.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8056-0
+00:29:47.127 --> 00:29:50.893
+<v Peli de Halleux>But if you look at it,
+you know if we if we collapse all these</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8056-1
+00:29:50.893 --> 00:29:52.327
+<v Peli de Halleux>steps, you can see that.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8079-0
+00:29:53.967 --> 00:29:58.527
+<v Peli de Halleux>You can recognize these these phases.
+We got the activation phase.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8161-0
+00:30:00.207 --> 00:30:04.705
+<v Peli de Halleux>Forget add the reaction,
+we got the agent and then we got the</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8161-1
+00:30:04.705 --> 00:30:09.347
+<v Peli de Halleux>create issue comment face.
+We we still don't have the detection</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8161-2
+00:30:09.347 --> 00:30:13.772
+<v Peli de Halleux>wired up but it's coming. Alright,
+so this runs in the repo.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8161-3
+00:30:13.772 --> 00:30:18.487
+<v Peli de Halleux>So let's see if where is the repositor.
+So here when I'm a user.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8169-0
+00:30:19.287 --> 00:30:21.527
+<v Peli de Halleux>And I'm going to say.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8199-0
+00:30:22.767 --> 00:30:27.953
+<v Peli de Halleux>Hello.
+And it's supposed to summarize things,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8199-1
+00:30:27.953 --> 00:30:31.447
+<v Peli de Halleux>so I know now what you do here.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8255-0
+00:30:34.127 --> 00:30:39.045
+<v Peli de Halleux>I should have prepared something funny to
+say. OK, well, let's do that.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8255-1
+00:30:39.045 --> 00:30:42.733
+<v Peli de Halleux>We create this.
+Now it's going to take a little while</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8255-2
+00:30:42.733 --> 00:30:46.967
+<v Peli de Halleux>because this is not fully optimized,
+but if we go to actions.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8263-0
+00:30:48.847 --> 00:30:51.567
+<v Peli de Halleux>We see that there's an action that
+triggered.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8334-0
+00:30:52.487 --> 00:30:56.958
+<v Peli de Halleux>Called issue triage.
+You can see that check membership went</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8334-1
+00:30:56.958 --> 00:31:01.652
+<v Peli de Halleux>through. I'm an admin in my repo.
+Now that enables activation.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8334-2
+00:31:01.652 --> 00:31:06.421
+<v Peli de Halleux>There are two tasks.
+Add reaction is going to add the eyeballs,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8334-3
+00:31:06.421 --> 00:31:07.687
+<v Peli de Halleux>so we go back to.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8351-0
+00:31:08.527 --> 00:31:13.607
+<v Peli de Halleux>The issue you can see eyeballs have been
+added. Somebody's looking at this.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8358-0
+00:31:14.967 --> 00:31:17.207
+<v Peli de Halleux>And then going back here it is.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8415-0
+00:31:18.287 --> 00:31:23.144
+<v Peli de Halleux>It is going to set up a job and it's
+going to set up Claude to run the whole</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8415-1
+00:31:23.144 --> 00:31:27.623
+<v Peli de Halleux>bunch of stuff we have to do,
+including setting up MC PS and so forth,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8415-2
+00:31:27.623 --> 00:31:29.767
+<v Peli de Halleux>but eventually Cloud CLI is ready.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8437-0
+00:31:31.527 --> 00:31:36.727
+<v Peli de Halleux>You can see here the the command to run
+cloud CLI with all the all the options.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8470-0
+00:31:39.887 --> 00:31:44.507
+<v Peli de Halleux>And you know, Claude is doing its work.
+It's logging the thing and hopefully</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8470-1
+00:31:44.507 --> 00:31:46.367
+<v Peli de Halleux>within a few seconds we'll get.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8494-0
+00:31:47.967 --> 00:31:52.059
+<v Peli de Halleux>Whenever clouds decide that movie that
+run out of oh,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8494-1
+00:31:52.059 --> 00:31:54.407
+<v Peli de Halleux>there we go and it's uploading.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8527-0
+00:31:55.927 --> 00:32:00.708
+<v Peli de Halleux>Now if we go back to now,
+we see that the next job is to create a</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8527-1
+00:32:00.708 --> 00:32:01.287
+<v Peli de Halleux>comment.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8602-0
+00:32:02.447 --> 00:32:07.045
+<v Peli de Halleux>And it found the comment and it added it
+and create issue comment runs in a</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8602-1
+00:32:07.045 --> 00:32:11.945
+<v Peli de Halleux>different job with different permissions
+because this part can actually write to</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8602-2
+00:32:11.945 --> 00:32:16.664
+<v Peli de Halleux>your your issues and the end result is
+that you get a comment here with three</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8602-3
+00:32:16.664 --> 00:32:17.087
+<v Peli de Halleux>emojis.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8606-0
+00:32:18.087 --> 00:32:18.607
+<v Peli de Halleux>Telling you.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8624-0
+00:32:20.367 --> 00:32:23.607
+<v Peli de Halleux>OK, you have no clue what's going on,
+so that's a pretty good.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8700-0
+00:32:24.847 --> 00:32:29.922
+<v Peli de Halleux>Pretty good. Elena,
+you're asking if you can ask the the demo</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8700-1
+00:32:29.922 --> 00:32:33.359
+<v Peli de Halleux>repo.
+Not quite because since we're still</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8700-2
+00:32:33.359 --> 00:32:37.452
+<v Peli de Halleux>debugging and making sure security is is
+perfect,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8700-3
+00:32:37.452 --> 00:32:40.807
+<v Peli de Halleux>I have my keys here and I can talk about.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8718-0
+00:32:41.007 --> 00:32:46.087
+<v Peli de Halleux>Why we're not using the GitHub Action
+token, but you can also link back to.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8826-0
+00:32:47.567 --> 00:32:52.325
+<v Peli de Halleux>Here and so one of the interesting thing
+of running over action is that we</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8826-1
+00:32:52.325 --> 00:32:56.385
+<v Peli de Halleux>actually have a trace.
+We have traceability of every run and we</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8826-2
+00:32:56.385 --> 00:33:01.079
+<v Peli de Halleux>also store everything in artifacts.
+So we know we can go back and look at</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8826-3
+00:33:01.079 --> 00:33:06.407
+<v Peli de Halleux>every agentic run for the last, you know,
+for example 30 days to be GDPR compliant.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8861-0
+00:33:06.607 --> 00:33:11.898
+<v Peli de Halleux>We can go and reveal the the the agent
+runs and figure out make sure that</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8861-1
+00:33:11.898 --> 00:33:15.831
+<v Peli de Halleux>they're they're OK.
+So that's from a user perspective,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8861-2
+00:33:15.831 --> 00:33:18.047
+<v Peli de Halleux>the only thing I have to write.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8933-0
+00:33:19.847 --> 00:33:23.884
+<v Peli de Halleux>Oh, I should actually. Where is it here?
+So this is what I write,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8933-1
+00:33:23.884 --> 00:33:28.044
+<v Peli de Halleux>and this is the part that I'm interested
+in. Now you may think, oh,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8933-2
+00:33:28.044 --> 00:33:31.959
+<v Peli de Halleux>this is complicated. This is really.
+I'll never get that right.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8933-3
+00:33:31.959 --> 00:33:35.567
+<v Peli de Halleux>And you're right, it's complicated.
+And This is why we've.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8935-0
+00:33:35.607 --> 00:33:35.687
+<v Peli de Halleux>Uh.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8975-0
+00:33:38.367 --> 00:33:43.687
+<v Peli de Halleux>Where are my? OK,
+This is why we now have a new way to code,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/8975-1
+00:33:43.687 --> 00:33:49.007
+<v Peli de Halleux>which is using these agents.
+So what I can do is I can load.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9077-0
+00:33:51.647 --> 00:33:55.147
+<v Peli de Halleux>I lost the I had.
+I had this cheat sheet page. Yeah,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9077-1
+00:33:55.147 --> 00:33:59.769
+<v Peli de Halleux>let me let me get to the to the docs here.
+And if you go to the docs,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9077-2
+00:33:59.769 --> 00:34:03.401
+<v Peli de Halleux>there's a human docs.
+There's also the the agent docs.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9077-3
+00:34:03.401 --> 00:34:06.769
+<v Peli de Halleux>So you you copy that,
+load that into your copilot.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9077-4
+00:34:06.769 --> 00:34:08.287
+<v Peli de Halleux>So this is copilot CLI.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9154-0
+00:34:08.607 --> 00:34:12.278
+<v Peli de Halleux>If you use it from a code space,
+you're logged in, it just works.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9154-1
+00:34:12.278 --> 00:34:15.226
+<v Peli de Halleux>It's going to ask me,
+do you want to load this file?</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9154-2
+00:34:15.226 --> 00:34:18.674
+<v Peli de Halleux>I'm going to say yes.
+So I'm loading a prompt that's teaching</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9154-3
+00:34:18.674 --> 00:34:22.845
+<v Peli de Halleux>Copilot CLI how to write identic
+workflows and also putting it into a mode</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9154-4
+00:34:22.845 --> 00:34:24.847
+<v Peli de Halleux>where it's like a workflow designer.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9177-0
+00:34:25.327 --> 00:34:35.527
+<v Peli de Halleux>Work surprisingly well, let's say. OK,
+so I want to have a daily.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9212-0
+00:34:37.167 --> 00:34:49.047
+<v Peli de Halleux>Report on the activity in the repository.
+Give me table the numbers and so.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9309-0
+00:34:52.047 --> 00:34:55.633
+<v Peli de Halleux>What is he going to come up with?
+It's doing some research. Actually,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9309-1
+00:34:55.633 --> 00:34:58.656
+<v Peli de Halleux>it's looking at whether there's already
+something. I mean,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9309-2
+00:34:58.656 --> 00:35:01.166
+<v Peli de Halleux>now at this point it's deciding what it's
+doing,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9309-3
+00:35:01.166 --> 00:35:05.161
+<v Peli de Halleux>but it was prompted about the syntax,
+it was prompted about the safe outputs,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9309-4
+00:35:05.161 --> 00:35:07.927
+<v Peli de Halleux>it was prompted about a whole bunch of
+opportunities.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9400-0
+00:35:09.247 --> 00:35:14.161
+<v Peli de Halleux>About what you can do with workflows,
+but this is also to show that it's not</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9400-1
+00:35:14.161 --> 00:35:19.075
+<v Peli de Halleux>just natural language that is coming,
+it's you can really now leverage these</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9400-2
+00:35:19.075 --> 00:35:24.116
+<v Peli de Halleux>agents CLIs to create experiences that
+just radically change the way you build</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9400-3
+00:35:24.116 --> 00:35:25.647
+<v Peli de Halleux>software or you ship it.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9490-0
+00:35:26.527 --> 00:35:31.324
+<v Peli de Halleux>So here we ship the whole wizard
+experience as one file and you can see</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9490-1
+00:35:31.324 --> 00:35:36.120
+<v Peli de Halleux>it's going to do a daily run.
+Workflow dispatch lets you run it on your</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9490-2
+00:35:36.120 --> 00:35:39.917
+<v Peli de Halleux>own. It's got read that it needs.
+It's running compilot.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9490-3
+00:35:39.917 --> 00:35:43.447
+<v Peli de Halleux>These are the tools it thinks it's going
+to need to.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9545-0
+00:35:43.807 --> 00:35:49.149
+<v Peli de Halleux>To solve this problem and it's got like
+and this is a template right?</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9545-1
+00:35:49.149 --> 00:35:54.948
+<v Peli de Halleux>You can see it has create issue as an
+output and it's got like the template</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9545-2
+00:35:54.948 --> 00:35:58.687
+<v Peli de Halleux>here. So this looks great. Yes,
+let's edit that.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9564-0
+00:35:58.727 --> 00:36:04.807
+<v Peli de Halleux>I'm gonna say use blond, please.
+Core Pilot has. OK, let's let's do that.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9594-0
+00:36:06.647 --> 00:36:10.123
+<v Peli de Halleux>Anyway, OK, it's compiling it,
+so we need to compile it.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9594-1
+00:36:10.123 --> 00:36:15.123
+<v Peli de Halleux>It knows that it should compile things.
+So right now I have one file checked out,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9594-2
+00:36:15.123 --> 00:36:15.367
+<v Peli de Halleux>but.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9621-0
+00:36:18.287 --> 00:36:23.087
+<v Peli de Halleux>Did the compile and the interesting thing
+about the compile here is that.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9627-0
+00:36:24.407 --> 00:36:27.447
+<v Peli de Halleux>Oh, no. OK, so uh.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9699-0
+00:36:28.607 --> 00:36:35.958
+<v Peli de Halleux>Use GHAW in this console to so I had to
+install it kind of differently,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9699-1
+00:36:35.958 --> 00:36:44.124
+<v Peli de Halleux>so hopefully it's gonna figure out that
+it's not GHAW but the other executable.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9699-2
+00:36:44.124 --> 00:36:45.247
+<v Peli de Halleux>Yes it did.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9792-0
+00:36:45.687 --> 00:36:48.922
+<v Peli de Halleux>Now it's running it,
+and because you have a CLI,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9792-1
+00:36:48.922 --> 00:36:53.939
+<v Peli de Halleux>any hallucination around the syntax,
+the LM is going to be able to recover,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9792-2
+00:36:53.939 --> 00:36:57.702
+<v Peli de Halleux>look at the error message and then review
+it and fix it.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9792-3
+00:36:57.702 --> 00:37:02.653
+<v Peli de Halleux>And what you have at the end of this
+process is a guaranteed workflow that</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9792-4
+00:37:02.653 --> 00:37:03.247
+<v Peli de Halleux>compiles.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9821-0
+00:37:03.687 --> 00:37:08.902
+<v Peli de Halleux>That is syntactically correct with
+respect to our schema and compiles into a</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9821-1
+00:37:08.902 --> 00:37:11.407
+<v Peli de Halleux>workflow and again you can review it.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9836-0
+00:37:12.727 --> 00:37:17.367
+<v Peli de Halleux>You know there's there's a resume here
+would like to run now.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9899-0
+00:37:18.927 --> 00:37:24.333
+<v Peli de Halleux>Send you to cloud. Yeah,
+but while it's doing that, we can look at.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9899-1
+00:37:24.333 --> 00:37:29.501
+<v Peli de Halleux>Now we can do another review,
+make sure that everything is good,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9899-2
+00:37:29.501 --> 00:37:31.647
+<v Peli de Halleux>but you can see read, read.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9908-0
+00:37:33.207 --> 00:37:36.847
+<v Peli de Halleux>We've got create issue and the rest I can
+kind of trust it.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9959-0
+00:37:38.007 --> 00:37:41.679
+<v Peli de Halleux>It's probably good enough for a first
+first run,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9959-1
+00:37:41.679 --> 00:37:48.047
+<v Peli de Halleux>and then I can maybe do more later on. OK,
+this is the diff, yes, and compile again.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9994-0
+00:37:49.207 --> 00:37:55.993
+<v Peli de Halleux>All right, so once this is done,
+I can go and push that and then we'll go</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/9994-1
+00:37:55.993 --> 00:37:58.927
+<v Peli de Halleux>and run it and see what it does.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10009-0
+00:38:02.367 --> 00:38:05.087
+<v Peli de Halleux>Sounds great. Now back to.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10043-0
+00:38:06.727 --> 00:38:13.807
+<v Peli de Halleux>Back to my UI here and I can see that
+there's a daily activity report.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10047-0
+00:38:15.167 --> 00:38:15.967
+<v Peli de Halleux>Where is it?</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10055-0
+00:38:17.447 --> 00:38:19.527
+<v Peli de Halleux>OK, what's the name of this thing?</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10061-0
+00:38:20.767 --> 00:38:21.807
+<v Peli de Halleux>The name is.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10132-0
+00:38:24.047 --> 00:38:28.345
+<v Peli de Halleux>Daily activity report,
+Daily activity report generator,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10132-1
+00:38:28.345 --> 00:38:33.639
+<v Peli de Halleux>Daily activity report generator,
+Daily activity report generator and</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10132-2
+00:38:33.639 --> 00:38:39.087
+<v Peli de Halleux>there's a workflow dispatch.
+I can run that. Now this is going to run.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10212-0
+00:38:39.447 --> 00:38:44.576
+<v Peli de Halleux>A full agentic run on VMS with all the
+setups I need with just the secrets I</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10212-1
+00:38:44.576 --> 00:38:47.307
+<v Peli de Halleux>want.
+I'm not jeopardizing my machine or</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10212-2
+00:38:47.307 --> 00:38:52.635
+<v Peli de Halleux>spinning up a container on my machine.
+This is very flexible to run all kind of</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10212-3
+00:38:52.635 --> 00:38:54.167
+<v Peli de Halleux>different AI workloads.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10234-0
+00:38:54.487 --> 00:38:59.967
+<v Peli de Halleux>In a safe fashion on the map,
+it's going and we can see here.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10340-0
+00:39:02.967 --> 00:39:05.764
+<v Peli de Halleux>In this case,
+because there is only workflow and</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10340-1
+00:39:05.764 --> 00:39:10.103
+<v Peli de Halleux>schedule, nobody can trigger this.
+There is no third party that can trigger</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10340-2
+00:39:10.103 --> 00:39:12.843
+<v Peli de Halleux>this,
+so we don't need to check the permission.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10340-3
+00:39:12.843 --> 00:39:16.610
+<v Peli de Halleux>This is this is something that is that
+only a team member can do.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10340-4
+00:39:16.610 --> 00:39:19.407
+<v Peli de Halleux>So we skip that step and now we're at the
+agent.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10349-0
+00:39:20.207 --> 00:39:22.047
+<v Peli de Halleux>And if we look at the agent.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10360-0
+00:39:23.287 --> 00:39:26.607
+<v Peli de Halleux>Let's see. Maybe we get.
+Maybe we get some output. Maybe not.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10408-0
+00:39:28.087 --> 00:39:33.994
+<v Peli de Halleux>It's probably querying the the GitHub MCP
+and trying to figure out the list of PRS</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10408-1
+00:39:33.994 --> 00:39:34.847
+<v Peli de Halleux>in the past.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10412-0
+00:39:36.527 --> 00:39:38.127
+<v Peli de Halleux>Can give a few seconds. Um.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10494-0
+00:39:39.767 --> 00:39:43.782
+<v Peli de Halleux>Although this thing,
+these things may tend to, you know,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10494-1
+00:39:43.782 --> 00:39:47.515
+<v Peli de Halleux>use sometimes.
+If you're doing GitHub Copilot agent,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10494-2
+00:39:47.515 --> 00:39:51.812
+<v Peli de Halleux>it's not uncommon to wait 20 minutes for
+for an agentic run,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10494-3
+00:39:51.812 --> 00:39:55.967
+<v Peli de Halleux>which really is not a problem if you have
+5 or 10 running.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10528-0
+00:39:56.687 --> 00:40:01.129
+<v Peli de Halleux>And you're always busy.
+I tend to have five at most.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10528-1
+00:40:01.129 --> 00:40:05.487
+<v Peli de Halleux>Then it really becomes kind of mind
+boggling thing.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10539-0
+00:40:07.047 --> 00:40:11.447
+<v Peli de Halleux>All right, maybe I go to. Well,
+let's let's keep waiting.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10547-0
+00:40:13.807 --> 00:40:15.487
+<v Peli de Halleux>It has to do a lot of work.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10597-0
+00:40:17.447 --> 00:40:22.401
+<v Peli de Halleux>OK, but while this is going,
+I can go back to the idea and show you</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10597-1
+00:40:22.401 --> 00:40:26.407
+<v Peli de Halleux>one more exciting stuff.
+So let's get out of here and.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10680-0
+00:40:29.367 --> 00:40:34.342
+<v Peli de Halleux>Because we have artifacts,
+we can also say, oh, what's going on here?</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10680-1
+00:40:34.342 --> 00:40:39.744
+<v Peli de Halleux>So we can query all the builds and all
+the artifacts and then we can go and</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10680-2
+00:40:39.744 --> 00:40:45.287
+<v Peli de Halleux>investigate the performance of our agents
+like we can figure out is is RDLMS.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10688-0
+00:40:45.407 --> 00:40:47.727
+<v Peli de Halleux>Doing well, though here it seems that.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10695-0
+00:40:49.567 --> 00:40:51.687
+<v Peli de Halleux>Oh, OK, so you can see that.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10807-0
+00:40:53.527 --> 00:40:58.521
+<v Peli de Halleux>These are the tools we use.
+We use to do write a lot. We use GitHub.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10807-1
+00:40:58.521 --> 00:41:03.081
+<v Peli de Halleux>We've used Playwrite.
+You can see the maximum duration of some</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10807-2
+00:41:03.081 --> 00:41:07.061
+<v Peli de Halleux>of these tools.
+So some tools take a long time to run,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10807-3
+00:41:07.061 --> 00:41:11.621
+<v Peli de Halleux>like the smart thing.
+So this tool basically takes a long time</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10807-4
+00:41:11.621 --> 00:41:12.127
+<v Peli de Halleux>to run.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10822-0
+00:41:13.047 --> 00:41:18.127
+<v Peli de Halleux>Some of these are surprising.
+I I suspect there's a parse error in my.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10879-0
+00:41:19.207 --> 00:41:23.414
+<v Peli de Halleux>There's probably a parse error in my in
+my code that this this whole thing has</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10879-1
+00:41:23.414 --> 00:41:26.182
+<v Peli de Halleux>been by coded.
+We're mostly using agent to build to</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10879-2
+00:41:26.182 --> 00:41:27.247
+<v Peli de Halleux>build this software.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10983-0
+00:41:29.687 --> 00:41:34.811
+<v Peli de Halleux>But the interesting piece here is that
+you have a natural way to store every run</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10983-1
+00:41:34.811 --> 00:41:38.670
+<v Peli de Halleux>in as artifacts in GitHub,
+and this opens the opportunity to</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10983-2
+00:41:38.670 --> 00:41:43.098
+<v Peli de Halleux>optimize them, to inspect them,
+to figure out which ones are working,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10983-3
+00:41:43.098 --> 00:41:46.956
+<v Peli de Halleux>which ones are not working.
+You can look at the performance,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/10983-4
+00:41:46.956 --> 00:41:48.727
+<v Peli de Halleux>your FCP tool tools and say.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11060-0
+00:41:48.807 --> 00:41:52.904
+<v Peli de Halleux>Look at the you know this.
+This should have been populated with the</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11060-1
+00:41:52.904 --> 00:41:56.398
+<v Peli de Halleux>size of the tokens,
+because if you have tools that return</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11060-2
+00:41:56.398 --> 00:42:00.494
+<v Peli de Halleux>massive, massive results,
+they're really gonna destroy your context</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11060-3
+00:42:00.494 --> 00:42:03.807
+<v Peli de Halleux>and destroy the performance of your of
+your agent. So.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11120-0
+00:42:04.887 --> 00:42:09.342
+<v Peli de Halleux>The opportunity here is that you also
+have this ephemeral storage.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11120-1
+00:42:09.342 --> 00:42:14.196
+<v Peli de Halleux>You have this cache that lasts 3 days
+where you can constantly track the</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11120-2
+00:42:14.196 --> 00:42:19.582
+<v Peli de Halleux>performance of all your agents and build
+and build more agents that look at your</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11120-3
+00:42:19.582 --> 00:42:20.047
+<v Peli de Halleux>agents.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11174-0
+00:42:20.247 --> 00:42:26.577
+<v Peli de Halleux>If that makes sense. All right,
+so activity report is still running on.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11174-1
+00:42:26.577 --> 00:42:32.202
+<v Peli de Halleux>Maybe. Maybe if I refresh. Yeah, OK,
+it's gonna go for a while.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11174-2
+00:42:32.202 --> 00:42:34.927
+<v Peli de Halleux>We have one that's that's here.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11267-0
+00:42:36.647 --> 00:42:39.927
+<v Peli de Halleux>OK,
+let's let's let's let it die and then we</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11267-1
+00:42:39.927 --> 00:42:43.862
+<v Peli de Halleux>can come back to to it a little bit later.
+All right,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11267-2
+00:42:43.862 --> 00:42:49.037
+<v Peli de Halleux>we can't do a talk on AI without MCP.
+So here it goes. What about MCP?</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11267-3
+00:42:49.037 --> 00:42:54.648
+<v Peli de Halleux>They are just to say there are a few
+built-in tools in in Agentic workflows,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11267-4
+00:42:54.648 --> 00:42:55.887
+<v Peli de Halleux>including GitHub.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11344-0
+00:42:56.687 --> 00:43:01.192
+<v Peli de Halleux>Playwrights and we picked those two
+because these are built into Copilot</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11344-1
+00:43:01.192 --> 00:43:04.771
+<v Peli de Halleux>agent as well,
+so we're kind of matching the expectation.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11344-2
+00:43:04.771 --> 00:43:08.659
+<v Peli de Halleux>Playwright is a headless browser that
+lets you open a webpage,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11344-3
+00:43:08.659 --> 00:43:13.287
+<v Peli de Halleux>take a screenshot and things like that.
+Other than that, it's the typical.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11397-0
+00:43:14.447 --> 00:43:18.824
+<v Peli de Halleux>MCP configuration game.
+You can give an ID to your server,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11397-1
+00:43:18.824 --> 00:43:23.646
+<v Peli de Halleux>the command, the arguments.
+You can also specify which tools are</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11397-2
+00:43:23.646 --> 00:43:27.207
+<v Peli de Halleux>allowed and then we'll spin that up and
+run it.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11477-0
+00:43:28.287 --> 00:43:34.115
+<v Peli de Halleux>But actually there's way more to that.
+So one of the danger of these tools that</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11477-1
+00:43:34.115 --> 00:43:38.705
+<v Peli de Halleux>these are, you know,
+install from NPX and they run random code</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11477-2
+00:43:38.705 --> 00:43:43.513
+<v Peli de Halleux>and they are in the same job with the
+same secrets as your agent.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11477-3
+00:43:43.513 --> 00:43:45.407
+<v Peli de Halleux>So this is another source.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11540-0
+00:43:45.767 --> 00:43:50.524
+<v Peli de Halleux>Of attack and problems.
+This is more like supply chain attack</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11540-1
+00:43:50.524 --> 00:43:56.124
+<v Peli de Halleux>where suddenly an MCP that used to be
+nice is now malicious because it's</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11540-2
+00:43:56.124 --> 00:44:00.727
+<v Peli de Halleux>sending also all your emails to another
+to another address.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11542-0
+00:44:01.567 --> 00:44:01.887
+<v Peli de Halleux>Um.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11572-0
+00:44:03.847 --> 00:44:09.767
+<v Peli de Halleux>So we have first class support to
+containerize in firewall MCPS.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11645-0
+00:44:11.047 --> 00:44:16.223
+<v Peli de Halleux>So we have a this keyword called
+container and it takes the container</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11645-1
+00:44:16.223 --> 00:44:21.177
+<v Peli de Halleux>image and then we have the same.
+Actually permission is gone here,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11645-2
+00:44:21.177 --> 00:44:25.687
+<v Peli de Halleux>but we have the same kind of idea of
+specifying the network.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11736-0
+00:44:26.247 --> 00:44:30.652
+<v Peli de Halleux>So we're going to mount an egress
+firewall around the container to make</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11736-1
+00:44:30.652 --> 00:44:33.894
+<v Peli de Halleux>sure that it is only allowed to talk to
+this domain.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11736-2
+00:44:33.894 --> 00:44:38.666
+<v Peli de Halleux>So although you trust the container,
+you also know that it only needs to talk</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11736-3
+00:44:38.666 --> 00:44:42.582
+<v Peli de Halleux>to a specific domain.
+In that case you can shut down everything</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11736-4
+00:44:42.582 --> 00:44:42.887
+<v Peli de Halleux>else.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11855-0
+00:44:42.887 --> 00:44:45.943
+<v Peli de Halleux>And if you have,
+if it happens to be compromised,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11855-1
+00:44:45.943 --> 00:44:50.037
+<v Peli de Halleux>you're not being pumped.
+So this this is this is something that is</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11855-2
+00:44:50.037 --> 00:44:54.742
+<v Peli de Halleux>being made possible because we have this
+this fabric of being able to create</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11855-3
+00:44:54.742 --> 00:44:57.919
+<v Peli de Halleux>containers and set up firewalls and all
+this stuff.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11855-4
+00:44:57.919 --> 00:45:02.807
+<v Peli de Halleux>So we can really create this environment
+where you know we trust but we verify.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11929-0
+00:45:02.887 --> 00:45:07.793
+<v Peli de Halleux>We give you only what you have to do.
+It's kind of minimal minimum access to</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11929-1
+00:45:07.793 --> 00:45:10.915
+<v Peli de Halleux>anything.
+So this is very convenient when you're</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11929-2
+00:45:10.915 --> 00:45:13.973
+<v Peli de Halleux>working with MCP that are talking to a
+network,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11929-3
+00:45:13.973 --> 00:45:18.687
+<v Peli de Halleux>you just want to give them minimum access
+to the Internet you don't want.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11950-0
+00:45:19.367 --> 00:45:24.509
+<v Peli de Halleux>You know the MCP that is supposed to
+catch the weather to also talk to a</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/11950-1
+00:45:24.509 --> 00:45:25.847
+<v Peli de Halleux>magician's website.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12035-0
+00:45:27.287 --> 00:45:32.976
+<v Peli de Halleux>So there is first class support for MCPS
+and these get these get passed on to the</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12035-1
+00:45:32.976 --> 00:45:37.623
+<v Peli de Halleux>to the Agentic engines who also have
+first class support for MCPS,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12035-2
+00:45:37.623 --> 00:45:42.687
+<v Peli de Halleux>but we're going to set them up in a way
+that is safer than your default.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12062-0
+00:45:42.727 --> 00:45:48.380
+<v Peli de Halleux>Installation where you just copy paste
+instructions and again focus on security.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12062-1
+00:45:48.380 --> 00:45:49.287
+<v Peli de Halleux>All right so.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12088-0
+00:45:51.207 --> 00:45:56.447
+<v Peli de Halleux>I went super fast.
+Let's see see how's my how's my action.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12091-0
+00:46:00.887 --> 00:46:01.327
+<v Peli de Halleux>Oh, it failed.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12110-0
+00:46:03.047 --> 00:46:05.727
+<v Peli de Halleux>That's no good for the demo.
+Let's take a look at what it did.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12116-0
+00:46:05.767 --> 00:46:07.487
+<v Peli de Halleux>Let's take a look at what it did.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12123-0
+00:46:08.767 --> 00:46:10.247
+<v Peli de Halleux>OK, we have the prompts.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12135-0
+00:46:11.207 --> 00:46:14.767
+<v Peli de Halleux>And then it did the run. Oh,
+and then it did. Um.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12156-0
+00:46:16.367 --> 00:46:21.727
+<v Peli de Halleux>I did roduce a report, somehow it failed.
+You can see all the workflow runs.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12204-0
+00:46:24.247 --> 00:46:31.597
+<v Peli de Halleux>This is the log of all the the calls it
+did and this is the this is the report 58</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12204-1
+00:46:31.597 --> 00:46:33.927
+<v Peli de Halleux>commits, 26 PRS 10 issues.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12259-0
+00:46:35.407 --> 00:46:40.355
+<v Peli de Halleux>Yeah, I'm closing all my issues,
+so that's that's the run.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12259-1
+00:46:40.355 --> 00:46:46.979
+<v Peli de Halleux>But somehow I decided that it had an
+error and then it didn't do create issue.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12259-2
+00:46:46.979 --> 00:46:49.327
+<v Peli de Halleux>Alright, and if I wanted to.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12271-0
+00:46:50.727 --> 00:46:53.887
+<v Peli de Halleux>I can go and I can look at the artifacts.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12278-0
+00:46:55.447 --> 00:46:57.447
+<v Peli de Halleux>I can download for example.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12363-0
+00:46:58.407 --> 00:47:02.150
+<v Peli de Halleux>The output of Claude. I don't know.
+I don't know how it's gonna look like.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12363-1
+00:47:02.150 --> 00:47:06.292
+<v Peli de Halleux>I don't know. Oh you can't see that. OK,
+forget it because I'm out of the browser,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12363-2
+00:47:06.292 --> 00:47:08.886
+<v Peli de Halleux>but you can download any file and look at
+the logs.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12363-3
+00:47:08.886 --> 00:47:12.629
+<v Peli de Halleux>So in this case my demo failed because
+create issue didn't didn't work out</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12363-4
+00:47:12.629 --> 00:47:13.327
+<v Peli de Halleux>unfortunately.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12370-0
+00:47:13.607 --> 00:47:16.807
+<v Peli de Halleux>So something happened and then we decided
+not to go to.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12396-0
+00:47:18.167 --> 00:47:20.526
+<v Peli de Halleux>And this is probably This is what we have
+to tune,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12396-1
+00:47:20.526 --> 00:47:23.207
+<v Peli de Halleux>but the idea is that we should have an
+issue out of that.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12508-0
+00:47:26.167 --> 00:47:31.300
+<v Peli de Halleux>I have some previous one that works,
+so we have an accessibility reviewer that</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12508-1
+00:47:31.300 --> 00:47:35.263
+<v Peli de Halleux>looks at the slides,
+the compile slide of the deck and as an</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12508-2
+00:47:35.263 --> 00:47:38.901
+<v Peli de Halleux>accessibility review.
+I don't know if it's good or bad,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12508-3
+00:47:38.901 --> 00:47:42.799
+<v Peli de Halleux>I just prompted it,
+but we could also add screenshots here.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12508-4
+00:47:42.799 --> 00:47:45.527
+<v Peli de Halleux>So there's a lot of opportunities here to.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12551-0
+00:47:46.567 --> 00:47:51.567
+<v Peli de Halleux>To go and automate task that beforehand
+was really hard to do and you can do it</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12551-1
+00:47:51.567 --> 00:47:55.567
+<v Peli de Halleux>in a very efficient way and flexible way
+using these workflows.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12573-0
+00:47:57.007 --> 00:48:01.645
+<v Peli de Halleux>All right,
+so my demo didn't workout sad this one in</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12573-1
+00:48:01.645 --> 00:48:02.607
+<v Peli de Halleux>particular.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12577-0
+00:48:04.527 --> 00:48:05.887
+<v Peli de Halleux>Was built with.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12603-0
+00:48:06.927 --> 00:48:09.965
+<v Peli de Halleux>The accessibility workflow.
+So that one is. Let's see,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12603-1
+00:48:09.965 --> 00:48:11.567
+<v Peli de Halleux>let's see what it looks like.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12640-0
+00:48:13.367 --> 00:48:17.035
+<v Peli de Halleux>Accessibility review.
+So that's the accessibility review</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12640-1
+00:48:17.035 --> 00:48:19.802
+<v Peli de Halleux>scripts.
+Just to make a look works on pull</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12640-2
+00:48:19.802 --> 00:48:22.247
+<v Peli de Halleux>requests when you do ready for review.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12666-0
+00:48:24.167 --> 00:48:29.287
+<v Peli de Halleux>Got read access it has laywright so it
+can sin UA browser and do screenshots.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12764-0
+00:48:30.687 --> 00:48:34.917
+<v Peli de Halleux>And it can create issues and upload
+assets and that allows you to upload</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12764-1
+00:48:34.917 --> 00:48:38.336
+<v Peli de Halleux>screenshots and so forth.
+And you can see you know this is</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12764-2
+00:48:38.336 --> 00:48:42.855
+<v Peli de Halleux>programming in a way that you start and
+give instructions to DLM and and it's</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12764-3
+00:48:42.855 --> 00:48:46.447
+<v Peli de Halleux>gonna go and execute them.
+So it is not as structured as the.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12824-0
+00:48:46.647 --> 00:48:50.365
+<v Peli de Halleux>Old school CLI YAML we would see with
+GitHub actions,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12824-1
+00:48:50.365 --> 00:48:55.734
+<v Peli de Halleux>but it is precise enough that a modern
+agent CLI will follow his instructions</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12824-2
+00:48:55.734 --> 00:48:59.521
+<v Peli de Halleux>and do that.
+And then you can see now it's looking for</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12824-3
+00:48:59.521 --> 00:49:02.687
+<v Peli de Halleux>all kind of validations around
+accessibility.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12894-0
+00:49:04.167 --> 00:49:07.213
+<v Peli de Halleux>Yeah.
+So that's in a nutshell Agentic workflow.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12894-1
+00:49:07.213 --> 00:49:11.972
+<v Peli de Halleux>As you can see, it's, you know,
+it's kind of raw right now. It's starting.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12894-2
+00:49:11.972 --> 00:49:16.541
+<v Peli de Halleux>You're welcome to try it out.
+We we have a bunch of issues with Copilot</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12894-3
+00:49:16.541 --> 00:49:18.127
+<v Peli de Halleux>came out Friday. There's.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12943-0
+00:49:19.447 --> 00:49:23.751
+<v Peli de Halleux>It's it's kind of half working for our
+scenario running in actions,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12943-1
+00:49:23.751 --> 00:49:27.739
+<v Peli de Halleux>but you know we're we're working with the
+GitHub team on that,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/12943-2
+00:49:27.739 --> 00:49:30.207
+<v Peli de Halleux>but you can try it with Codex or Cloud.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13042-0
+00:49:31.287 --> 00:49:36.371
+<v Peli de Halleux>It's a CLI, so you have to install it.
+It's an extension to GH and then oh,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13042-1
+00:49:36.371 --> 00:49:40.117
+<v Peli de Halleux>this is not, this is not right.
+So this should be AWAW.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13042-2
+00:49:40.117 --> 00:49:44.466
+<v Peli de Halleux>And then I've shown this demo where when
+you load these prompts,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13042-3
+00:49:44.466 --> 00:49:49.081
+<v Peli de Halleux>you're not actually you don't.
+You shouldn't be typing these things,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13042-4
+00:49:49.081 --> 00:49:50.887
+<v Peli de Halleux>you should use an an agent.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13134-0
+00:49:51.207 --> 00:49:54.416
+<v Peli de Halleux>To kickstart what you're trying to do and
+then refine it.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13134-1
+00:49:54.416 --> 00:49:58.896
+<v Peli de Halleux>You don't have to go and type it from
+from the start and try to learn the thing.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13134-2
+00:49:58.896 --> 00:50:02.436
+<v Peli de Halleux>It's it's kind of the old way,
+the new way. We have a compiler,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13134-3
+00:50:02.436 --> 00:50:06.363
+<v Peli de Halleux>we'll give you error messages,
+but it's way more efficient to actually</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13134-4
+00:50:06.363 --> 00:50:07.967
+<v Peli de Halleux>chat with an agent abilities.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13203-0
+00:50:08.167 --> 00:50:12.300
+<v Peli de Halleux>And then you can see all kind of examples
+we have.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13203-1
+00:50:12.300 --> 00:50:18.782
+<v Peli de Halleux>We have a website called Agentix as well
+where we maintain a bunch of examples.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13203-2
+00:50:18.782 --> 00:50:23.563
+<v Peli de Halleux>If you go here,
+you'll see all kind of potential examples,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13203-3
+00:50:23.563 --> 00:50:23.887
+<v Peli de Halleux>but.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13249-0
+00:50:24.407 --> 00:50:28.492
+<v Peli de Halleux>On the other hand,
+it's it's really up to you to come up</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13249-1
+00:50:28.492 --> 00:50:33.509
+<v Peli de Halleux>with your with your scenarios. OK,
+so I've been rambling away for the</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13249-2
+00:50:33.509 --> 00:50:36.447
+<v Peli de Halleux>longest time. I think we have 10 minutes.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13268-0
+00:50:38.487 --> 00:50:41.767
+<v Stacey Mulcahy>I mean, there's questions in Q&amp;
+A if you want.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13262-0
+00:50:39.407 --> 00:50:40.047
+<v Peli de Halleux>English.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13285-0
+00:50:41.447 --> 00:50:45.247
+<v Peli de Halleux>Yeah, I didn't look at all. Do you? Yeah.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13287-0
+00:50:43.967 --> 00:50:46.487
+<v Stacey Mulcahy>Yeah. Do you want me to here? I'll um.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13305-0
+00:50:47.207 --> 00:50:50.487
+<v Stacey Mulcahy>I'll I'll toss them your way and you
+don't have to parse them. How's that?</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13341-0
+00:50:51.127 --> 00:50:58.485
+<v Peli de Halleux>Yes,
+because I'm I can answer the recording.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13356-0
+00:50:55.007 --> 00:51:02.128
+<v Stacey Mulcahy>Pally engaged. OK,
+how does the action differentiate between</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13341-1
+00:50:58.485 --> 00:51:00.447
+<v Peli de Halleux>Yeah, sorry.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13356-1
+00:51:02.128 --> 00:51:06.447
+<v Stacey Mulcahy>a prompt and user input in the issue?</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13456-0
+00:51:07.487 --> 00:51:12.873
+<v Peli de Halleux>In general you don't.
+I mean it's as good as you're prompting,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13456-1
+00:51:12.873 --> 00:51:19.712
+<v Peli de Halleux>so you could try to wrap it into XML tags.
+So here for example here this is the</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13456-2
+00:51:19.712 --> 00:51:26.380
+<v Peli de Halleux>input from the user which we've pre
+sanitized with deterministic sanitization</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13456-3
+00:51:26.380 --> 00:51:26.807
+<v Peli de Halleux>like.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13500-0
+00:51:27.247 --> 00:51:31.446
+<v Peli de Halleux>Removing because special characters and
+so forth.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13500-1
+00:51:31.446 --> 00:51:37.828
+<v Peli de Halleux>Maybe you want to say no user here and
+user here and you're gonna say don't</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13500-2
+00:51:37.828 --> 00:51:39.927
+<v Peli de Halleux>trust anything from user.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13593-0
+00:51:41.527 --> 00:51:45.630
+<v Peli de Halleux>But in general with LMS,
+you're just sending a big BLOB of text.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13593-1
+00:51:45.630 --> 00:51:50.805
+<v Peli de Halleux>So that's kind of the challenge is that
+you have to architecture and even if it's</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13593-2
+00:51:50.805 --> 00:51:53.582
+<v Peli de Halleux>not here,
+but it comes from the GitHub MCP,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13593-3
+00:51:53.582 --> 00:51:56.927
+<v Peli de Halleux>same same problem,
+it may become part of the prompt.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13618-0
+00:51:58.247 --> 00:52:03.168
+<v Peli de Halleux>That comes with the territory of LLMS.
+There is no boundary between code and</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13618-1
+00:52:03.168 --> 00:52:03.487
+<v Peli de Halleux>data.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13659-0
+00:52:05.127 --> 00:52:11.421
+<v Stacey Mulcahy>Gotcha. OK, next question. You ready?
+Could it be integrated with ADO provided</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13634-0
+00:52:08.767 --> 00:52:09.007
+<v Peli de Halleux>Yep.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13659-1
+00:52:11.421 --> 00:52:14.527
+<v Stacey Mulcahy>our internal projects are in ADO still?</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13726-0
+00:52:15.447 --> 00:52:19.372
+<v Peli de Halleux>Excellent question.
+The answer is this one, no,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13726-1
+00:52:19.372 --> 00:52:26.241
+<v Peli de Halleux>but I chatted with the ADO team last week,
+the one ES team or maybe hopefully doing</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13726-2
+00:52:26.241 --> 00:52:30.247
+<v Peli de Halleux>looking whether it's possible to do a
+prototype.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13837-0
+00:52:30.487 --> 00:52:33.359
+<v Peli de Halleux>So kind of, you know,
+there's some discussions,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13837-1
+00:52:33.359 --> 00:52:36.768
+<v Peli de Halleux>but also I'm not an expert in the one ES
+infrastructure,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13837-2
+00:52:36.768 --> 00:52:41.254
+<v Peli de Halleux>so I don't know if this is feasible.
+I think the idea applies to any ICICD</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13837-3
+00:52:41.254 --> 00:52:44.245
+<v Peli de Halleux>environment,
+so hopefully we can bring it to ADO.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13837-4
+00:52:44.245 --> 00:52:48.193
+<v Peli de Halleux>I'd love to bring it to ADO.
+So if someone is excited to do that,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13837-5
+00:52:48.193 --> 00:52:49.927
+<v Peli de Halleux>I'd love to work on that too.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13871-0
+00:52:50.487 --> 00:52:56.885
+<v Peli de Halleux>So yeah, hit me up. But yeah,
+it's it's not applicable to ADO right now</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13871-1
+00:52:56.885 --> 00:53:00.527
+<v Peli de Halleux>as is. It's just very specific to GitHub.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13875-0
+00:53:02.007 --> 00:53:03.647
+<v Peli de Halleux>The idea is applicable.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13912-0
+00:53:02.767 --> 00:53:07.982
+<v Stacey Mulcahy>OK, yeah, next question.
+Is there a way to undo what an action</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13912-1
+00:53:07.982 --> 00:53:11.127
+<v Stacey Mulcahy>does if you realize it wasn't correct?</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13916-0
+00:53:13.607 --> 00:53:13.687
+<v Peli de Halleux>Um.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13919-0
+00:53:16.127 --> 00:53:17.007
+<v Peli de Halleux>That's a good one.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13979-0
+00:53:19.527 --> 00:53:26.523
+<v Peli de Halleux>So it really depends on what kind of safe
+output you're using. If we don't really,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/13979-1
+00:53:26.523 --> 00:53:28.967
+<v Peli de Halleux>we don't have an undo button.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14048-0
+00:53:30.567 --> 00:53:35.544
+<v Peli de Halleux>Currently you would have to manually
+delete the the comment.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14048-1
+00:53:35.544 --> 00:53:41.499
+<v Peli de Halleux>In this case you're restricted to put a
+comment on the triggering issue,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14048-2
+00:53:41.499 --> 00:53:46.475
+<v Peli de Halleux>so you will find it.
+You can also put more restrictions like</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14048-3
+00:53:46.475 --> 00:53:47.127
+<v Peli de Halleux>Max one.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14094-0
+00:53:47.847 --> 00:53:52.892
+<v Peli de Halleux>In fact, that's the default.
+You're only allowed to add one comment.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14094-1
+00:53:52.892 --> 00:53:58.447
+<v Peli de Halleux>So there's a number of boundaries to
+prevent a runaway AI, but there is no.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14107-0
+00:53:59.847 --> 00:54:02.847
+<v Peli de Halleux>There is no guaranteed undo like.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14141-0
+00:54:03.687 --> 00:54:09.243
+<v Peli de Halleux>We try to do non destructive updates,
+so for example we only support adding</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14141-1
+00:54:09.243 --> 00:54:12.167
+<v Peli de Halleux>labels. We do not support removing them.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14194-0
+00:54:13.607 --> 00:54:19.152
+<v Peli de Halleux>Because that would be destructive.
+We support creating pull requests.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14194-1
+00:54:19.152 --> 00:54:25.094
+<v Peli de Halleux>We support pushing commits to a branch,
+in which case you can't revert the</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14194-2
+00:54:25.094 --> 00:54:25.727
+<v Peli de Halleux>commits.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14250-0
+00:54:27.127 --> 00:54:32.317
+<v Peli de Halleux>And of course we rely on you putting
+branch protection to prevent accidental</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14250-1
+00:54:32.317 --> 00:54:37.843
+<v Peli de Halleux>pushes to the wrong branches. But yeah,
+the the undo is, I would say almost undo,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14250-2
+00:54:37.843 --> 00:54:39.527
+<v Peli de Halleux>but it's gonna be manual.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14283-0
+00:54:42.247 --> 00:54:46.158
+<v Stacey Mulcahy>Next question,
+how do I know what network defaults allow?</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14283-1
+00:54:46.158 --> 00:54:49.327
+<v Stacey Mulcahy>How do I know if the agent can do a web
+fetch?</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14313-0
+00:54:50.727 --> 00:54:54.992
+<v Peli de Halleux>Yes, uh,
+network defaults is uh pretty much the</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14313-1
+00:54:54.992 --> 00:54:58.367
+<v Peli de Halleux>same as uh compiler Padawan and it is.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14330-0
+00:54:59.447 --> 00:55:03.487
+<v Peli de Halleux>I guess it's not. It's not documented,
+but there's code.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14360-0
+00:55:04.967 --> 00:55:10.687
+<v Peli de Halleux>So somewhere here there's there's
+probably something called network.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14373-0
+00:55:12.167 --> 00:55:15.327
+<v Peli de Halleux>Hopefully. Oh no, not in this remote,
+in this remote.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14398-0
+00:55:16.567 --> 00:55:19.459
+<v Peli de Halleux>But yeah,
+there is because we open source and</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14398-1
+00:55:19.459 --> 00:55:20.527
+<v Peli de Halleux>somewhere in the.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14405-0
+00:55:21.447 --> 00:55:24.527
+<v Peli de Halleux>Network default network.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14460-0
+00:55:26.087 --> 00:55:30.554
+<v Peli de Halleux>Yeah, there's no, but we are.
+We should probably have a.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14460-1
+00:55:30.554 --> 00:55:35.413
+<v Peli de Halleux>We could have a CLI command that lists
+all the domains. Yeah,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14460-2
+00:55:35.413 --> 00:55:37.607
+<v Peli de Halleux>so it's it's somewhere else.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14469-0
+00:55:39.167 --> 00:55:42.127
+<v Peli de Halleux>It was split it so it's not here anymore.
+It moved.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14518-0
+00:55:44.647 --> 00:55:47.719
+<v Peli de Halleux>But yeah,
+so actually that's a good suggestion.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14518-1
+00:55:47.719 --> 00:55:51.943
+<v Peli de Halleux>And again, this is interesting.
+The more you surface in your CLI,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14518-2
+00:55:51.943 --> 00:55:54.247
+<v Peli de Halleux>the more the DLM can learn about it.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14531-0
+00:55:54.887 --> 00:55:59.007
+<v Peli de Halleux>But they moved somewhere else and I don't
+know where they are right now.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14564-0
+00:56:00.127 --> 00:56:02.895
+<v Stacey Mulcahy>OK, next question.
+I'm gonna keep you moving.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14564-1
+00:56:02.895 --> 00:56:07.647
+<v Stacey Mulcahy>What is the best way to test these agent
+actions before deploying in the wild?</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14550-0
+00:56:03.527 --> 00:56:03.807
+<v Peli de Halleux>Yeah.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14589-0
+00:56:08.087 --> 00:56:13.799
+<v Peli de Halleux>Ha, excellent choice. Excellent question.
+We have a stage mode which I forgot to</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14589-1
+00:56:13.799 --> 00:56:14.927
+<v Peli de Halleux>talk about, but.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14591-0
+00:56:14.967 --> 00:56:15.327
+<v Peli de Halleux>Um.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14596-0
+00:56:16.767 --> 00:56:18.487
+<v Peli de Halleux>O if you put stage here.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14661-0
+00:56:22.967 --> 00:56:26.689
+<v Peli de Halleux>What's going to happen is we will not
+publish.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14661-1
+00:56:26.689 --> 00:56:31.360
+<v Peli de Halleux>We will render a preview in the action
+preview in the run,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14661-2
+00:56:31.360 --> 00:56:34.527
+<v Peli de Halleux>but will not publish anything to GitHub.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14715-0
+00:56:36.207 --> 00:56:41.530
+<v Peli de Halleux>So you will go to. Once you have staged,
+what you do is you will go to the action</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14715-1
+00:56:41.530 --> 00:56:44.580
+<v Peli de Halleux>run,
+look at the output and that's going to be</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14715-2
+00:56:44.580 --> 00:56:46.527
+<v Peli de Halleux>it. We will not do the commit.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14757-0
+00:56:47.927 --> 00:56:52.758
+<v Peli de Halleux>So you can actually test an action in
+isolation without touching GitHub besides</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14757-1
+00:56:52.758 --> 00:56:55.958
+<v Peli de Halleux>reading it,
+but no writes until you feel it's OK and</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14757-2
+00:56:55.958 --> 00:56:57.407
+<v Peli de Halleux>then you can turn it on.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14811-0
+00:56:58.567 --> 00:57:01.229
+<v Stacey Mulcahy>OK,
+how do these read-only permissions</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14811-1
+00:57:01.229 --> 00:57:06.756
+<v Stacey Mulcahy>interact with GitHub Copilot's agent mode,
+where the AI is meant to do more than</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14811-2
+00:57:06.756 --> 00:57:07.847
+<v Stacey Mulcahy>just read files?</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14886-0
+00:57:08.327 --> 00:57:13.260
+<v Peli de Halleux>The AI is going to receive a 403 when it
+tries to do anything that the token</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14886-1
+00:57:13.260 --> 00:57:16.719
+<v Peli de Halleux>doesn't allow.
+So say the AI tries to create an issue</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14886-2
+00:57:16.719 --> 00:57:21.011
+<v Peli de Halleux>and then the the the the the REST API is
+just going to return 403.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14886-3
+00:57:21.011 --> 00:57:25.302
+<v Peli de Halleux>You're not allowed to do that and then
+the AI is going to say, oh,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14886-4
+00:57:25.302 --> 00:57:26.327
+<v Peli de Halleux>I can't do that.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14913-0
+00:57:26.887 --> 00:57:32.253
+<v Peli de Halleux>Let me try to do something else denied.
+So this is this is a strong deny in the</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14891-0
+00:57:28.367 --> 00:57:30.127
+<v Stacey Mulcahy>Denied.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14913-1
+00:57:32.253 --> 00:57:37.887
+<v Peli de Halleux>sense that you're guaranteed you're never
+right because the token doesn't allow it.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14962-0
+00:57:38.807 --> 00:57:43.434
+<v Peli de Halleux>It's stronger than let's say restricting
+the restricting the tools on the MCP</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14962-1
+00:57:43.434 --> 00:57:48.416
+<v Peli de Halleux>cause an agent could still do a curl call.
+You could still do a you could still hit</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14962-2
+00:57:48.416 --> 00:57:52.687
+<v Peli de Halleux>the the REST API natively in a sense and
+go around all the the tooling.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14962-3
+00:57:52.687 --> 00:57:56.127
+<v Peli de Halleux>So this is this is guaranteed you you
+don't get it right.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14982-0
+00:57:57.847 --> 00:58:01.240
+<v Stacey Mulcahy>OK, I think last question,
+although I'll check the top.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14982-1
+00:58:01.240 --> 00:58:05.906
+<v Stacey Mulcahy>What happens if the request requires
+different permissions than you've given</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/14982-2
+00:58:05.906 --> 00:58:06.087
+<v Stacey Mulcahy>it?</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15029-0
+00:58:07.847 --> 00:58:13.724
+<v Peli de Halleux>So that's a good question and that's
+actually it's an extremely common case</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15029-1
+00:58:13.724 --> 00:58:19.909
+<v Peli de Halleux>because the methodology here is to start
+with 0 permission and then keep adding</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15029-2
+00:58:19.909 --> 00:58:22.847
+<v Peli de Halleux>them as you need them. So in our logs.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15062-0
+00:58:23.207 --> 00:58:28.583
+<v Peli de Halleux>One of the idea of the logs feature is
+that and it's not there yet,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15062-1
+00:58:28.583 --> 00:58:34.038
+<v Peli de Halleux>but this is something we want to add is
+that logs is gonna mine the,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15062-2
+00:58:34.038 --> 00:58:39.887
+<v Peli de Halleux>it's gonna mine the logs and it's gonna
+look for these. Oh, I wish I had.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15107-0
+00:58:40.087 --> 00:58:44.728
+<v Peli de Halleux>This tool or I'm missing a tool.
+So in fact we have in our MCP we have a</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15107-1
+00:58:44.728 --> 00:58:49.304
+<v Peli de Halleux>tool called missing tool where DLM is
+able to report what it's missing,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15107-2
+00:58:49.304 --> 00:58:54.390
+<v Peli de Halleux>what it wish it could call or which API
+tried to call then wasn't able to call.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15107-3
+00:58:54.390 --> 00:58:56.487
+<v Peli de Halleux>So what's going to happen is you.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15146-0
+00:58:57.327 --> 00:59:00.383
+<v Peli de Halleux>You run your workflow,
+it runs a couple of times and then you</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15146-1
+00:59:00.383 --> 00:59:03.586
+<v Peli de Halleux>look at your logs and say, oh,
+you know it's it's always trying.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15146-2
+00:59:03.586 --> 00:59:07.281
+<v Peli de Halleux>I forgot to give it the list of pull
+requests and that's why it's failing.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15146-3
+00:59:07.281 --> 00:59:10.041
+<v Peli de Halleux>Then you go in,
+add that to your list until you kind of</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15146-4
+00:59:10.041 --> 00:59:13.687
+<v Peli de Halleux>converge to a point where it works,
+but it works with just what you need.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15161-0
+00:59:14.127 --> 00:59:21.887
+<v Peli de Halleux>There are more than 86 tools in GitHub
+today, so you can query the whole thing.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15201-0
+00:59:23.887 --> 00:59:29.101
+<v Peli de Halleux>Maybe you don't need that all like to
+keep more secure means you know exactly</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15201-1
+00:59:29.101 --> 00:59:33.981
+<v Peli de Halleux>which tool you're calling, right?
+Especially when it's third party MC PS</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15201-2
+00:59:33.981 --> 00:59:39.127
+<v Peli de Halleux>where the tool set can change at every
+second. There's no guarantee there's.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15229-0
+00:59:39.607 --> 00:59:45.359
+<v Peli de Halleux>The the tool set in MCPS is not is not
+constant and it's actually dynamic.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15229-1
+00:59:45.359 --> 00:59:50.727
+<v Peli de Halleux>So so that's also a way to kind of log
+down, log down this this part.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15274-0
+00:59:52.367 --> 00:59:55.720
+<v Peli de Halleux>But yeah,
+we still have a bunch of work around this</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15274-1
+00:59:55.720 --> 01:00:01.008
+<v Peli de Halleux>kind of the feedback loop experience of
+iterating and refining these workflows is</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15274-2
+01:00:01.008 --> 01:00:05.005
+<v Peli de Halleux>still kind of in play.
+What we think is that it's going to be</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15274-3
+01:00:05.005 --> 01:00:08.487
+<v Peli de Halleux>basically a thing where we're going to
+teach copilot.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15289-0
+01:00:08.847 --> 01:00:14.952
+<v Peli de Halleux>How to use the logs feature and I'm going
+to tell Copilot, you know,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15289-1
+01:00:14.952 --> 01:00:16.367
+<v Peli de Halleux>fix my workflow.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15293-0
+01:00:21.687 --> 01:00:22.167
+<v Peli de Halleux>And add.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15360-0
+01:00:24.007 --> 01:00:28.331
+<v Peli de Halleux>Missing tools and when I do that it
+should query the logs,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15360-1
+01:00:28.331 --> 01:00:33.241
+<v Peli de Halleux>figure out the missing tools,
+figure out the update and give me an</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15360-2
+01:00:33.241 --> 01:00:38.078
+<v Peli de Halleux>update to the to the agentic workflow
+that is potentially better.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15360-3
+01:00:38.078 --> 01:00:42.621
+<v Peli de Halleux>Now if this works here,
+that means I can have a daily agentic</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15360-4
+01:00:42.621 --> 01:00:43.647
+<v Peli de Halleux>workflow that.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15378-0
+01:00:43.927 --> 01:00:48.010
+<v Peli de Halleux>Queries the logs for the last 24 hours,
+look at the things that are not working</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15378-1
+01:00:48.010 --> 01:00:51.327
+<v Peli de Halleux>and open a pull request on how to improve
+the Agentic workflows.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15433-0
+01:00:52.647 --> 01:00:55.725
+<v Peli de Halleux>I don't know if I can do one more layer
+of that,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15433-1
+01:00:55.725 --> 01:01:00.562
+<v Peli de Halleux>but now you can see that you can start
+also self optimizing these things and</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15433-2
+01:01:00.562 --> 01:01:05.524
+<v Peli de Halleux>again we start from zero and we open one
+door at a time until we get to a good</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15433-3
+01:01:05.524 --> 01:01:08.540
+<v Peli de Halleux>point.
+You can also think about optimizing your</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15433-4
+01:01:08.540 --> 01:01:09.607
+<v Peli de Halleux>agent so that MD.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15482-0
+01:01:10.167 --> 01:01:14.591
+<v Peli de Halleux>You can optimize your prompt.
+When you find some good path to problem,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15482-1
+01:01:14.591 --> 01:01:19.389
+<v Peli de Halleux>you can serialize it, save it in memory.
+We leverage the cache of actions to</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15482-2
+01:01:19.389 --> 01:01:23.252
+<v Peli de Halleux>create a memory between agents that you
+know last seven days,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15482-3
+01:01:23.252 --> 01:01:26.367
+<v Peli de Halleux>but that's a way to can also have
+something that.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15513-0
+01:01:26.567 --> 01:01:30.634
+<v Peli de Halleux>You know there's forgetting is not a bad
+idea and and I would say,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15513-1
+01:01:30.634 --> 01:01:35.490
+<v Peli de Halleux>but it's also a short term memory about
+big operations like analyzing a big log</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15513-2
+01:01:35.490 --> 01:01:40.527
+<v Peli de Halleux>of of run and extracting information that
+may be costly and then you can cache it.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15517-0
+01:01:41.647 --> 01:01:43.447
+<v Peli de Halleux>And it's it's rendering that.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15520-0
+01:01:44.527 --> 01:01:44.847
+<v Stacey Mulcahy>Awesome.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15539-0
+01:01:46.007 --> 01:01:50.767
+<v Peli de Halleux>Anyway, it's doing something. Oh,
+we're done. I'm a minute over.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15572-0
+01:01:47.047 --> 01:01:53.736
+<v Stacey Mulcahy>It's working. Yeah, yeah, yeah. I'm gonna,
+I'm gonna pull. I'm gonna pull the plug.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15572-1
+01:01:53.736 --> 01:02:00.107
+<v Stacey Mulcahy>Hey, everybody, thanks for joining us.
+I'm sure if Pele has any other things he</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15544-0
+01:01:55.687 --> 01:01:55.887
+<v Peli de Halleux>What?</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15572-2
+01:02:00.107 --> 01:02:04.327
+<v Stacey Mulcahy>wants you to check out,
+he can put them in the chat.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15622-0
+01:02:04.327 --> 01:02:09.070
+<v Stacey Mulcahy>Um, after the after the session, yeah,
+it's recorded. You can get a hold of it.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15622-1
+01:02:09.070 --> 01:02:12.804
+<v Stacey Mulcahy>Also, if you're interested in this,
+wanna track this work, uh,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15622-2
+01:02:12.804 --> 01:02:16.657
+<v Stacey Mulcahy>Peli's pretty friendly.
+I'm pretty sure you can reach out and he</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15622-3
+01:02:16.657 --> 01:02:19.918
+<v Stacey Mulcahy>would be happy to help you get on boarded
+or you know,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15622-4
+01:02:19.918 --> 01:02:22.407
+<v Stacey Mulcahy>uh advocate for what he's working on Peli.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15656-0
+01:02:21.127 --> 01:02:25.997
+<v Peli de Halleux>I'd I'd love to hear wacky ideas,
+things you wish you could do and is now</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15656-1
+01:02:25.997 --> 01:02:29.616
+<v Peli de Halleux>possible through these.
+Because if you use the prompt,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15656-2
+01:02:29.616 --> 01:02:32.643
+<v Peli de Halleux>you really don't need programming
+background.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15656-3
+01:02:32.643 --> 01:02:36.327
+<v Peli de Halleux>You can just say what you wish you have
+you want to do.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15662-0
+01:02:36.807 --> 01:02:40.807
+<v Peli de Halleux>And it should generate A workflow that
+works for you.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15720-0
+01:02:40.567 --> 01:02:44.638
+<v Stacey Mulcahy>And that was my favorite part of that.
+I could have used that like two months</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15720-1
+01:02:44.638 --> 01:02:48.812
+<v Stacey Mulcahy>ago writing CI stuff. So I was like,
+what do I need? OK, on behalf of everyone.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15720-2
+01:02:48.812 --> 01:02:51.161
+<v Stacey Mulcahy>Hey, Peli,
+thank you so much for joining us,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15720-3
+01:02:51.161 --> 01:02:53.874
+<v Stacey Mulcahy>everybody. Thanks for joining us.
+During this time,</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15720-4
+01:02:53.874 --> 01:02:57.788
+<v Stacey Mulcahy>we're going to close out this call,
+look for the recap on the Viva Engage.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15720-5
+01:02:57.788 --> 01:02:59.927
+<v Stacey Mulcahy>And again, if you have ideas or whatever.</v>
+
+983c415e-2181-494f-88e3-e08e7cc69a54/15748-0
+01:03:12.687 --> 01:03:12.847
+<v Peli de Halleux>OK.</v>

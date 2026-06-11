@@ -1,0 +1,49 @@
+WorkflowSession Lifecycle Example
+============================================================
+1. New session created
+   Session ID: 13b084a7-0c18-404a-a3e4-a3f554d4ef38
+   Status: pending
+   Result: None
+   Pending requests: []
+
+2. Status -> running
+
+3. Status -> paused
+   Pending requests: 1
+     Type: gate
+     Context: {'gate_id': 'review_gate', 'gate_description': 'Review draft before publishing'}
+
+4. JSON serialization:
+   {
+  "session_id": "13b084a7-0c18-404a-a3e4-a3f554d4ef38",
+  "status": "paused",
+  "task": "Write and publish a blog post",
+  "result": {
+    "status": "paused",
+    "state": {
+      "task": "Write and publish a blog post",
+      "drafter_output": "Here is the draft...",
+      "awaiting_gate_approval": true,
+      "pending_gate_id": "review_gate",
+      "pending_gate_description": "Review draft before publishing"
+    },
+    "error": null
+  },
+  "error": null,
+  "pending_requests": [
+    {
+      "...
+
+5. After resume: status -> running
+   Pending requests cleared: True
+
+6. Cancelled session: status -> failed
+   Error: Session cancelled
+
+7. ApprovalRequest:
+   to_dict keys: ['request_id', 'request_type', 'context', 'agent_id', 'step_index', 'created_at']
+   Round-trip: request_type=action_approval, agent_id=emailer
+
+8. Event streaming:
+   Subscribed to event stream (consumer type: StreamConsumer)
+   In async workflows, iterate: async for event in session.subscribe(): ...

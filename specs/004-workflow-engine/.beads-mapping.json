@@ -1,0 +1,169 @@
+{
+  "feature": "004-workflow-engine",
+  "epic_id": "hiveflow-blp",
+  "epic_title": "Workflow Engine",
+  "created_at": "2026-02-24T00:28:48Z",
+  "tasks": {
+    "T001": {
+      "bead_id": "hiveflow-blp.1",
+      "phase": "Phase 2: Foundational",
+      "labels": [],
+      "priority": 1,
+      "depends_on": []
+    },
+    "T002": {
+      "bead_id": "hiveflow-blp.2",
+      "phase": "Phase 2: Foundational",
+      "labels": [],
+      "priority": 1,
+      "depends_on": ["hiveflow-blp.1"]
+    },
+    "T003": {
+      "bead_id": "hiveflow-blp.3",
+      "phase": "Phase 2: Foundational",
+      "labels": [],
+      "priority": 1,
+      "depends_on": ["hiveflow-blp.2"]
+    },
+    "T004": {
+      "bead_id": "hiveflow-blp.4",
+      "phase": "Phase 2: Foundational",
+      "labels": [],
+      "priority": 1,
+      "depends_on": []
+    },
+    "T005": {
+      "bead_id": "hiveflow-blp.5",
+      "phase": "Phase 2: Foundational",
+      "labels": [],
+      "priority": 1,
+      "depends_on": ["hiveflow-blp.3", "hiveflow-blp.4"]
+    },
+    "T006": {
+      "bead_id": "hiveflow-blp.6",
+      "phase": "Phase 3: US2 Auto-Checkpointing",
+      "labels": ["us2"],
+      "priority": 1,
+      "depends_on": ["hiveflow-blp.5"]
+    },
+    "T007": {
+      "bead_id": "hiveflow-blp.7",
+      "phase": "Phase 3: US2 Auto-Checkpointing",
+      "labels": ["us2"],
+      "priority": 1,
+      "depends_on": ["hiveflow-blp.6"]
+    },
+    "T008": {
+      "bead_id": "hiveflow-blp.8",
+      "phase": "Phase 3: US2 Auto-Checkpointing",
+      "labels": ["us2"],
+      "priority": 1,
+      "depends_on": ["hiveflow-blp.7"]
+    },
+    "T009": {
+      "bead_id": "hiveflow-blp.9",
+      "phase": "Phase 3: US2 Auto-Checkpointing",
+      "labels": ["us2"],
+      "priority": 1,
+      "depends_on": ["hiveflow-blp.8"]
+    },
+    "T010": {
+      "bead_id": "hiveflow-blp.10",
+      "phase": "Phase 3: US2 Auto-Checkpointing",
+      "labels": ["us2"],
+      "priority": 1,
+      "depends_on": ["hiveflow-blp.9"]
+    },
+    "T011": {
+      "bead_id": "hiveflow-blp.11",
+      "phase": "Phase 4: US1 Resume (MVP)",
+      "labels": ["us1"],
+      "priority": 2,
+      "depends_on": ["hiveflow-blp.10"]
+    },
+    "T012": {
+      "bead_id": "hiveflow-blp.12",
+      "phase": "Phase 4: US1 Resume (MVP)",
+      "labels": ["us1"],
+      "priority": 2,
+      "depends_on": ["hiveflow-blp.11"]
+    },
+    "T013": {
+      "bead_id": "hiveflow-blp.13",
+      "phase": "Phase 4: US1 Resume (MVP)",
+      "labels": ["us1"],
+      "priority": 2,
+      "depends_on": ["hiveflow-blp.12"]
+    },
+    "T014": {
+      "bead_id": "hiveflow-blp.14",
+      "phase": "Phase 4: US1 Resume (MVP)",
+      "labels": ["us1"],
+      "priority": 2,
+      "depends_on": ["hiveflow-blp.13"]
+    },
+    "T015": {
+      "bead_id": "hiveflow-blp.15",
+      "phase": "Phase 4: US1 Resume (MVP)",
+      "labels": ["us1"],
+      "priority": 2,
+      "depends_on": ["hiveflow-blp.14"]
+    },
+    "T016": {
+      "bead_id": "hiveflow-blp.16",
+      "phase": "Phase 5: US3 Events",
+      "labels": ["us3"],
+      "priority": 2,
+      "depends_on": ["hiveflow-blp.10"]
+    },
+    "T017": {
+      "bead_id": "hiveflow-blp.17",
+      "phase": "Phase 5: US3 Events",
+      "labels": ["us3"],
+      "priority": 2,
+      "depends_on": ["hiveflow-blp.10"]
+    },
+    "T018": {
+      "bead_id": "hiveflow-blp.18",
+      "phase": "Phase 5: US3 Events",
+      "labels": ["us3"],
+      "priority": 2,
+      "depends_on": ["hiveflow-blp.15", "hiveflow-blp.16", "hiveflow-blp.17"]
+    },
+    "T019": {
+      "bead_id": "hiveflow-blp.19",
+      "phase": "Phase 5: US3 Events",
+      "labels": ["us3"],
+      "priority": 2,
+      "depends_on": ["hiveflow-blp.18"]
+    },
+    "T020": {
+      "bead_id": "hiveflow-blp.20",
+      "phase": "Phase 6: Polish",
+      "labels": [],
+      "priority": 3,
+      "depends_on": ["hiveflow-blp.19"]
+    },
+    "T021": {
+      "bead_id": "hiveflow-blp.21",
+      "phase": "Phase 6: Polish",
+      "labels": [],
+      "priority": 3,
+      "depends_on": ["hiveflow-blp.19"]
+    },
+    "T022": {
+      "bead_id": "hiveflow-blp.22",
+      "phase": "Phase 6: Polish",
+      "labels": [],
+      "priority": 3,
+      "depends_on": ["hiveflow-blp.20", "hiveflow-blp.21"]
+    },
+    "T023": {
+      "bead_id": "hiveflow-blp.23",
+      "phase": "Phase 6: Polish",
+      "labels": [],
+      "priority": 3,
+      "depends_on": ["hiveflow-blp.22"]
+    }
+  }
+}

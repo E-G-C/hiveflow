@@ -1,0 +1,96 @@
+============================================================
+  HiveFlow -- Dynamic Team Generation
+============================================================
+
+1. Default generation (auto-select agent types):
+   Task:       Analyze the pros and cons of remote work and write a policy ...
+   Team name:  Generated Team: Analyze the pros and cons of remote work and write
+   Agents:     ['researcher', 'writer', 'reviewer']
+
+   Workflow:
+     researcher      [sequential] -> writer
+     writer          [sequential] -> reviewer
+     reviewer        [sequential] -> (end)
+
+------------------------------------------------------------
+2. Specify agent types:
+   Agents:   ['planner', 'researcher', 'writer']
+   Workflow: planner -> researcher -> writer
+
+------------------------------------------------------------
+3. Agent details:
+   - researcher       role=Deep Researcher            [tool_user]  tools=['web_search']
+     prompt: You are a thorough research agent. Search for information, evaluate source quali...
+   - writer           role=Content Writer             [llm_only]
+     prompt: You are a professional writer. Transform research findings into clear, well-stru...
+   - reviewer         role=Quality Reviewer           [llm_only]
+     prompt: You are a quality reviewer. Evaluate documents for accuracy, completeness, and c...
+
+------------------------------------------------------------
+4. Build live agents from generated config:
+   Built 3 agents: ['researcher', 'writer', 'reviewer']
+   Workflow engine: 3 steps
+     researcher      [sequential] -> writer
+     writer          [sequential] -> reviewer
+     reviewer        [sequential] -> (end)
+
+------------------------------------------------------------
+5. Full generated config (JSON):
+{
+  "team_name": "Generated Team: Analyze the pros and cons of remote work and write",
+  "description": "Analyze the pros and cons of remote work and write a policy recommendation",
+  "agents": [
+    {
+      "id": "researcher",
+      "role": "Deep Researcher",
+      "system_prompt": "You are a thorough research agent. Search for information, evaluate source quality, and synthesize findings.",
+      "behavior_type": "tool_user",
+      "tools": [
+        "web_search"
+      ],
+      "model": "$SMART_LLM"
+    },
+    {
+      "id": "writer",
+      "role": "Content Writer",
+      "system_prompt": "You are a professional writer. Transform research findings into clear, well-structured documents.",
+      "behavior_type": "llm_only",
+      "tools": [],
+      "model": "$SMART_LLM"
+    },
+    {
+      "id": "reviewer",
+      "role": "Quality Reviewer",
+      "system_prompt": "You are a quality reviewer. Evaluate documents for accuracy, completeness, and clarity. Provide specific feedback.",
+      "behavior_type": "llm_only",
+      "tools": [],
+      "model": "$SMART_LLM"
+    }
+  ],
+  "workflow": {
+    "steps": [
+      {
+        "agent": "researcher",
+        "type": "sequential",
+        "next": "writer"
+      },
+      {
+        "agent": "writer",
+        "type": "sequential",
+        "next": "reviewer"
+      },
+      {
+        "agent": "reviewer",
+        "type": "sequential",
+        "next": null
+      }
+    ]
+  }
+}
+
+------------------------------------------------------------
+  Summary
+------------------------------------------------------------
+  TeamGenerator.generate_team() -- deterministic archetype matching
+  TeamGenerator.build()         -- creates Agent objects + WorkflowEngine
+  For LLM-based generation, see agents_and_teams/07_llm_team_generation.py

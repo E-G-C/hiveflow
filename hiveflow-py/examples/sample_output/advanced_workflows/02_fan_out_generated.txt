@@ -1,0 +1,33 @@
+============================================================
+  HiveFlow -- Fan-Out with Dynamic Team Generation
+============================================================
+  Provider: Mock (no API key)
+  Task:     Write a comprehensive analysis of renewable energy technolog...
+
+  Generated team: Generated Team: Write a comprehensive analysis of renewable energy
+  Agents: ['planner', 'writer', 'reviewer']
+  Workflow: planner (sequential) -> writer (parallel_fan_out) -> reviewer (sequential)
+
+  > planner (sequential)
+  * planner (0.0s)
+
+  > writer (parallel_fan_out)
+  * writer (0.0s)
+
+  > reviewer (sequential)
+  * reviewer (0.0s)
+
+------------------------------------------------------------
+Status:  completed
+Steps:   3
+Elapsed: 0.0s
+
+Sections: 4 planned, 4 written
+  1.   51 words -- Section 1: Market Overview -- Current renewable energy lands
+  2.   51 words -- Section 2: Technology Comparison -- Solar vs wind vs hydro
+  3.   51 words -- Section 3: Economic Analysis -- Cost trends and investment p
+  4.   51 words -- Section 4: Policy and Regulation -- Government incentives wo
+
+Total tokens: 590
+
+  Output saved: output\fan_out_generated.md (204 words)

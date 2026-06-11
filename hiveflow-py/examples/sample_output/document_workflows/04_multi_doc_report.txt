@@ -1,0 +1,76 @@
+============================================================
+  HiveFlow -- Multi-Document Report with Per-Agent Scoping
+============================================================
+  Provider: Mock (no API key)
+  Documents: 3 documents loaded: product_requirements.txt (1 chunks, ~72 tokens), sprint_retro.md (1 chunks, ~141 tokens), qa_report.txt (1 chunks, ~137 tokens) (~350 total tokens)
+
+  Document scoping:
+    analyst    mode=full           -> sees 3 doc(s): ['product_requirements.txt', 'sprint_retro.md', 'qa_report.txt']
+    planner    mode=full           -> sees 2 doc(s): ['sprint_retro.md', 'qa_report.txt']
+    writer     mode=none           -> sees 0 doc(s): []
+
+  > analyst...
+  * analyst done
+
+  > planner...
+  * planner done
+
+  > writer...
+  * writer done
+
+------------------------------------------------------------
+Status:  completed
+Elapsed: 0.0s
+  analyst       72 words   450 tokens
+  planner       67 words   450 tokens
+  writer       109 words   450 tokens
+
+------------------------------------------------------------
+analyst output:
+------------------------------------------------------------
+## Risk Analysis
+
+**Critical Risks:**
+1. Latency regression (p95: 340ms vs 200ms target) blocks release
+2. Memory leak (BUG-302) causes OOM after 4 hours -- production blocker
+3. 17.2% blocked test cases suggest infrastructure instability
+
+**Medium Risks:**
+4. Test coverage dropped to 72% -- below quality bar
+5. Race condition in concurrent updates (BUG-303)
+6. Throughput at 60% of target (1,200 vs 2,000 qps)
+
+**Recommendation:** Delay release until items 1-3 are resolved.
+
+------------------------------------------------------------
+planner output:
+------------------------------------------------------------
+## Sprint 24 Plan
+
+**Week 1 -- Critical fixes:**
+- Alice: Profile latency regression, implement optimization
+- Bob: Implement query caching layer
+- DevOps: Fix BUG-302 memory leak in embedding service
+
+**Week 2 -- Quality restoration:**
+- Carol: Restore test coverage to >85%
+- Team: Unblock 146 blocked test cases
+- Alice: Validate latency targets after optimization
+
+**Release gate:** All critical bugs resolved + p95 < 200ms
+
+------------------------------------------------------------
+writer output:
+------------------------------------------------------------
+# AI Search v2.0 -- Project Status Report
+
+## Executive Summary
+Sprint 23 delivered the semantic search prototype on schedule, but introduced critical performance regressions that block the v2.0 release.
+
+## Key Findings
+The risk analysis identified 3 critical blockers: latency regression (p95 at 340ms vs 200ms target), a memory leak causing OOM after 4 hours, and 17% blocked test cases indicating infrastructure instability.
+
+## Recommended Plan
+Sprint 24 should focus exclusively on critical fixes in Week 1 (latency optimization, query caching, memory leak fix) followed by quality restoration in Week 2. No new features until the release gate is passed: all critical bugs resolved and p95 < 200ms.
+
+  Output saved: output\multi_doc_report.md

@@ -1,0 +1,11 @@
+{
+  "name": "@hiveflow/example-action-error-demo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/main.ts"
+  },
+  "dependencies": {
+    "@hiveflow/core": "file:../../packages/core"
+  }
+}

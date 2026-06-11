@@ -1,0 +1,34 @@
+Provider primary-openai:gpt-4o failed: primary-openai is down (attempt 1)
+Provider provider-a:model-a failed: provider-a is down (attempt 1)
+Provider provider-b:model-b failed: provider-b is down (attempt 1)
+Provider flaky-api attempt 1/3 failed: flaky-api timed out
+Provider flaky-api attempt 2/3 failed: flaky-api timed out
+Provider azure attempt 1/2 failed: azure is down (attempt 1)
+Provider azure attempt 2/2 failed: azure is down (attempt 2)
+Provider retry_azure:gpt-4o-eastus failed: azure is down (attempt 2)
+Provider openai attempt 1/2 failed: openai is down (attempt 1)
+Provider openai attempt 2/2 failed: openai is down (attempt 2)
+Provider retry_openai:gpt-4o failed: openai is down (attempt 2)
+1. Basic fallback chain
+   Chain: Fallback chain: primary-openai -> secondary-anthropic
+   Result: Response from secondary-anthropic (model=claude-sonnet-4-20250514)
+   primary calls:   1
+   secondary calls: 1
+
+2. All providers fail
+   Caught: LLMFallbackExhaustedError
+   Message: All LLM providers failed: provider-a:model-a: ConnectionError: provider-a is down (attempt 1); provider-b:model-b: ConnectionError: provider-b is down (attempt 1)
+   Individual errors: 2
+     - provider-a:model-a -> provider-a is down (attempt 1)
+     - provider-b:model-b -> provider-b is down (attempt 1)
+
+3. RetryProvider
+   Result: Success from flaky-api!
+   Total attempts: 3
+
+4. build_fallback_chain (retry + fallback)
+   Chain: Fallback chain: retry_azure -> retry_openai -> retry_anthropic
+   Result: Response from anthropic (model=claude-sonnet-4-20250514)
+   azure calls:     2
+   openai calls:    2
+   anthropic calls: 1

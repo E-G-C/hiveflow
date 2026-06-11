@@ -1,0 +1,20 @@
+{
+  "epic_id": "hiveflow-32t",
+  "tasks": {
+    "T001": { "beads_id": "hiveflow-32t.1", "phase": 1 },
+    "T002": { "beads_id": "hiveflow-32t.2", "phase": 3 },
+    "T003": { "beads_id": "hiveflow-32t.3", "phase": 3 },
+    "T004": { "beads_id": "hiveflow-32t.4", "phase": 4 },
+    "T005": { "beads_id": "hiveflow-32t.5", "phase": 4 },
+    "T006": { "beads_id": "hiveflow-32t.6", "phase": 4 },
+    "T007": { "beads_id": "hiveflow-32t.7", "phase": 5 },
+    "T008": { "beads_id": "hiveflow-32t.8", "phase": 5 },
+    "T009": { "beads_id": "hiveflow-32t.9", "phase": 5 },
+    "T010": { "beads_id": "hiveflow-32t.10", "phase": 5 },
+    "T011": { "beads_id": "hiveflow-32t.11", "phase": 6 },
+    "T012": { "beads_id": "hiveflow-32t.12", "phase": 6 },
+    "T013": { "beads_id": "hiveflow-32t.13", "phase": 7 },
+    "T014": { "beads_id": "hiveflow-32t.14", "phase": 7 },
+    "T015": { "beads_id": "hiveflow-32t.15", "phase": 7 }
+  }
+}

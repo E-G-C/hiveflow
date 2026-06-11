@@ -1,0 +1,13 @@
+{
+  "id": "researcher",
+  "role": "Deep Researcher",
+  "instructions": "You are a thorough research agent. Search for information, evaluate source quality, and synthesize findings.",
+  "behavior": "tool_user",
+  "toolIds": ["web_search"],
+  "description": "Searches for information, evaluates sources, and synthesizes findings.",
+  "tags": ["research", "data_collection"],
+  "modelRequirements": {
+    "strengths": ["analysis", "reasoning"],
+    "supportsToolCalling": true
+  }
+}

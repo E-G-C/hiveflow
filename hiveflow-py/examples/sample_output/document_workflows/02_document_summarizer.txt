@@ -1,0 +1,53 @@
+============================================================
+  HiveFlow -- Document Summarizer
+============================================================
+  Provider: Mock (no API key)
+  Documents: 1 document loaded: earnings_call.txt (1 chunks, ~197 tokens) (~197 total tokens)
+
+  > analyst...
+  * analyst done
+
+  > writer...
+  * writer done
+
+------------------------------------------------------------
+Status:  completed
+Elapsed: 0.0s
+  analyst       61 words   320 tokens
+  writer        61 words   320 tokens
+
+------------------------------------------------------------
+Analyst output:
+------------------------------------------------------------
+## Key Financial Metrics
+
+- Revenue: $2.3B (+15% YoY)
+- Operating margin: 18% (up from 12%)
+- Gross margin: 64.2%
+- Free cash flow: $890M
+
+## Key Takeaways
+
+1. Cloud services drove 40% of revenue growth
+2. International expansion contributed 25% of new revenue
+3. R&D investment increased to 22% of revenue
+4. Guidance raised for next quarter: $2.5B revenue target
+
+------------------------------------------------------------
+Writer output (Executive Summary):
+------------------------------------------------------------
+## Key Financial Metrics
+
+- Revenue: $2.3B (+15% YoY)
+- Operating margin: 18% (up from 12%)
+- Gross margin: 64.2%
+- Free cash flow: $890M
+
+## Key Takeaways
+
+1. Cloud services drove 40% of revenue growth
+2. International expansion contributed 25% of new revenue
+3. R&D investment increased to 22% of revenue
+4. Guidance raised for next quarter: $2.5B revenue target
+
+  Output saved: output\document_summarizer.md

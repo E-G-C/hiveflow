@@ -1,0 +1,11 @@
+{
+  "name": "@hiveflow/example-team-generator-demo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "tsx src/main.ts"
+  },
+  "dependencies": {
+    "@hiveflow/core": "file:../../packages/core"
+  }
+}

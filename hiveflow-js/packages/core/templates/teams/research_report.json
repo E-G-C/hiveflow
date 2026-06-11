@@ -1,0 +1,37 @@
+{
+  "teamName": "research_report",
+  "version": "0.1.0",
+  "description": "Two-step research and writing team template.",
+  "agents": [
+    {
+      "id": "researcher",
+      "role": "Researcher",
+      "instructions": "Gather concise findings for the current task.",
+      "behavior": "tool_user",
+      "tools": ["web_search"],
+      "model": "fast-llm",
+      "outputType": "text"
+    },
+    {
+      "id": "writer",
+      "role": "Writer",
+      "instructions": "Turn the findings into a polished report.",
+      "behavior": "llm_only",
+      "model": "strategic-llm",
+      "outputType": "text"
+    }
+  ],
+  "workflow": {
+    "steps": [
+      {
+        "agent": "researcher",
+        "type": "sequential",
+        "next": "writer"
+      },
+      {
+        "agent": "writer",
+        "type": "sequential"
+      }
+    ]
+  }
+}

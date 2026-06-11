@@ -1,0 +1,37 @@
+# Executive Brief layout template.
+#
+# A concise format that includes only the title, executive summary,
+# main findings, and references — no appendices or cost data.
+#
+# Usage in team config:
+#   publish:
+#     layout: "executive-brief"
+#     formats: ["markdown"]
+#
+# Or load programmatically:
+#   from hiveflow import load_layout
+#   layout = load_layout("executive-brief", extra_dirs=["examples/output_pipeline/layouts"])
+
+name: executive-brief
+description: Concise executive briefing format
+
+sections:
+  - id: title
+    source: metadata.title
+    required: true
+    heading: null
+
+  - id: executive_summary
+    source: sections.executive_summary
+    required: true
+    heading: "Executive Summary"
+
+  - id: findings
+    source: content
+    required: true
+    heading: "Key Findings"
+
+  - id: references
+    source: references
+    required: false
+    heading: "References"

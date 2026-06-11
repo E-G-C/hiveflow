@@ -1,0 +1,22 @@
+============================================================
+DEMO: action_executor with auto policy
+============================================================
+Status: completed
+Output: Email sent successfully!
+
+Audit trail (1 action(s)):
+  Tool: send_email
+  Args: {'to': 'new-hire@company.com', 'subject': 'Welcome aboard!'}
+  Result: {'sent': True, 'to': 'new-hire@company.com'}
+  Status: success
+
+============================================================
+DEMO: action_executor with require_approval policy
+============================================================
+Status: paused
+Awaiting approval: True
+
+Proposed actions (1):
+  Tool: send_email
+  Args: {'to': 'new-hire@company.com', 'subject': 'Welcome aboard!'}
+  (Waiting for human approval before execution)

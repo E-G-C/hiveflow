@@ -1,0 +1,8 @@
+{
+  "id": "human_reviewer",
+  "role": "Human Review Gate",
+  "instructions": "Pause for human review and approval.",
+  "behavior": "human_gate",
+  "description": "Pauses the workflow so a human can approve or reject progress.",
+  "tags": ["review", "human_in_the_loop"]
+}

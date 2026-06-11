@@ -1,0 +1,55 @@
+# Default layout template for HiveFlow output pipeline.
+# Defines the standard document structure used by publishers.
+# Custom layouts can be created by copying this file and modifying
+# the sections list. Reference by name in team config:
+#   publish:
+#     layout: "default"
+
+name: default
+description: Standard report layout with all sections
+
+sections:
+  - id: title
+    source: metadata.title
+    required: true
+    heading: null  # Title rendered as document heading, not a section
+
+  - id: date
+    source: metadata.date
+    required: true
+    heading: null  # Date rendered inline with title
+
+  - id: toc
+    source: auto
+    required: false
+    heading: "Table of Contents"
+
+  - id: executive_summary
+    source: sections.executive_summary
+    required: false
+    heading: "Executive Summary"
+
+  - id: content
+    source: content
+    required: true
+    heading: null  # Main body content, no separate heading
+
+  - id: actions
+    source: actions
+    required: false
+    heading: "Actions Taken"
+
+  - id: conclusion
+    source: sections.conclusion
+    required: false
+    heading: "Conclusion"
+
+  - id: references
+    source: references
+    required: false
+    heading: "References"
+
+  - id: appendix
+    source: cost_summary
+    required: false
+    heading: "Appendix: Cost & Token Usage"

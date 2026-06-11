@@ -1,0 +1,31 @@
+Workflow Event Stream Example  [Mock provider]
+============================================================
+
+--- Execute phase (pauses at gate) ---
+  >> step_start [researcher]: step_type=sequential
+  >> step_complete [researcher]: step_type=sequential
+  >> step_start [review_gate]: step_type=gated
+  >> gate_requested [review_gate]: gate_id=review_gate, gate_description=Review research before writing, step_index=1
+  >> checkpoint_saved [review_gate]: checkpoint_id=63549507-4b31-446f-a117-9b5e87a58986, session_id=events-demo, step_index=1
+
+Result: paused
+Events captured: 5
+Event sequence: step_start -> step_complete -> step_start -> gate_requested -> checkpoint_saved
+
+--- Resume phase (continues after gate) ---
+  >> approval [review_gate]: responses={'approved': True}, gate_id=review_gate
+  >> step_start [writer]: step_type=sequential
+  >> step_complete [writer]: step_type=sequential
+  >> output: result=
+
+Result: completed
+Events captured: 4
+Event sequence: approval -> step_start -> step_complete -> output
+
+--- Event type reference ---
+  approval: 1 occurrence(s)
+  checkpoint_saved: 1 occurrence(s)
+  gate_requested: 1 occurrence(s)
+  output: 1 occurrence(s)
+  step_complete: 2 occurrence(s)
+  step_start: 3 occurrence(s)

@@ -1,0 +1,6 @@
+{
+  "id": "human_reviewer",
+  "role": "Human Review Gate",
+  "system_prompt": "Pause for human review and approval.",
+  "behavior_type": "human_gate"
+}

@@ -1,0 +1,42 @@
+# Example team config with auto-publish.
+#
+# Run with:
+#   hiveflow run --config examples/output_pipeline/team_config.yaml \
+#                --query "Analyze the benefits of remote work"
+#
+# Output files will be created in ./output/auto/
+
+team_name: "Research Team"
+description: "Two-agent research pipeline with auto-publish"
+
+agents:
+  - id: researcher
+    role: Research Analyst
+    system_prompt: >
+      You are a research analyst. Given a topic, provide a thorough summary
+      of key findings, trends, and supporting evidence.
+    behavior_type: llm_only
+    model: azure:gpt-4o-mini
+
+  - id: writer
+    role: Report Writer
+    system_prompt: >
+      You are a professional writer. Synthesize the research into a clear,
+      well-structured report with an executive summary and conclusions.
+    behavior_type: llm_only
+    model: azure:gpt-4o-mini
+
+workflow:
+  steps:
+    - agent: researcher
+      type: sequential
+      next: writer
+    - agent: writer
+      type: sequential
+
+# Output pipeline configuration
+publish:
+  formats: ["markdown", "json"]
+  output_dir: "./output/auto"
+  filename: "output"
+  layout: "default"

@@ -1,0 +1,29 @@
+============================================================
+  HiveFlow -- Basic Two-Agent Workflow
+============================================================
+
+  > Starting: researcher
+  * Complete: researcher
+
+  > Starting: writer
+  * Complete: writer
+
+------------------------------------------------------------
+Workflow status: completed
+Steps executed:  2
+  researcher      78 words   165 tokens
+  writer         105 words   330 tokens
+
+------------------------------------------------------------
+Final assembled output:
+------------------------------------------------------------
+# The Benefits of Renewable Energy
+
+Renewable energy is transforming the global power landscape. Solar costs have plummeted 89% since 2010, making it the cheapest source of new electricity in most of the world. Wind energy contributes 7% of global power and is accelerating through offshore installations.
+
+Advances in battery storage -- costs down 97% over three decades -- are solving intermittency, while green hydrogen opens pathways for sectors that are hard to electrify directly.
+
+Beyond climate benefits, the sector drives economic growth: 13.7 million jobs worldwide and counting. The transition to renewables is not just an environmental imperative -- it is an economic opportunity.
+
+------------------------------------------------------------
+State keys: ['_step_order', 'final_output', 'researcher_output', 'researcher_usage', 'task', 'writer_output', 'writer_usage']

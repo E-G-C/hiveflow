@@ -1,0 +1,30 @@
+Model Requirements & Tier Variables Example
+============================================================
+
+1. ModelRequirements -- declarative model selection:
+   cost_tier: smart
+   supports_tools: True
+   supports_vision: False
+   strengths: ['reasoning', 'coding']
+
+2. Tier variable resolution:
+   Default FAST_LLM:      openai:gpt-4o-mini
+   Default SMART_LLM:     openai:gpt-4o
+   Default STRATEGIC_LLM: openai:o3-mini
+
+   resolve_model('$SMART_LLM') -> 'openai:gpt-4o'
+   resolve_model('azure:gpt-4o-eastus') -> 'azure:gpt-4o-eastus'
+
+3. Override tiers:
+   Custom SMART_LLM: anthropic:claude-sonnet-4-20250514
+   resolve_model('$SMART_LLM') -> 'anthropic:claude-sonnet-4-20250514'
+
+4. Agent config with model_requirements (JSON):
+   Agent: analyzer
+   cost_tier: smart
+   When model is not set, framework resolves via tier mapping
+
+5. Precedence rules:
+   If both model and model_requirements are set, model wins.
+   model='openai:gpt-4o' + model_requirements.cost_tier='fast'
+   -> uses 'openai:gpt-4o' (explicit model takes priority)

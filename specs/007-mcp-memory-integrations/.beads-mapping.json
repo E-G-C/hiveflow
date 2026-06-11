@@ -1,0 +1,205 @@
+{
+  "epic_id": "hiveflow-7lk",
+  "tasks": {
+    "T001": {
+      "beads_id": "hiveflow-7lk.1",
+      "phase": 1,
+      "parallel": false
+    },
+    "T002": {
+      "beads_id": "hiveflow-7lk.2",
+      "phase": 1,
+      "parallel": false
+    },
+    "T003": {
+      "beads_id": "hiveflow-7lk.3",
+      "phase": 2,
+      "parallel": false
+    },
+    "T004": {
+      "beads_id": "hiveflow-7lk.4",
+      "phase": 2,
+      "parallel": true
+    },
+    "T005": {
+      "beads_id": "hiveflow-7lk.5",
+      "phase": 2,
+      "parallel": false
+    },
+    "T006": {
+      "beads_id": "hiveflow-7lk.6",
+      "phase": 2,
+      "parallel": false
+    },
+    "T007": {
+      "beads_id": "hiveflow-7lk.7",
+      "phase": 2,
+      "parallel": false
+    },
+    "T008": {
+      "beads_id": "hiveflow-7lk.8",
+      "phase": 2,
+      "parallel": true
+    },
+    "T009": {
+      "beads_id": "hiveflow-7lk.9",
+      "phase": 3,
+      "parallel": true
+    },
+    "T010": {
+      "beads_id": "hiveflow-7lk.10",
+      "phase": 3,
+      "parallel": true
+    },
+    "T011": {
+      "beads_id": "hiveflow-7lk.11",
+      "phase": 3,
+      "parallel": false
+    },
+    "T012": {
+      "beads_id": "hiveflow-7lk.12",
+      "phase": 3,
+      "parallel": false
+    },
+    "T013": {
+      "beads_id": "hiveflow-7lk.13",
+      "phase": 3,
+      "parallel": false
+    },
+    "T014": {
+      "beads_id": "hiveflow-7lk.14",
+      "phase": 3,
+      "parallel": false
+    },
+    "T015": {
+      "beads_id": "hiveflow-7lk.15",
+      "phase": 3,
+      "parallel": false
+    },
+    "T016": {
+      "beads_id": "hiveflow-7lk.16",
+      "phase": 3,
+      "parallel": false
+    },
+    "T017": {
+      "beads_id": "hiveflow-7lk.17",
+      "phase": 3,
+      "parallel": false
+    },
+    "T018": {
+      "beads_id": "hiveflow-7lk.18",
+      "phase": 3,
+      "parallel": false
+    },
+    "T019": {
+      "beads_id": "hiveflow-7lk.19",
+      "phase": 3,
+      "parallel": false
+    },
+    "T020": {
+      "beads_id": "hiveflow-7lk.20",
+      "phase": 3,
+      "parallel": false
+    },
+    "T021": {
+      "beads_id": "hiveflow-7lk.21",
+      "phase": 3,
+      "parallel": false
+    },
+    "T022": {
+      "beads_id": "hiveflow-7lk.22",
+      "phase": 4,
+      "parallel": true
+    },
+    "T023": {
+      "beads_id": "hiveflow-7lk.23",
+      "phase": 4,
+      "parallel": false
+    },
+    "T024": {
+      "beads_id": "hiveflow-7lk.24",
+      "phase": 4,
+      "parallel": false
+    },
+    "T025": {
+      "beads_id": "hiveflow-7lk.25",
+      "phase": 5,
+      "parallel": true
+    },
+    "T026": {
+      "beads_id": "hiveflow-7lk.26",
+      "phase": 5,
+      "parallel": false
+    },
+    "T027": {
+      "beads_id": "hiveflow-7lk.27",
+      "phase": 5,
+      "parallel": false
+    },
+    "T028": {
+      "beads_id": "hiveflow-7lk.28",
+      "phase": 6,
+      "parallel": true
+    },
+    "T029": {
+      "beads_id": "hiveflow-7lk.29",
+      "phase": 6,
+      "parallel": false
+    },
+    "T030": {
+      "beads_id": "hiveflow-7lk.30",
+      "phase": 6,
+      "parallel": false
+    },
+    "T031": {
+      "beads_id": "hiveflow-7lk.31",
+      "phase": 6,
+      "parallel": false
+    },
+    "T032": {
+      "beads_id": "hiveflow-7lk.32",
+      "phase": 7,
+      "parallel": false
+    },
+    "T033": {
+      "beads_id": "hiveflow-7lk.33",
+      "phase": 7,
+      "parallel": false
+    },
+    "T034": {
+      "beads_id": "hiveflow-7lk.34",
+      "phase": 7,
+      "parallel": false
+    },
+    "T035": {
+      "beads_id": "hiveflow-7lk.35",
+      "phase": 7,
+      "parallel": true
+    },
+    "T036": {
+      "beads_id": "hiveflow-7lk.36",
+      "phase": 8,
+      "parallel": true
+    },
+    "T037": {
+      "beads_id": "hiveflow-7lk.37",
+      "phase": 8,
+      "parallel": true
+    },
+    "T038": {
+      "beads_id": "hiveflow-7lk.38",
+      "phase": 8,
+      "parallel": true
+    },
+    "T039": {
+      "beads_id": "hiveflow-7lk.39",
+      "phase": 8,
+      "parallel": false
+    },
+    "T040": {
+      "beads_id": "hiveflow-7lk.40",
+      "phase": 8,
+      "parallel": false
+    }
+  }
+}

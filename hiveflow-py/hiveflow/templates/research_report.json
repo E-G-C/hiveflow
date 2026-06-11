@@ -1,0 +1,129 @@
+{
+  "team_name": "research_report",
+  "description": "Multi-agent team for producing comprehensive research reports",
+  "agents": [
+    {
+      "id": "editor",
+      "role": "Research Editor",
+      "system_prompt": "You are an expert research editor. Your role is to plan research projects by breaking down topics into well-structured sections and sub-queries. Generate a clear outline with specific research questions for each section.",
+      "behavior_type": "orchestrator",
+      "tools": ["planner"],
+      "model": "$STRATEGIC_LLM"
+    },
+    {
+      "id": "researcher",
+      "role": "Deep Researcher",
+      "system_prompt": "You are a thorough research analyst. Your role is to conduct deep research on assigned topics using web search and content scraping. Gather comprehensive, accurate information from authoritative sources. Always cite your sources.",
+      "behavior_type": "tool_user",
+      "tools": ["web_search", "scraper"],
+      "model": "$SMART_LLM"
+    },
+    {
+      "id": "reviewer",
+      "role": "Quality Reviewer",
+      "system_prompt": "You are an expert quality reviewer. Evaluate research content for accuracy, completeness, coherence, and proper citation. Provide specific feedback on what needs improvement. Accept only when quality standards are met.",
+      "behavior_type": "llm_only",
+      "tools": [],
+      "model": "$SMART_LLM"
+    },
+    {
+      "id": "reviser",
+      "role": "Content Reviser",
+      "system_prompt": "You are a skilled content reviser. Your role is to improve research content based on reviewer feedback. Address all identified issues while maintaining the original research integrity and citations.",
+      "behavior_type": "llm_only",
+      "tools": [],
+      "model": "$SMART_LLM"
+    },
+    {
+      "id": "writer",
+      "role": "Report Writer",
+      "system_prompt": "You are an expert report writer. Transform research data into well-structured, comprehensive reports with clear sections, proper citations, and professional formatting. Write in an academic yet accessible style.",
+      "behavior_type": "llm_only",
+      "tools": [],
+      "model": "$SMART_LLM"
+    },
+    {
+      "id": "publisher",
+      "role": "Report Publisher",
+      "system_prompt": "You are a report publisher. Format the final report with proper structure including title, table of contents, sections, and references. Ensure all citations are properly formatted.",
+      "behavior_type": "llm_only",
+      "tools": [],
+      "model": "$FAST_LLM"
+    }
+  ],
+  "workflow": {
+    "steps": [
+      {
+        "agent": "editor",
+        "type": "sequential",
+        "next": "researcher"
+      },
+      {
+        "agent": "researcher",
+        "type": "parallel_fan_out",
+        "next": "reviewer"
+      },
+      {
+        "agent": "reviewer",
+        "type": "conditional",
+        "next_on_accept": "writer",
+        "next_on_reject": "reviser"
+      },
+      {
+        "agent": "reviser",
+        "type": "sequential",
+        "next": "reviewer"
+      },
+      {
+        "agent": "writer",
+        "type": "sequential",
+        "next": "publisher"
+      },
+      {
+        "agent": "publisher",
+        "type": "sequential",
+        "next": null
+      }
+    ]
+  },
+  "state_schema": {
+    "required_keys": [
+      "task",
+      "research_data",
+      "draft",
+      "review"
+    ],
+    "agent_io": {
+      "editor": {
+        "reads": ["task"],
+        "writes": ["sections", "outline"]
+      },
+      "researcher": {
+        "reads": ["sections", "outline"],
+        "writes": ["research_data", "sources"]
+      },
+      "reviewer": {
+        "reads": ["research_data", "draft"],
+        "writes": ["review", "feedback"]
+      },
+      "reviser": {
+        "reads": ["research_data", "draft", "feedback"],
+        "writes": ["draft"]
+      },
+      "writer": {
+        "reads": ["research_data", "sources"],
+        "writes": ["draft", "report"]
+      },
+      "publisher": {
+        "reads": ["report", "sources"],
+        "writes": ["final_report"]
+      }
+    }
+  },
+  "publish": {
+    "formats": ["pdf", "markdown", "docx"],
+    "layout": "default",
+    "style": "apa",
+    "output_dir": "./output"
+  }
+}

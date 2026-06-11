@@ -1,0 +1,177 @@
+{
+  "epic_id": "hiveflow-xi5",
+  "tasks": {
+    "T001": {
+      "beads_id": "hiveflow-xi5.1",
+      "phase": 1
+    },
+    "T002": {
+      "beads_id": "hiveflow-xi5.2",
+      "phase": 1
+    },
+    "T003": {
+      "beads_id": "hiveflow-xi5.3",
+      "phase": 1
+    },
+    "T004": {
+      "beads_id": "hiveflow-xi5.4",
+      "phase": 1
+    },
+    "T005": {
+      "beads_id": "hiveflow-xi5.5",
+      "phase": 1
+    },
+    "T006": {
+      "beads_id": "hiveflow-xi5.6",
+      "phase": 1
+    },
+    "T007": {
+      "beads_id": "hiveflow-xi5.7",
+      "phase": 1
+    },
+    "T008": {
+      "beads_id": "hiveflow-xi5.8",
+      "phase": 2
+    },
+    "T009": {
+      "beads_id": "hiveflow-xi5.9",
+      "phase": 2
+    },
+    "T010": {
+      "beads_id": "hiveflow-xi5.10",
+      "phase": 2
+    },
+    "T011": {
+      "beads_id": "hiveflow-xi5.11",
+      "phase": 2
+    },
+    "T012": {
+      "beads_id": "hiveflow-xi5.12",
+      "phase": 2
+    },
+    "T013": {
+      "beads_id": "hiveflow-xi5.13",
+      "phase": 3
+    },
+    "T014": {
+      "beads_id": "hiveflow-xi5.14",
+      "phase": 3
+    },
+    "T015": {
+      "beads_id": "hiveflow-xi5.15",
+      "phase": 3
+    },
+    "T016": {
+      "beads_id": "hiveflow-xi5.16",
+      "phase": 3
+    },
+    "T017": {
+      "beads_id": "hiveflow-xi5.17",
+      "phase": 3
+    },
+    "T018": {
+      "beads_id": "hiveflow-xi5.18",
+      "phase": 3
+    },
+    "T019": {
+      "beads_id": "hiveflow-xi5.19",
+      "phase": 3
+    },
+    "T020": {
+      "beads_id": "hiveflow-xi5.20",
+      "phase": 3
+    },
+    "T021": {
+      "beads_id": "hiveflow-xi5.21",
+      "phase": 3
+    },
+    "T022": {
+      "beads_id": "hiveflow-xi5.22",
+      "phase": 4
+    },
+    "T023": {
+      "beads_id": "hiveflow-xi5.23",
+      "phase": 4
+    },
+    "T024": {
+      "beads_id": "hiveflow-xi5.24",
+      "phase": 4
+    },
+    "T025": {
+      "beads_id": "hiveflow-xi5.25",
+      "phase": 4
+    },
+    "T026": {
+      "beads_id": "hiveflow-xi5.26",
+      "phase": 4
+    },
+    "T027": {
+      "beads_id": "hiveflow-xi5.27",
+      "phase": 4
+    },
+    "T028": {
+      "beads_id": "hiveflow-xi5.28",
+      "phase": 4
+    },
+    "T029": {
+      "beads_id": "hiveflow-xi5.29",
+      "phase": 4
+    },
+    "T030": {
+      "beads_id": "hiveflow-xi5.30",
+      "phase": 5
+    },
+    "T031": {
+      "beads_id": "hiveflow-xi5.31",
+      "phase": 5
+    },
+    "T032": {
+      "beads_id": "hiveflow-xi5.32",
+      "phase": 5
+    },
+    "T033": {
+      "beads_id": "hiveflow-xi5.33",
+      "phase": 5
+    },
+    "T034": {
+      "beads_id": "hiveflow-xi5.34",
+      "phase": 5
+    },
+    "T035": {
+      "beads_id": "hiveflow-xi5.35",
+      "phase": 5
+    },
+    "T036": {
+      "beads_id": "hiveflow-xi5.36",
+      "phase": 5
+    },
+    "T037": {
+      "beads_id": "hiveflow-xi5.37",
+      "phase": 5
+    },
+    "T038": {
+      "beads_id": "hiveflow-xi5.38",
+      "phase": 6
+    },
+    "T039": {
+      "beads_id": "hiveflow-xi5.39",
+      "phase": 6
+    },
+    "T040": {
+      "beads_id": "hiveflow-xi5.40",
+      "phase": 6
+    },
+    "T041": {
+      "beads_id": "hiveflow-xi5.41",
+      "phase": 7
+    },
+    "T042": {
+      "beads_id": "hiveflow-xi5.42",
+      "phase": 7
+    },
+    "T043": {
+      "beads_id": "hiveflow-xi5.43",
+      "phase": 7
+    }
+  }
+}

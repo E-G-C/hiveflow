@@ -1,0 +1,65 @@
+============================================================
+  HiveFlow -- Deep Research with Recursive Branching
+============================================================
+
+  Configuration:
+    Breadth:     3 sub-queries per level
+    Depth:       2 levels of recursion
+    Concurrency: 4 max parallel branches
+    Max context: 25000 words
+    Total branches: 3 + 3x3 = 12
+
+  Query: Impact of artificial intelligence on education
+
+------------------------------------------------------------
+Executing research tree...
+------------------------------------------------------------
+
+  Progress:      108%
+  Total branches:    12
+  Completed:         13
+  Failed:            0
+
+------------------------------------------------------------
+Research tree:
+------------------------------------------------------------
+  Root: Research findings for 'Impact of artificial intelligence on education' at depth ...
+  Sub-branches: 3
+    [1] Research findings for 'Impact of artificial intelligence on ...
+      [1.1] Research findings for 'Impact of artificial intell...
+      [1.2] Research findings for 'Impact of artificial intell...
+      [1.3] Research findings for 'Impact of artificial intell...
+    [2] Research findings for 'Impact of artificial intelligence on ...
+      [2.1] Research findings for 'Impact of artificial intell...
+      [2.2] Research findings for 'Impact of artificial intell...
+      [2.3] Research findings for 'Impact of artificial intell...
+    [3] Research findings for 'Impact of artificial intelligence on ...
+      [3.1] Research findings for 'Impact of artificial intell...
+      [3.2] Research findings for 'Impact of artificial intell...
+      [3.3] Research findings for 'Impact of artificial intell...
+
+  Total findings across tree: 13
+
+------------------------------------------------------------
+Citations:
+------------------------------------------------------------
+  Total citations: 1
+  ## References
+  
+  1. Source: Impact of artificial intelligence on education. Retrieved from https://example.com/impact-of-artificial-intelligence-on-edu
+
+------------------------------------------------------------
+Merged research state (for workflow integration):
+------------------------------------------------------------
+  State keys: ['research_citations', 'research_findings', 'research_progress', 'research_topic', 'research_tree']
+  research_topic: Impact of artificial intelligence on education...
+  research_findings: --- Source 1 ---
+Research findings for 'Impact of artificial intelligence on edu...
+  research_tree: {'query': 'Impact of artificial intelligence on education', 'findings': "Research findings for 'Impact of artificial intelligence on education' at depth 0. This topic has several important aspects including recent developments, key challenges, and promising opportunities. Multiple sources confirm growing interest and investment.", 'sub_results': [{'query': 'Impact of artificial intelligence on education: current state and recent developments', 'findings': "Research findings for 'Impact of artificial intelligence on education: current state and recent developments' at depth 1. This topic has several important aspects including recent developments, key challenges, and promising opportunities. Multiple sources confirm growing interest and investment.", 'sub_results': [{'query': 'Impact of artificial intelligence on education: current state and recent developments: current state and recent developments', 'findings': "Research findings for 'Impact of artificial intelligence on education: current state and recent developments: current state and recent developments' at depth 2. This topic has several important aspects including recent developments, key challenges, and promising opportunities. Multiple sources confirm growing interest and investment.", 'sub_results': [], 'citations': [{'url': 'https://example.com/impact-of-artificial-intelligence-on-edu', 'title': 'Source: Impact of artificial intelligence on education: cu', 'content': 'Detailed content about Impact of artificial intelligence on education: cu'}], 'depth': 2, 'error': None}, {'query': 'Impact of artificial intelligence on education: current state and recent developments: future trends and predictions', 'findings': "Research findings for 'Impact of artificial intelligence on education: current state and recent developments: future trends and predictions' at depth 2. This topic has several important aspects including recent developments, key challenges, and promising opportunities. Multiple sources confirm growing interest and investment.", 'sub_results': [], 'citations': [{'url': 'https://example.com/impact-of-artificial-intelligence-on-edu', 'title': 'Source: Impact of artificial intelligence on education: cu', 'content': 'Detailed content about Impact of artificial intelligence on education: cu'}], 'depth': 2, 'error': None}, {'query': 'Impact of artificial intelligence on education: current state and recent developments: key challenges and obstacles', 'findings': "Research findings for 'Impact of artificial intelligence on education: current state and recent developments: key challenges and obstacles' at depth 2. This topic has several important aspects including recent developments, key challenges, and promising opportunities. Multiple sources confirm growing interest and investment.", 'sub_results': [], 'citations': [{'url': 'https://example.com/impact-of-artificial-intelligence-on-edu', 'title': 'Source: Impact of artificial intelligence on education: cu', 'content': 'Detailed content about Impact of artificial intelligence on education: cu'}], 'depth': 2, 'error': None}], 'citations': [{'url': 'https://example.com/impact-of-artificial-intelligence-on-edu', 'title': 'Source: Impact of artificial intelligence on education: cu', 'content': 'Detailed content about Impact of artificial intelligence on education: cu'}], 'depth': 1, 'error': None}, {'query': 'Impact of artificial intelligence on education: future trends and predictions', 'findings': "Research findings for 'Impact of artificial intelligence on education: future trends and predictions' at depth 1. This topic has several important aspects including recent developments, key challenges, and promising opportunities. Multiple sources confirm growing interest and investment.", 'sub_results': [{'query': 'Impact of artificial intelligence on education: future trends and predictions: current state and recent developments', 'findings': "Research findings for 'Impact of artificial intelligence on education: future trends and predictions: current state and recent developments' at depth 2. This topic has several important aspects including recent developments, key challenges, and promising opportunities. Multiple sources confirm growing interest and investment.", 'sub_results': [], 'citations': [{'url': 'https://example.com/impact-of-artificial-intelligence-on-edu', 'title': 'Source: Impact of artificial intelligence on education: fu', 'content': 'Detailed content about Impact of artificial intelligence on education: fu'}], 'depth': 2, 'error': None}, {'query': 'Impact of artificial intelligence on education: future trends and predictions: future trends and predictions', 'findings': "Research findings for 'Impact of artificial intelligence on education: future trends and predictions: future trends and predictions' at depth 2. This topic has several important aspects including recent developments, key challenges, and promising opportunities. Multiple sources confirm growing interest and investment.", 'sub_results': [], 'citations': [{'url': 'https://example.com/impact-of-artificial-intelligence-on-edu', 'title': 'Source: Impact of artificial intelligence on education: fu', 'content': 'Detailed content about Impact of artificial intelligence on education: fu'}], 'depth': 2, 'error': None}, {'query': 'Impact of artificial intelligence on education: future trends and predictions: key challenges and obstacles', 'findings': "Research findings for 'Impact of artificial intelligence on education: future trends and predictions: key challenges and obstacles' at depth 2. This topic has several important aspects including recent developments, key challenges, and promising opportunities. Multiple sources confirm growing interest and investment.", 'sub_results': [], 'citations': [{'url': 'https://example.com/impact-of-artificial-intelligence-on-edu', 'title': 'Source: Impact of artificial intelligence on education: fu', 'content': 'Detailed content about Impact of artificial intelligence on education: fu'}], 'depth': 2, 'error': None}], 'citations': [{'url': 'https://example.com/impact-of-artificial-intelligence-on-edu', 'title': 'Source: Impact of artificial intelligence on education: fu', 'content': 'Detailed content about Impact of artificial intelligence on education: fu'}], 'depth': 1, 'error': None}, {'query': 'Impact of artificial intelligence on education: key challenges and obstacles', 'findings': "Research findings for 'Impact of artificial intelligence on education: key challenges and obstacles' at depth 1. This topic has several important aspects including recent developments, key challenges, and promising opportunities. Multiple sources confirm growing interest and investment.", 'sub_results': [{'query': 'Impact of artificial intelligence on education: key challenges and obstacles: current state and recent developments', 'findings': "Research findings for 'Impact of artificial intelligence on education: key challenges and obstacles: current state and recent developments' at depth 2. This topic has several important aspects including recent developments, key challenges, and promising opportunities. Multiple sources confirm growing interest and investment.", 'sub_results': [], 'citations': [{'url': 'https://example.com/impact-of-artificial-intelligence-on-edu', 'title': 'Source: Impact of artificial intelligence on education: ke', 'content': 'Detailed content about Impact of artificial intelligence on education: ke'}], 'depth': 2, 'error': None}, {'query': 'Impact of artificial intelligence on education: key challenges and obstacles: future trends and predictions', 'findings': "Research findings for 'Impact of artificial intelligence on education: key challenges and obstacles: future trends and predictions' at depth 2. This topic has several important aspects including recent developments, key challenges, and promising opportunities. Multiple sources confirm growing interest and investment.", 'sub_results': [], 'citations': [{'url': 'https://example.com/impact-of-artificial-intelligence-on-edu', 'title': 'Source: Impact of artificial intelligence on education: ke', 'content': 'Detailed content about Impact of artificial intelligence on education: ke'}], 'depth': 2, 'error': None}, {'query': 'Impact of artificial intelligence on education: key challenges and obstacles: key challenges and obstacles', 'findings': "Research findings for 'Impact of artificial intelligence on education: key challenges and obstacles: key challenges and obstacles' at depth 2. This topic has several important aspects including recent developments, key challenges, and promising opportunities. Multiple sources confirm growing interest and investment.", 'sub_results': [], 'citations': [{'url': 'https://example.com/impact-of-artificial-intelligence-on-edu', 'title': 'Source: Impact of artificial intelligence on education: ke', 'content': 'Detailed content about Impact of artificial intelligence on education: ke'}], 'depth': 2, 'error': None}], 'citations': [{'url': 'https://example.com/impact-of-artificial-intelligence-on-edu', 'title': 'Source: Impact of artificial intelligence on education: ke', 'content': 'Detailed content about Impact of artificial intelligence on education: ke'}], 'depth': 1, 'error': None}], 'citations': [{'url': 'https://example.com/impact-of-artificial-intelligence-on-edu', 'title': 'Source: Impact of artificial intelligence on education', 'content': 'Detailed content about Impact of artificial intelligence on education'}], 'depth': 0, 'error': None}
+  research_citations: {'citation_count': 1, 'citations': [{'citation_id': 'b4c9c2af', 'url': 'https://example.com/impact-of-artificial-intelligence-on-edu', 'title': 'Source: Impact of artificial intelligence on education', 'content_snippet': 'Detailed content about Impact of artificial intelligence on education', 'author': '', 'date': '', 'source_type': 'web', 'metadata': {}}]}
+  research_progress: {'total_branches': 12, 'completed_branches': 13, 'failed_branches': 0, 'current_depth': 2, 'max_depth': 2, 'completion_percentage': 108.3, 'is_complete': True}
+
+------------------------------------------------------------
+  In production, replace mock_research() with an LLM+web-search
+  function and mock_query_generator() with an LLM call.
+------------------------------------------------------------

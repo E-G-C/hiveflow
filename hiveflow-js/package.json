@@ -1,0 +1,36 @@
+{
+  "name": "hiveflow-js",
+  "private": true,
+  "packageManager": "npm@11.6.2",
+  "workspaces": [
+    "packages/*",
+    "examples/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "demo:sequential": "npm --workspace @hiveflow/example-sequential-demo run start",
+    "demo:branching": "npm --workspace @hiveflow/example-branching-demo run start",
+    "demo:action-executor": "npm --workspace @hiveflow/example-action-executor-demo run start",
+    "demo:action-error": "npm --workspace @hiveflow/example-action-error-demo run start",
+    "demo:action-rollback": "npm --workspace @hiveflow/example-action-rollback-demo run start",
+    "demo:subworkflow": "npm --workspace @hiveflow/example-subworkflow-demo run start",
+    "demo:subworkflow-pause": "npm --workspace @hiveflow/example-subworkflow-pause-demo run start",
+    "demo:team-config": "npm --workspace @hiveflow/example-team-config-demo run start",
+    "demo:team-generator": "npm --workspace @hiveflow/example-team-generator-demo run start",
+    "demo:llm-team-generator": "npm --workspace @hiveflow/example-llm-team-generator-demo run start",
+    "demo:dynamic-collaboration": "npm --workspace @hiveflow/example-dynamic-collaboration-demo run start",
+    "demo:checkpoint": "npm --workspace @hiveflow/example-checkpoint-demo run start",
+    "demo:session-events": "npm --workspace @hiveflow/example-session-events-demo run start",
+    "demo:smoke": "bash ./scripts/demo-smoke.sh",
+    "demo:live-openai": "npm --workspace @hiveflow/example-live-openai-compatible-demo run start"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.19.2",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}

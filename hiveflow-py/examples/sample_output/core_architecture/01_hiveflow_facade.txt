@@ -1,0 +1,9 @@
+Session ID : 244f7caa-8c6a-4415-b707-690a456fa89a
+Status     : completed
+State keys : ['task', 'researcher_output', 'researcher_usage', 'researcher_summary', '_step_order', 'writer_output', 'writer_usage', 'writer_summary', 'final_output']
+Writer out : Here is a well-structured summary of: Task: Explain the benefits of renewable energy
+
+--- Summary from researcher ---
+Here is a well-structured summary of: Task: Explain the benefits of renewable ener...
+
+JSON snapshot keys: ['session_id', 'status', 'task', 'result', 'error', 'pending_requests', 'created_at']

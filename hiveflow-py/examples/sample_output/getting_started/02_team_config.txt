@@ -1,0 +1,80 @@
+============================================================
+  Load Team Configuration from File
+============================================================
+
+Team:        research_report
+Description: Multi-agent team for producing comprehensive research reports
+
+Agents (6):
+  - editor                role=Research Editor
+    behavior=orchestrator  model=$STRATEGIC_LLM
+    tools: planner
+  - researcher            role=Deep Researcher
+    behavior=tool_user  model=$SMART_LLM
+    tools: web_search, scraper
+  - reviewer              role=Quality Reviewer
+    behavior=llm_only  model=$SMART_LLM
+  - reviser               role=Content Reviser
+    behavior=llm_only  model=$SMART_LLM
+  - writer                role=Report Writer
+    behavior=llm_only  model=$SMART_LLM
+  - publisher             role=Report Publisher
+    behavior=llm_only  model=$FAST_LLM
+
+Workflow (6 steps):
+  1. editor [sequential] -> researcher
+  2. researcher [parallel_fan_out] -> reviewer
+  3. reviewer [conditional] (accept->writer, reject->reviser)
+  4. reviser [sequential] -> reviewer
+  5. writer [sequential] -> publisher
+  6. publisher [sequential]
+
+State Schema:
+  Required keys:    task, research_data, draft, review
+  Agent I/O maps:   6 agents
+  Enforcement mode: warn
+
+Publish Configuration:
+  Formats: pdf, markdown, docx
+  Style:   apa
+  Output:  ./output
+
+JSON Schema: 6 top-level properties
+
+============================================================
+  Create Team Configuration from Dictionary
+============================================================
+
+Team:   quick_summarizer
+Agents: ['researcher', 'writer']
+Steps:  2
+
+Round-trip JSON (first 500 chars):
+{
+  "team_name": "quick_summarizer",
+  "description": "Summarize a topic in two steps",
+  "agents": [
+    {
+      "id": "researcher",
+      "role": "Researcher",
+      "system_prompt": "Research the given topic thoroughly.",
+      "behavior_type": "llm_only",
+      "tools": [],
+      "model": "openai:gpt-4o-mini",
+      "max_tokens": null,
+      "documents": null,
+      "document_mode": "none",
+      "max_document_tokens": null,
+      "action_policy": null,
+      "model_requirements": null,
+    
+
+Validation: TeamConfiguration enforces schema constraints.
+  Try adding an invalid behavior_type -- pydantic will raise.
+
+============================================================
+  Summary
+============================================================
+  TeamConfiguration is the validated schema for team definitions.
+  It can be loaded from JSON files, dicts, or constructed in code.
+  Use it to validate configs before executing workflows.

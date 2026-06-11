@@ -1,0 +1,82 @@
+{
+  "team_name": "content_creation",
+  "description": "Multi-agent team for content creation with planning, research, writing, and editing",
+  "agents": [
+    {
+      "id": "planner",
+      "role": "Content Planner",
+      "system_prompt": "You are a content strategist. Plan content by defining the target audience, key messages, structure, and outline. Break down the content into logical sections.",
+      "behavior_type": "orchestrator",
+      "model": "$SMART_LLM"
+    },
+    {
+      "id": "researcher",
+      "role": "Content Researcher",
+      "system_prompt": "You are a thorough research agent. Search for information, statistics, and examples relevant to the content plan. Evaluate source quality and synthesize findings.",
+      "behavior_type": "tool_user",
+      "tools": ["web_search"],
+      "model": "$SMART_LLM"
+    },
+    {
+      "id": "writer",
+      "role": "Content Writer",
+      "system_prompt": "You are a professional content writer. Transform research findings and the content plan into clear, engaging, well-structured content. Follow the outline and incorporate all research data.",
+      "behavior_type": "llm_only",
+      "tools": [],
+      "model": "$SMART_LLM"
+    },
+    {
+      "id": "editor",
+      "role": "Content Editor",
+      "system_prompt": "You are an experienced editor. Review content for clarity, grammar, flow, tone consistency, and factual accuracy. Polish the final output for publication.",
+      "behavior_type": "llm_only",
+      "tools": [],
+      "model": "$SMART_LLM"
+    }
+  ],
+  "workflow": {
+    "steps": [
+      {
+        "agent": "planner",
+        "type": "sequential",
+        "next": "researcher"
+      },
+      {
+        "agent": "researcher",
+        "type": "sequential",
+        "next": "writer"
+      },
+      {
+        "agent": "writer",
+        "type": "sequential",
+        "next": "editor"
+      },
+      {
+        "agent": "editor",
+        "type": "sequential",
+        "next": null
+      }
+    ]
+  },
+  "state_schema": {
+    "required_keys": ["task", "content_plan", "research_data", "draft"],
+    "agent_io": {
+      "planner": {
+        "reads": ["task"],
+        "writes": ["content_plan", "outline", "sections"]
+      },
+      "researcher": {
+        "reads": ["content_plan", "outline"],
+        "writes": ["research_data", "sources"]
+      },
+      "writer": {
+        "reads": ["content_plan", "outline", "research_data"],
+        "writes": ["draft"]
+      },
+      "editor": {
+        "reads": ["draft"],
+        "writes": ["final_content"]
+      }
+    }
+  }
+}

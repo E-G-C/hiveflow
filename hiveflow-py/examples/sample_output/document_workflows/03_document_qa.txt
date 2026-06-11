@@ -1,0 +1,47 @@
+============================================================
+  HiveFlow -- Document Q&A with Retriever Tool
+============================================================
+  Documents loaded: 2 documents loaded: architecture_review.md (1 chunks, ~149 tokens), incident_report.md (1 chunks, ~210 tokens) (~359 total tokens)
+
+  Question: Based on the architecture review and the incident report, what are the top 3 mos...
+
+------------------------------------------------------------
+Direct tool usage (without LLM):
+------------------------------------------------------------
+  Fetch 'architecture_review.md': 1 chunk(s)
+    [0] # Architecture Review: Payment Service
+
+## Current State
+The payment s...
+
+  Search 'circuit breaker outage': 2 match(es)
+    [incident_report.md:0] # Incident Report: Payment Service Outage (2025-02-15)
+
+## Timeline
+- ...
+    [architecture_review.md:0] # Architecture Review: Payment Service
+
+## Current State
+The payment s...
+
+------------------------------------------------------------
+LLM tool-calling loop (mock):
+------------------------------------------------------------
+  Turn 1: tool call -> retrieve_document({'document_name': 'architecture_review.md'}) -> 1 chunks
+  Turn 2: tool call -> retrieve_document({'document_name': 'incident_report.md'}) -> 1 chunks
+  Turn 3: final answer (122 words)
+
+------------------------------------------------------------
+Answer:
+------------------------------------------------------------
+Based on the architecture review and incident report, the top 3 most urgent changes are:
+
+1. **Circuit breaker implementation** (CRITICAL) -- The lack of a circuit breaker was the direct cause of the outage, turning a partial processor failure into a full service outage. Status: TODO, ETA 2 weeks.
+
+2. **Idempotency keys for payment operations** (HIGH) -- The missing idempotency caused 12 duplicate charges during the incident. Status: TODO, ETA 1 week.
+
+3. **Payment processor failover** (HIGH) -- While a manual failover was performed during the incident, an automated active-passive failover should be implemented. Status: Failover procedure documented (DONE), but automated failover is not yet in place.
+
+The database bottleneck (Issue #2) is lower priority as it didn't contribute to this incident.
+
+  Total tokens: 1020

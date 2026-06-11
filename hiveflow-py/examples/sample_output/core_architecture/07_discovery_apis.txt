@@ -1,0 +1,26 @@
+Discovery APIs Example
+============================================================
+
+1. Team Templates:
+   Available templates: ['code_review', 'content_creation', 'research_report']
+   'code_review' config keys: ['team_name', 'description', 'agents', 'workflow', 'state_schema']
+
+2. Agent Archetypes (built-in):
+   Available: ['editor', 'human_reviewer', 'planner', 'researcher', 'reviewer', 'writer']
+   'editor': role=Task Editor
+   'human_reviewer': role=Human Review Gate
+   'planner': role=Task Planner
+
+3. Custom Archetypes:
+   Registered: ['data_scientist', 'devops_engineer']
+   data_scientist tools: ['python_executor', 'data_visualizer']
+
+4. Custom Team Templates:
+   Templates: ['code_review']
+
+5. Tool Registry:
+   Registered tools: (none -- install tool plugins)
+
+6. Model Registry:
+   Registered providers: (none -- install LLM plugins)
+   Providers are discovered via entry points in pyproject.toml

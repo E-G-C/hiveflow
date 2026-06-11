@@ -1,0 +1,83 @@
+QA Test Execution Report - Sprint 14
+Reporter: Priya Sharma (QA Lead)
+Date: 2025-12-12
+
+TEST SUMMARY
+
+Total test cases executed: 247
+Passed: 228 (92.3%)
+Failed: 11 (4.5%)
+Blocked: 8 (3.2%)
+
+CRITICAL BUGS FOUND
+
+BUG-1847: Offline sync drops records when device storage exceeds 400MB
+Severity: P1
+Status: Fixed in build 14.3.2
+Steps to reproduce:
+  1. Enable airplane mode
+  2. Create 500+ inspection records with photos
+  3. Restore connectivity
+  4. Observe sync progress
+Expected: All records sync successfully
+Actual: Records created after 400MB threshold are silently dropped
+Root cause: SQLite WAL checkpoint triggered during sync, conflicting with
+  insert operations. Fixed by deferring WAL checkpoint until sync completes.
+
+BUG-1852: GPS track recording stops after 4 hours in background on iOS
+Severity: P2
+Status: Open (assigned to David, Sprint 15)
+Steps to reproduce:
+  1. Start track recording
+  2. Switch to another app
+  3. Wait 4+ hours
+Expected: Continuous track recording
+Actual: Recording stops at approximately 4 hours
+Root cause: iOS background task expiration. Need to use location-based
+  background mode instead of generic background task.
+
+BUG-1855: Biometric prompt appears twice after session timeout
+Severity: P3
+Status: Open (Sprint 15 backlog)
+
+BUG-1861: High contrast mode cuts off long form field labels
+Severity: P3
+Status: Open (Sprint 15 backlog)
+
+BLOCKED TEST CASES (8)
+
+All blocked tests are in the IoT Dashboard module:
+- TC-301 through TC-308: Live sensor data display
+- Blocked by: Atlas WebSocket API not available in test environment
+- Unblocked ETA: Sprint 15 Day 3 (pending mock server from David)
+
+AUTOMATION STATUS
+
+Total automated tests: 208 / 247 (84.2%)
+New automated this sprint: 24
+Flaky tests identified: 3 (TC-112, TC-178, TC-201)
+Average CI run time: 12 minutes
+
+DEVICE COVERAGE
+
+| Device              | OS Version | Result |
+|---------------------|-----------|--------|
+| iPhone 15 Pro       | iOS 17.2  | Pass   |
+| iPhone 12           | iOS 16.4  | Pass   |
+| iPhone SE 3         | iOS 17.1  | Pass   |
+| Pixel 8 Pro         | Android 14| Pass   |
+| Pixel 6             | Android 13| Pass   |
+| Samsung Galaxy S23  | Android 14| Pass   |
+| Samsung Galaxy A54  | Android 13| 2 fails|
+
+Note: Galaxy A54 failures (BUG-1861 and a rendering issue with map tiles
+at low memory) are consistent with mid-range device limitations. The map
+tile issue is not reproducible on devices with 6GB+ RAM.
+
+RECOMMENDATIONS
+
+1. Prioritize BUG-1852 fix before Q1 release (GPS tracking is core feature)
+2. Build Atlas mock server to unblock IoT testing
+3. Investigate Galaxy A54 memory issues - may need to reduce map tile cache
+   size on devices with <6GB RAM
+4. Add load testing for offline sync with >1000 records

@@ -1,0 +1,15 @@
+Gated Workflow Step Example
+============================================================
+
+Status: paused
+Drafter output: Draft blog post about AI safety: AI systems should be designed with ......
+
+Workflow paused at gate!
+  Gate ID: review_gate
+  Description: Review the draft before publishing
+  Awaiting approval: True
+
+In a real application, you would:
+  1. Present the drafter's output to a reviewer
+  2. Collect their approval via UI or API
+  3. Call session.resume(responses) to continue the workflow

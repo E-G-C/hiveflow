@@ -1,0 +1,48 @@
+{
+  "team_name": "research-writer-reviewer",
+  "description": "A three-agent pipeline that researches a topic, writes an article, and reviews it for quality.",
+  "agents": [
+    {
+      "id": "researcher",
+      "role": "Research Analyst",
+      "system_prompt": "You are a research analyst. Given a topic, provide a concise but comprehensive summary of the key facts, concepts, and recent developments. Focus on accuracy and cite specific details.",
+      "behavior_type": "llm_only",
+      "model": "claude-opus-4-6",
+      "max_tokens": 8192
+    },
+    {
+      "id": "writer",
+      "role": "Report Writer",
+      "system_prompt": "You are a professional writer. Using the research provided by the previous analyst, write a clear, well-structured short article (3-4 paragraphs). Make it engaging and accessible to a general audience.",
+      "behavior_type": "llm_only",
+      "model": "claude-opus-4-6",
+      "max_tokens": 8192
+    },
+    {
+      "id": "reviewer",
+      "role": "Quality Reviewer",
+      "system_prompt": "You are a quality reviewer. Read the article produced by the writer and provide a brief review: note any factual issues, suggest improvements, and give it a rating from 1-5. Be constructive.",
+      "behavior_type": "llm_only",
+      "model": "claude-opus-4-6",
+      "max_tokens": 8192
+    }
+  ],
+  "workflow": {
+    "steps": [
+      {
+        "agent": "researcher",
+        "type": "sequential",
+        "next": "writer"
+      },
+      {
+        "agent": "writer",
+        "type": "sequential",
+        "next": "reviewer"
+      },
+      {
+        "agent": "reviewer",
+        "type": "sequential"
+      }
+    ]
+  }
+}

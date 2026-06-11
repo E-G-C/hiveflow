@@ -1,0 +1,24 @@
+Agent 'writer' wrote undeclared state key 'writer_usage' (declared writes: ['writer_output'])
+State Schema Enforcement Example
+============================================================
+
+1. mode='warn' -- allows all writes, warns on undeclared
+   State keys: ['_step_order', 'task', 'writer_output', 'writer_usage']
+   writer_output present: True
+   writer_usage present: True
+   (writer_usage is undeclared but allowed with warning)
+
+2. mode='strict' -- filters out undeclared writes
+   State keys: ['_step_order', 'task', 'writer_output']
+   writer_output present: True
+   writer_usage present: False
+   (writer_usage is filtered out because it's undeclared)
+
+3. mode='off' -- no enforcement at all
+   State keys: ['_step_order', 'task', 'writer_output', 'writer_usage']
+   writer_output present: True
+   writer_usage present: True
+   (everything passes through)
+
+4. Schema in JSON config format:
+   {'state_schema': {'required_keys': ['task'], 'enforcement_mode': 'strict', 'agent_io': {'researcher': {'reads': ['task'], 'writes': ['findings']}, 'writer': {'reads': ['task', 'findings'], 'writes': ['report']}}}}
