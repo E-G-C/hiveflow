@@ -11,6 +11,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 - **API hardening (`hiveflow-py`)** — the `/config` endpoint now redacts `API_KEY` instead of returning it; API-key authentication uses constant-time comparison (`hmac.compare_digest`) to avoid timing leaks; the `/workflows/start` endpoint rejects the `instructions_file` parameter (server-side file paths were a local-file-inclusion vector — send `instructions` inline or upload the file as a document); and the per-IP rate-limit middleware now evicts empty buckets so the IP keyspace cannot grow unbounded.
 - **Restricted tier-variable resolution (`hiveflow-py`)** — `HiveFlowConfig.resolve_model()` now only resolves known LLM tiers (`FAST_LLM`/`SMART_LLM`/`STRATEGIC_LLM`), so a model reference like `$API_KEY` can no longer leak arbitrary config attributes.
+- **Checkpoint path-traversal hardening (`hiveflow-js`)** — `FileCheckpointStorage` rejects session/checkpoint ids that sanitize to empty, `.`, or `..` and asserts resolved paths stay within the storage root, so a crafted session id can no longer delete or escape the checkpoints directory.
+- **Prototype-pollution guard for delegated state (`hiveflow-js`)** — `buildDelegatedState` now skips `__proto__`/`constructor`/`prototype` keys when copying parent state and LLM-supplied delegation context.
+- **Spawn-cap enforcement on the default-delegate path (`hiveflow-js`)** — `spawnDefaultDelegate` now honors `maxSpawnedAgents`, matching the explicit `spawn_agent` cap so auto-delegation cannot exceed the agent budget.
+- **Validated action normalizers (`hiveflow-js`)** — action/rollback record normalizers (now shared between `agent.ts` and `workflow.ts`) validate `status`/`policy` against their allowed sets, falling back to safe defaults (an unknown policy becomes `require_approval`) instead of being cast through unchecked.
 
 ### Fixed
 
@@ -18,6 +22,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 - **Checkpoint step-index resolution (`hiveflow-py`)** — the workflow engine now looks up a step's index by identity rather than `list.index()`, preventing wrong checkpoint positions when two steps share identical field values.
 - **Action-executor crash guard (`hiveflow-py`)** — `action_executor` agents no longer raise `UnboundLocalError` when `max_tool_iterations` is non-positive.
 - **Immutable state merge (`hiveflow-py`)** — `WorkflowState.merge()` no longer mutates the source state's history, so repeated merges from the same state are consistent.
+- **Session events no longer dropped on close (`hiveflow-js`)** — `SessionEventConsumer.close()` preserves already-queued events and appends the done sentinel after them, so a slow `for await` consumer receives every event before the iterator terminates.
+- **Crash-resilient checkpoint serialization (`hiveflow-js`)** — deep-clone and checkpoint writes use a shared `safeClone`/`safeSerialize` helper that tolerates circular references, `BigInt`, and functions, so non-serializable tool/LLM state can no longer make `persistCheckpoint` reject a run.
+- **Corrupt checkpoint files tolerated when listing (`hiveflow-js`)** — `listCheckpoints` uses `Promise.allSettled`, skipping and warning on unreadable files so one corrupt checkpoint no longer makes a session unloadable.
 
 ### Changed
 

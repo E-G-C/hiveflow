@@ -6,10 +6,12 @@ import type { ModelDefinition } from "./definition.js";
 import type { ModelAdapter, ToolDefinition, ToolExecutionContext } from "./model.js";
 import type { WorkflowData } from "./types.js";
 import type { ArchetypeDefinition, ArchetypeLibrary } from "./archetype.js";
+import { safeClone } from "./internal.js";
 
 const DEFAULT_MAX_DELEGATION_DEPTH = 3;
 const DEFAULT_MAX_SPAWNED_AGENTS = 10;
 const DEFAULT_DELEGATION_TIMEOUT_SECONDS = 300;
+const UNSAFE_DELEGATED_STATE_KEYS = new Set(["__proto__", "constructor", "prototype"]);
 const SUPPORTED_BEHAVIORS = new Set<AgentBehavior>([
   "llm_only",
   "tool_user",
@@ -373,6 +375,12 @@ export class CollaborationRuntime implements AgentCollaborationContext {
   }
 
   private spawnDefaultDelegate(orchestrator: Agent, task: string): Agent {
+    if (this.spawnedAgents >= this.config.maxSpawnedAgents) {
+      throw new Error(
+        `Spawn limit reached (${this.config.maxSpawnedAgents}) for the current workflow execution.`
+      );
+    }
+
     const agentId = this.generateSpawnedAgentId("delegate");
     const agent = new Agent({
       id: agentId,
@@ -659,6 +667,10 @@ function buildDelegatedState(
   const delegatedState: WorkflowData = {};
 
   for (const [key, value] of Object.entries(parentState)) {
+    if (UNSAFE_DELEGATED_STATE_KEYS.has(key)) {
+      continue;
+    }
+
     if (key.startsWith("_")) {
       continue;
     }
@@ -677,6 +689,10 @@ function buildDelegatedState(
 
   if (context) {
     for (const [key, value] of Object.entries(context)) {
+      if (UNSAFE_DELEGATED_STATE_KEYS.has(key)) {
+        continue;
+      }
+
       delegatedState[key] = cloneWorkflowData(value);
     }
   }
@@ -761,9 +777,5 @@ async function withTimeout<T>(
 }
 
 function cloneWorkflowData<T>(value: T): T {
-  if (value === undefined) {
-    return value;
-  }
-
-  return JSON.parse(JSON.stringify(value)) as T;
+  return safeClone(value);
 }

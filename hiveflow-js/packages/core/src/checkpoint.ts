@@ -1,9 +1,10 @@
 import { randomUUID } from "node:crypto";
 import { mkdir, readdir, readFile, rename, rm, writeFile } from "node:fs/promises";
-import { join } from "node:path";
+import { join, resolve, sep } from "node:path";
 
 import type { WorkflowDefinition } from "./definition.js";
 import type { WorkflowResult } from "./workflow.js";
+import { safeClone, safeSerialize } from "./internal.js";
 
 const CHECKPOINT_VERSION = "1";
 
@@ -121,7 +122,7 @@ export class FileCheckpointStorage implements CheckpointStorage {
 
     try {
       await mkdir(sessionDirectory, { recursive: true });
-      await writeFile(temporaryPath, JSON.stringify(checkpoint, null, 2), "utf8");
+      await writeFile(temporaryPath, safeSerialize(checkpoint, 2), "utf8");
       await rename(temporaryPath, path);
       return checkpoint.checkpointId;
     } catch (error) {
@@ -189,11 +190,25 @@ export class FileCheckpointStorage implements CheckpointStorage {
     try {
       const sessionDirectory = this.getSessionDirectory(sessionId);
       const entries = await readdir(sessionDirectory, { withFileTypes: true });
-      const checkpoints = await Promise.all(
-        entries
-          .filter((entry) => entry.isFile() && entry.name.endsWith(".json"))
-          .map((entry) => this.readCheckpoint(join(sessionDirectory, entry.name)))
+      const files = entries.filter(
+        (entry) => entry.isFile() && entry.name.endsWith(".json")
       );
+      const results = await Promise.allSettled(
+        files.map((entry) => this.readCheckpoint(join(sessionDirectory, entry.name)))
+      );
+
+      const checkpoints: WorkflowCheckpoint[] = [];
+      results.forEach((result, index) => {
+        if (result.status === "fulfilled") {
+          checkpoints.push(result.value);
+          return;
+        }
+
+        const fileName = files[index]?.name ?? "<unknown>";
+        console.warn(
+          `Skipping unreadable checkpoint file '${fileName}' for session '${sessionId}': ${describeError(result.reason)}`
+        );
+      });
 
       return checkpoints.sort((left, right) => left.createdAt - right.createdAt);
     } catch (error) {
@@ -209,11 +224,28 @@ export class FileCheckpointStorage implements CheckpointStorage {
   }
 
   private getSessionDirectory(sessionId: string): string {
-    return join(this.directory, sanitizeId(sessionId));
+    const directory = join(this.directory, sanitizeId(sessionId, "session"));
+    this.assertWithinRoot(directory);
+    return directory;
   }
 
   private getCheckpointPath(sessionId: string, checkpointId: string): string {
-    return join(this.getSessionDirectory(sessionId), `${sanitizeId(checkpointId)}.json`);
+    const path = join(
+      this.getSessionDirectory(sessionId),
+      `${sanitizeId(checkpointId, "checkpoint")}.json`
+    );
+    this.assertWithinRoot(path);
+    return path;
+  }
+
+  private assertWithinRoot(candidate: string): void {
+    const root = resolve(this.directory);
+    const resolved = resolve(candidate);
+    if (resolved !== root && !resolved.startsWith(root + sep)) {
+      throw new CheckpointError(
+        `Resolved checkpoint path '${resolved}' escapes the storage root '${root}'.`
+      );
+    }
   }
 
   private async readCheckpoint(path: string): Promise<WorkflowCheckpoint> {
@@ -245,8 +277,23 @@ function normalizeCheckpoint(checkpoint: WorkflowCheckpoint): WorkflowCheckpoint
   });
 }
 
-function sanitizeId(value: string): string {
-  return value.replaceAll(/[^a-zA-Z0-9._-]/g, "_");
+function sanitizeId(value: string, kind: "session" | "checkpoint"): string {
+  const sanitized = value.replaceAll(/[^a-zA-Z0-9._-]/g, "_");
+  if (sanitized.length === 0 || sanitized === "." || sanitized === "..") {
+    throw new CheckpointError(
+      `Invalid ${kind} id '${value}' resolves to an unsafe path segment.`
+    );
+  }
+
+  return sanitized;
+}
+
+function describeError(error: unknown): string {
+  if (error instanceof Error) {
+    return error.message;
+  }
+
+  return String(error);
 }
 
 function isMissingPathError(error: unknown): boolean {
@@ -259,5 +306,5 @@ function isMissingPathError(error: unknown): boolean {
 }
 
 function cloneCheckpointValue<T>(value: T): T {
-  return JSON.parse(JSON.stringify(value)) as T;
+  return safeClone(value);
 }

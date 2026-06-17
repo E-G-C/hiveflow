@@ -7,6 +7,7 @@ import type { WorkflowData } from "./types.js";
 import { WorkflowEngine } from "./workflow.js";
 import type { WorkflowStep } from "./workflow.js";
 import type { ArchetypeLibrary } from "./archetype.js";
+import { safeClone } from "./internal.js";
 
 export interface ModelDefinition {
   kind: string;
@@ -226,5 +227,5 @@ export class WorkflowRuntimeCatalog {
 }
 
 function cloneWorkflowDefinition(definition: WorkflowDefinition): WorkflowDefinition {
-  return JSON.parse(JSON.stringify(definition)) as WorkflowDefinition;
+  return safeClone(definition);
 }

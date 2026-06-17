@@ -9,6 +9,7 @@ import type { CollaborationBudgetPolicy, CollaborationConfig } from "./collabora
 import type { AgentDefinition, ModelDefinition, WorkflowDefinition } from "./definition.js";
 import type { WorkflowData } from "./types.js";
 import type { WorkflowStep, WorkflowStepType } from "./workflow.js";
+import { safeClone } from "./internal.js";
 
 type ParallelItemSource = "parallelItems" | "parallel_items" | "taskData" | "task_data";
 
@@ -929,5 +930,5 @@ function countOccurrences(values: string[]): Map<string, number> {
 }
 
 function cloneTeamValue<T>(value: T): T {
-  return JSON.parse(JSON.stringify(value)) as T;
+  return safeClone(value);
 }

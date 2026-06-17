@@ -471,7 +471,9 @@ class SessionEventConsumer implements WorkflowEventConsumer, AsyncIterator<Workf
             waiter?.({ value: undefined, done: true });
         }
 
-        this.queue.length = 0;
+        // Preserve any events a slow consumer has not drained yet; append the
+        // done sentinel after them so the iterator yields all buffered events
+        // before terminating.
         this.queue.push(null);
     }
 

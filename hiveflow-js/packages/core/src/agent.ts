@@ -6,6 +6,11 @@ import type {
     ToolDefinition
 } from "./model.js";
 import type { ModelMessage, ToolCall, ToolResult, WorkflowData } from "./types.js";
+import {
+    normalizeActionProposals,
+    normalizeActionRecords,
+    normalizeRollbackRecords
+} from "./internal.js";
 
 const DEFAULT_MAX_TOOL_ITERATIONS = 5;
 
@@ -973,124 +978,6 @@ function createSyntheticInvocation(
         toolCalls: options.toolCalls ?? [],
         toolResults: options.toolResults ?? [],
         responseMessages: []
-    };
-}
-
-function normalizeActionProposals(value: unknown): ActionProposal[] {
-    if (!Array.isArray(value)) {
-        return [];
-    }
-
-    return value
-        .map((proposal) => normalizeActionProposal(proposal))
-        .filter((proposal): proposal is ActionProposal => proposal !== undefined);
-}
-
-function normalizeActionProposal(value: unknown): ActionProposal | undefined {
-    if (!value || typeof value !== "object") {
-        return undefined;
-    }
-
-    const record = value as Record<string, unknown>;
-    const tool = record.tool;
-    const toolCallId = record.toolCallId ?? record.tool_call_id;
-
-    if (typeof tool !== "string" || typeof toolCallId !== "string") {
-        return undefined;
-    }
-
-    return {
-        tool,
-        arguments: record.arguments,
-        toolCallId
-    };
-}
-
-function normalizeActionRecords(value: unknown): ActionRecord[] {
-    if (!Array.isArray(value)) {
-        return [];
-    }
-
-    return value
-        .map((record) => normalizeActionRecord(record))
-        .filter((record): record is ActionRecord => record !== undefined);
-}
-
-function normalizeActionRecord(value: unknown): ActionRecord | undefined {
-    if (!value || typeof value !== "object") {
-        return undefined;
-    }
-
-    const record = value as Record<string, unknown>;
-    const actionId = record.actionId;
-    const agentId = record.agentId;
-    const tool = record.tool;
-    const status = record.status;
-    const policy = record.policy;
-    const toolCallId = record.toolCallId ?? record.tool_call_id;
-
-    if (
-        typeof actionId !== "string"
-        || typeof agentId !== "string"
-        || typeof tool !== "string"
-        || typeof status !== "string"
-        || typeof policy !== "string"
-        || typeof toolCallId !== "string"
-    ) {
-        return undefined;
-    }
-
-    return {
-        actionId,
-        agentId,
-        tool,
-        arguments: record.arguments,
-        status: status as ActionRecord["status"],
-        policy: policy as ActionPolicy,
-        toolCallId,
-        ...(record.reversible === true ? { reversible: true } : {}),
-        ...(typeof record.rollbackAction === "string" ? { rollbackAction: record.rollbackAction } : {}),
-        result: record.result
-    };
-}
-
-function normalizeRollbackRecords(value: unknown): RollbackRecord[] {
-    if (!Array.isArray(value)) {
-        return [];
-    }
-
-    return value
-        .map((record) => normalizeRollbackRecord(record))
-        .filter((record): record is RollbackRecord => record !== undefined);
-}
-
-function normalizeRollbackRecord(value: unknown): RollbackRecord | undefined {
-    if (!value || typeof value !== "object") {
-        return undefined;
-    }
-
-    const record = value as Record<string, unknown>;
-    const rollbackId = record.rollbackId ?? record.rollback_id;
-    const agentId = record.agentId;
-    const rollbackAction = record.rollbackAction ?? record.rollback_action;
-    const status = record.status;
-
-    if (
-        typeof rollbackId !== "string"
-        || typeof agentId !== "string"
-        || typeof rollbackAction !== "string"
-        || typeof status !== "string"
-    ) {
-        return undefined;
-    }
-
-    return {
-        rollbackId,
-        agentId,
-        rollbackAction,
-        status: status as RollbackRecord["status"],
-        failedActions: normalizeActionRecords(record.failedActions ?? record.failed_actions),
-        result: record.result
     };
 }
 
