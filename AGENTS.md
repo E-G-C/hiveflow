@@ -1,17 +1,5 @@
 ﻿# Agent Instructions
 
-This project uses **bd** (beads) for issue tracking. Run `bd onboard` to get
-started.
-
-## Quick Reference
-
-```bash
-bd ready              # Find available work
-bd show <id>          # View issue details
-bd update <id> --status in_progress  # Claim work
-bd close <id>         # Complete work
-bd sync               # Sync with git
-```
 
 ## Landing the Plane (Session Completion)
 
@@ -21,19 +9,18 @@ complete until `git push` succeeds.
 **MANDATORY WORKFLOW:**
 
 1. **File issues for remaining work** - Create issues for anything that needs
-   follow-up
-1. **Run quality gates** (if code changed) - Tests, linters, builds
-2. **Update issue status** - Close finished work, update in-progress items
-3. **PUSH TO REMOTE** - This is MANDATORY:
+   follow-up.
+2. **Run quality gates** (if code changed) - Tests, linters, builds.
+3. **Update issue status** - Close finished work, update in-progress items.
+4. **PUSH TO REMOTE** - This is MANDATORY:
    ```bash
    git pull --rebase
-   bd sync
    git push
    git status  # MUST show "up to date with origin"
    ```
-1. **Clean up** - Clear stashes, prune remote branches
-2. **Verify** - All changes committed AND pushed
-3. **Hand off** - Provide context for next session
+5. **Clean up** - Clear stashes, prune remote branches.
+6. **Verify** - All changes committed and pushed.
+7. **Hand off** - Provide context for next session.
 
 **CRITICAL RULES:**
 
@@ -69,7 +56,7 @@ uv pip list            # List installed packages (inside the venv)
 
 ### Rules
 
-- Don't use `from __future__ import annotations` as we target Python 3.11+ which supports postponed annotations natively
+- Prefer native typing features; only use `from __future__ import annotations` when a file truly needs it.
 - **Always use `uv`** for installing, adding, removing, or syncing packages.
 - **Always activate the virtual environment** before testing or executing any
   Python code:
@@ -136,8 +123,30 @@ Create examples covering the new features you add, and update existing examples 
 
 All project documentation must stay in sync with the codebase at all times. Stale docs are worse than no docs.
 
-- **After every feature or fix**: review and update `README.md`, `CHANGELOG.md`, `CLAUDE.md`, and any relevant docs under `docs/` or `specs/`.
+- **After every feature or fix**: review and update `README.md`, `CHANGELOG.md`, `AGENTS.md`, and any relevant docs under `docs/` or `specs/`.
 - **After dependency changes**: update installation instructions, `pyproject.toml` optional-dependency docs, and environment variable references.
 - **After API changes**: update contract docs (`specs/*/contracts/`), example code, and quickstart guides.
 - **Before marking work complete**: confirm that a new contributor could follow the docs to set up, run, and understand the feature you just shipped.
 - Keep documentation under the `docs` directory updated with detailed explanations, diagrams, architecture decisions, and anything useful for understanding and using the framework.
+
+## Active Technologies
+- Core runtime and SDK dependencies: `pydantic`, `pydantic-settings`, `openai`, `anthropic`, `structlog`, `httpx`, `aiofiles`, `pyyaml`, `json-repair`, `ratelimit`, and `rich`.
+- Optional extras for docs and browser automation: `pypandoc`, `jinja2`, `beautifulsoup4`, `playwright`, `duckduckgo-search`, `tavily-python`, and `numpy`.
+- Microsoft Agent Framework and file-based checkpoint / team-config patterns are the default operational model for the project.
+
+## Project Structure
+
+The Python package lives in `hiveflow-py/hiveflow/`, tests in `hiveflow-py/tests/`, and the TypeScript package in `hiveflow-js/`. Requirement notes and design docs live in `requirements/` (files 01-15, plus `README.md` and `notes.md`).
+
+## Code Style
+
+- Use standard conventions.
+- Use pydantic BaseModel for schemas, dataclasses for simple data.
+- Keep I/O paths async-first.
+
+## Requirements
+
+Architecture and design decisions are documented in `requirements/`.
+
+<!-- MANUAL ADDITIONS START -->
+<!-- MANUAL ADDITIONS END -->

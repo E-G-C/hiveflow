@@ -56,7 +56,7 @@ The approach integrates into the existing execution flow: `TaskPreprocessor.prep
 
 | Principle | Status | Notes |
 |-----------|--------|-------|
-| All above | PASS | Design phase introduced no violations. Data model uses dataclasses (simple data as per CLAUDE.md). No new external dependencies. Async-first preserved. State keys are stable contracts. |
+| All above | PASS | Design phase introduced no violations. Data model uses dataclasses (simple data as per AGENTS.md). No new external dependencies. Async-first preserved. State keys are stable contracts. |
 
 ## Project Structure
 
