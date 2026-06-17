@@ -194,3 +194,63 @@ class TestResumeEndpoint:
         )
         assert response.status_code == 400
         assert "approve" in response.json()["detail"]
+
+
+# --- Security ---
+
+
+# Minimal team config that passes TeamConfiguration validation.
+_SECURITY_TEAM = {
+    "team_name": "test",
+    "description": "Security test team",
+    "agents": [
+        {
+            "id": "agent1",
+            "role": "Test",
+            "system_prompt": "You are a test agent.",
+            "behavior_type": "llm_only",
+        }
+    ],
+    "workflow": {"steps": [{"agent": "agent1", "type": "sequential"}]},
+}
+
+
+class TestApiSecurity:
+    def test_config_redacts_api_key(self):
+        """The /config endpoint must never expose the configured API key."""
+        from fastapi.testclient import TestClient
+
+        app = create_app(HiveFlowConfig(API_KEY="super-secret-key"))
+        client = TestClient(app)
+
+        response = client.get("/config", headers={"X-API-Key": "super-secret-key"})
+        assert response.status_code == 200
+        data = response.json()
+        assert data["API_KEY"] == "***redacted***"
+        assert "super-secret-key" not in response.text
+
+    def test_api_key_required_when_configured(self):
+        """Requests without a valid key are rejected; the correct key passes."""
+        from fastapi.testclient import TestClient
+
+        app = create_app(HiveFlowConfig(API_KEY="super-secret-key"))
+        client = TestClient(app)
+
+        # Missing key
+        assert client.get("/config").status_code == 401
+        # Wrong key
+        assert client.get("/config", headers={"X-API-Key": "nope"}).status_code == 401
+        # Correct key
+        assert (
+            client.get("/config", headers={"X-API-Key": "super-secret-key"}).status_code == 200
+        )
+
+    def test_instructions_file_rejected(self, client):
+        """Server-side file paths must not be honored over the API (LFI guard)."""
+        response = client.post(
+            "/workflows/start",
+            json={"team": _SECURITY_TEAM, "instructions_file": "/etc/passwd"},
+        )
+        assert response.status_code == 400
+        assert "instructions_file" in response.json()["detail"]
+

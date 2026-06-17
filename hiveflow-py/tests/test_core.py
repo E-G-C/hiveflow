@@ -763,31 +763,33 @@ class TestSubWorkflow:
 
     @pytest.mark.asyncio
     async def test_recursion_depth_exceeds_max_raises(self):
-        """_depth >= 5 must raise RuntimeError."""
+        """Nesting depth >= 5 must raise RuntimeError."""
         from unittest.mock import MagicMock
 
         engine = WorkflowEngine([WorkflowStep(agent="inner", step_type="sub_workflow")])
         engine._team_library = MagicMock()
+        engine._sub_workflow_depth = 5
 
         step = WorkflowStep(agent="inner", step_type="sub_workflow")
         step.team = "some_team"
 
         with pytest.raises(RuntimeError, match="recursion depth exceeded"):
-            await engine._execute_sub_workflow(step, {}, {}, _depth=5)
+            await engine._execute_sub_workflow(step, {}, {})
 
     @pytest.mark.asyncio
     async def test_recursion_depth_6_also_raises(self):
-        """_depth > 5 must also raise RuntimeError."""
+        """Nesting depth > 5 must also raise RuntimeError."""
         from unittest.mock import MagicMock
 
         engine = WorkflowEngine([WorkflowStep(agent="inner", step_type="sub_workflow")])
         engine._team_library = MagicMock()
+        engine._sub_workflow_depth = 6
 
         step = WorkflowStep(agent="inner", step_type="sub_workflow")
         step.team = "some_team"
 
         with pytest.raises(RuntimeError, match="recursion depth exceeded"):
-            await engine._execute_sub_workflow(step, {}, {}, _depth=6)
+            await engine._execute_sub_workflow(step, {}, {})
 
     @pytest.mark.asyncio
     async def test_no_team_library_raises(self):
@@ -800,3 +802,30 @@ class TestSubWorkflow:
 
         with pytest.raises(RuntimeError, match="no TeamLibrary configured"):
             await engine._execute_sub_workflow(step, {}, {})
+
+    @pytest.mark.asyncio
+    async def test_depth_propagates_to_nested_engine(self):
+        """A nested sub_workflow engine must inherit parent depth + 1.
+
+        Guards against the regression where each nested engine restarted at
+        depth 0, defeating the recursion limit across engine boundaries.
+        """
+        from unittest.mock import MagicMock, patch
+
+        engine = WorkflowEngine([WorkflowStep(agent="inner", step_type="sub_workflow")])
+        team_library = MagicMock()
+        team_library.get.return_value = {"agents": [], "workflow": {"steps": []}}
+        engine._team_library = team_library
+
+        # An inner engine with no steps completes immediately.
+        inner_engine = WorkflowEngine([])
+
+        step = WorkflowStep(agent="inner", step_type="sub_workflow")
+        step.team = "some_team"
+
+        with patch("hiveflow.core.teams.TeamGenerator") as gen_cls:
+            gen_cls.return_value.build.return_value = ({}, inner_engine)
+            await engine._execute_sub_workflow(step, {}, {"task": "x"})
+
+        assert inner_engine._sub_workflow_depth == 1
+

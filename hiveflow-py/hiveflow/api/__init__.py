@@ -8,6 +8,7 @@ Provides endpoints for:
 """
 
 import asyncio
+import hmac
 import json
 import tempfile
 import time
@@ -92,7 +93,8 @@ def create_app(config: HiveFlowConfig | None = None) -> Any:
                 if request.scope.get("type") == "websocket":
                     return await call_next(request)
                 key = request.headers.get(_api_key_header, "")
-                if key != _api_key:
+                # Constant-time comparison to avoid leaking the key via timing.
+                if not hmac.compare_digest(key, _api_key):
                     return JSONResponse(
                         status_code=401,
                         content={"detail": "Invalid or missing API key"},
@@ -119,14 +121,19 @@ def create_app(config: HiveFlowConfig | None = None) -> Any:
                 now = time.monotonic()
                 window = 60.0  # 1 minute
                 # Prune expired entries
-                bucket = _rate_buckets[client_ip]
-                _rate_buckets[client_ip] = [t for t in bucket if now - t < window]
-                if len(_rate_buckets[client_ip]) >= _rate_limit_rpm:
+                recent = [t for t in _rate_buckets[client_ip] if now - t < window]
+                if len(recent) >= _rate_limit_rpm:
+                    _rate_buckets[client_ip] = recent
                     return JSONResponse(
                         status_code=429,
                         content={"detail": "Rate limit exceeded"},
                     )
-                _rate_buckets[client_ip].append(now)
+                recent.append(now)
+                # Evict empty buckets so the IP keyspace cannot grow unbounded.
+                if recent:
+                    _rate_buckets[client_ip] = recent
+                else:
+                    _rate_buckets.pop(client_ip, None)
                 return await call_next(request)
 
         app.add_middleware(RateLimitMiddleware)
@@ -139,9 +146,16 @@ def create_app(config: HiveFlowConfig | None = None) -> Any:
 
     # -- Configuration ---
 
+    # Config fields that must never be exposed over the API.
+    _SENSITIVE_CONFIG_FIELDS = {"API_KEY"}
+
     @app.get("/config")
     async def get_current_config() -> dict[str, Any]:
-        return app_config.model_dump()
+        data = app_config.model_dump()
+        for field in _SENSITIVE_CONFIG_FIELDS:
+            if data.get(field):
+                data[field] = "***redacted***"
+        return data
 
     # -- Team Management ---
 
@@ -297,14 +311,15 @@ def create_app(config: HiveFlowConfig | None = None) -> Any:
         if instructions:
             initial_state["task"] = instructions
         elif instructions_file:
-            try:
-                from hiveflow.core.documents import DocumentPipeline
-
-                pipeline = DocumentPipeline()
-                content = await pipeline.load_instructions_file(instructions_file)
-                initial_state["task"] = content
-            except (ValueError, FileNotFoundError) as e:
-                raise HTTPException(status_code=400, detail=str(e)) from e
+            # Reading server-side file paths supplied by an API client is a
+            # local-file-inclusion risk. Instructions must be sent inline (or
+            # uploaded as a document); server-side paths are only honored by
+            # embedded/CLI callers.
+            raise HTTPException(
+                status_code=400,
+                detail="'instructions_file' is not allowed over the API; "
+                "send 'instructions' inline or upload the file as a document.",
+            )
 
         # Build workflow engine
         engine = WorkflowEngine.from_schema(team.workflow)
@@ -321,8 +336,11 @@ def create_app(config: HiveFlowConfig | None = None) -> Any:
 
         # Register engine events to stream channel
         def on_engine_event(event_type: str, agent_id: str, data: dict[str, Any]) -> None:
-            loop = asyncio.get_event_loop()
-            loop.create_task(
+            try:
+                loop = asyncio.get_running_loop()
+            except RuntimeError:
+                return  # No running loop — drop the event rather than crash
+            event_task = loop.create_task(
                 channel.publish(
                     StreamEvent(
                         event_type=StreamEventType(event_type),
@@ -331,6 +349,9 @@ def create_app(config: HiveFlowConfig | None = None) -> Any:
                     )
                 )
             )
+            # Retain a reference so the task is not garbage-collected mid-flight.
+            _background_tasks.add(event_task)
+            event_task.add_done_callback(_background_tasks.discard)
 
         engine.on_event(on_engine_event)
 

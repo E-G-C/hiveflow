@@ -7,7 +7,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/).
 
 ## [Unreleased]
 
+### Security
+
+- **API hardening (`hiveflow-py`)** — the `/config` endpoint now redacts `API_KEY` instead of returning it; API-key authentication uses constant-time comparison (`hmac.compare_digest`) to avoid timing leaks; the `/workflows/start` endpoint rejects the `instructions_file` parameter (server-side file paths were a local-file-inclusion vector — send `instructions` inline or upload the file as a document); and the per-IP rate-limit middleware now evicts empty buckets so the IP keyspace cannot grow unbounded.
+- **Restricted tier-variable resolution (`hiveflow-py`)** — `HiveFlowConfig.resolve_model()` now only resolves known LLM tiers (`FAST_LLM`/`SMART_LLM`/`STRATEGIC_LLM`), so a model reference like `$API_KEY` can no longer leak arbitrary config attributes.
+
+### Fixed
+
+- **Sub-workflow recursion guard (`hiveflow-py`)** — nested `sub_workflow` depth is now propagated across engine boundaries, so the `MAX_SUB_WORKFLOW_DEPTH` limit actually bounds cyclic/self-referential team configurations instead of recursing until a stack overflow.
+- **Checkpoint step-index resolution (`hiveflow-py`)** — the workflow engine now looks up a step's index by identity rather than `list.index()`, preventing wrong checkpoint positions when two steps share identical field values.
+- **Action-executor crash guard (`hiveflow-py`)** — `action_executor` agents no longer raise `UnboundLocalError` when `max_tool_iterations` is non-positive.
+- **Immutable state merge (`hiveflow-py`)** — `WorkflowState.merge()` no longer mutates the source state's history, so repeated merges from the same state are consistent.
+
 ### Changed
+
+- **`hiveflow-py` API extra now includes `python-multipart`** — required by the multipart upload endpoints (`/workflows/start/upload`, document upload); previously these failed at runtime when only the `api` extra was installed.
 
 - **Repository restructured into a polyglot monorepo** — moved the Python implementation (the `hiveflow` package, `tests/`, `docs/`, `examples/`, `pyproject.toml`, and `uv.lock`) into a dedicated `hiveflow-py/` directory alongside the existing `hiveflow-js/` TypeScript implementation. Cross-language specs (`requirements/`, `specs/`) remain at the repository root, and a new top-level `README.md` describes the monorepo layout. Run all Python tooling from `hiveflow-py/`.
 

@@ -143,9 +143,12 @@ class HiveFlowConfig(BaseSettings):
             Resolved model string in format provider:model
         """
         if model_ref.startswith("$"):
-            # Resolve tier variable
+            # Resolve tier variable — restricted to the known LLM tiers so a
+            # reference like "$API_KEY" cannot leak arbitrary config attributes.
             tier_var = model_ref[1:]  # Remove $
-            return getattr(self, tier_var, self.SMART_LLM)
+            if tier_var in {tier.value for tier in LLMTier}:
+                return getattr(self, tier_var, self.SMART_LLM)
+            return self.SMART_LLM
         return model_ref
 
     def get_retrievers(self) -> list[str]:

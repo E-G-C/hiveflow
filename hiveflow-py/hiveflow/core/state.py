@@ -30,13 +30,12 @@ class WorkflowState:
         Returns:
             New WorkflowState instance with merged values
         """
-        # Save current state to history
-        self._history.append(self._state.copy())
-
-        # Create new merged state
+        # Create new merged state without mutating self. The new state owns a
+        # history that is the parent's history plus a snapshot of the prior
+        # state, so repeated merges from the same source stay consistent.
         new_state = {**self._state, **updates}
         new_workflow_state = WorkflowState(new_state)
-        new_workflow_state._history = self._history.copy()
+        new_workflow_state._history = [*self._history, self._state.copy()]
 
         return new_workflow_state
 

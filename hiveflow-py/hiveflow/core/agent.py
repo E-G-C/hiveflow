@@ -530,6 +530,7 @@ class Agent:
 
         all_action_records: list[dict[str, Any]] = []
 
+        response: LLMResponse | None = None
         for _ in range(self.max_tool_iterations):
             response = await self.llm_provider.chat(messages, config)
 
@@ -707,6 +708,12 @@ class Agent:
                 "Agent %s hit max tool iterations (%d)",
                 self.agent_id,
                 self.max_tool_iterations,
+            )
+
+        if response is None:
+            raise RuntimeError(
+                f"Agent '{self.agent_id}' produced no response "
+                f"(max_tool_iterations={self.max_tool_iterations})"
             )
 
         return {

@@ -26,6 +26,9 @@ logger = structlog.get_logger()
 # Backwards-compatible alias
 StepType = WorkflowStepType
 
+# Maximum nesting depth for sub_workflow steps (guards against cyclic configs).
+MAX_SUB_WORKFLOW_DEPTH = 5
+
 
 @dataclass
 class WorkflowStep:
@@ -140,6 +143,8 @@ class WorkflowEngine:
         self._team_library = team_library
         self._task_preprocessor = task_preprocessor
         self._collaboration_config = None  # Set via set_collaboration_config()
+        # Current sub_workflow nesting depth; incremented for nested engines.
+        self._sub_workflow_depth: int = 0
 
         # Stream channel for real-time event delivery (FR-023)
         self._stream_channel = None
@@ -150,6 +155,13 @@ class WorkflowEngine:
         self._step_map: dict[str, WorkflowStep] = {
             step.step_id: step
             for step in self.steps  # type: ignore[misc]
+        }
+
+        # Identity-keyed index lookup. Using id() avoids dataclass __eq__
+        # collisions when two steps share identical field values, which would
+        # make list.index() return the wrong position for checkpoints.
+        self._step_indices: dict[int, int] = {
+            id(step): i for i, step in enumerate(self.steps)
         }
 
         # Event callbacks for observability
@@ -176,6 +188,14 @@ class WorkflowEngine:
             config: CollaborationConfig instance
         """
         self._collaboration_config = config
+
+    def _step_index(self, step: WorkflowStep) -> int:
+        """Return the index of a step by identity (avoids __eq__ collisions)."""
+        idx = self._step_indices.get(id(step))
+        if idx is None:
+            # Fallback for steps not seen at construction time.
+            return self.steps.index(step)
+        return idx
 
     def _init_streaming(self) -> None:
         """Initialize StreamChannel and JsonLinesWriter if OUTPUT_DIR is configured."""
@@ -653,7 +673,7 @@ class WorkflowEngine:
                     {
                         "gate_id": current_step.gate_id,
                         "gate_description": current_step.gate_description or "",
-                        "step_index": self.steps.index(current_step),
+                        "step_index": self._step_index(current_step),
                     },
                 )
                 state["awaiting_gate_approval"] = True
@@ -671,7 +691,7 @@ class WorkflowEngine:
                     await self._save_checkpoint(
                         checkpoint_storage,
                         session_id,
-                        step_index=self.steps.index(current_step),
+                        step_index=self._step_index(current_step),
                         current_agent_id=current_step.gate_id or "",
                         current_step_type=step_type,
                         state=state,
@@ -717,7 +737,7 @@ class WorkflowEngine:
                             await self._save_checkpoint(
                                 checkpoint_storage,
                                 session_id,
-                                step_index=self.steps.index(current_step),
+                                step_index=self._step_index(current_step),
                                 current_agent_id=agent_id,
                                 current_step_type=step_type,
                                 state=state,
@@ -758,7 +778,7 @@ class WorkflowEngine:
                         await self._save_checkpoint(
                             checkpoint_storage,
                             session_id,
-                            step_index=self.steps.index(current_step),
+                            step_index=self._step_index(current_step),
                             current_agent_id=agent_id,
                             current_step_type=step_type,
                             state=state,
@@ -864,16 +884,12 @@ class WorkflowEngine:
             from hiveflow.core.result_payload import ResultPayload
 
             payload = ResultPayload.from_workflow_result(
-                type(
-                    "_WR",
-                    (),
-                    {
-                        "status": WorkflowStatus.COMPLETED,
-                        "state": state,
-                        "step_results": step_results,
-                        "error": None,
-                    },
-                )(),
+                WorkflowResult(
+                    status=WorkflowStatus.COMPLETED,
+                    state=state,
+                    step_results=step_results,
+                    error=None,
+                ),
             )
         except Exception:
             logger.debug("ResultPayload assembly skipped", exc_info=True)
@@ -1290,25 +1306,25 @@ class WorkflowEngine:
         step: WorkflowStep,
         _agents: dict[str, Agent],
         state: dict[str, Any],
-        _depth: int = 0,
     ) -> dict[str, Any]:
         """Execute a nested team configuration as a sub-workflow.
 
         Args:
             step: The sub_workflow step definition (must have step.team set)
-            agents: Current workflow's agents dict
+            _agents: Current workflow's agents dict
             state: Current workflow state
-            _depth: Current recursion depth (max 5)
 
         Returns:
             Updated state with sub-workflow outputs merged via output_mapping
 
         Raises:
-            RuntimeError: If team_library is not set, team not found, or depth > 5
+            RuntimeError: If team_library is not set, team not found, or the
+                sub_workflow nesting depth exceeds MAX_SUB_WORKFLOW_DEPTH.
         """
-        if _depth >= 5:
+        if self._sub_workflow_depth >= MAX_SUB_WORKFLOW_DEPTH:
             raise RuntimeError(
-                f"Sub-workflow recursion depth exceeded (max 5) at step '{step.agent}'"
+                f"Sub-workflow recursion depth exceeded "
+                f"(max {MAX_SUB_WORKFLOW_DEPTH}) at step '{step.agent}'"
             )
 
         if self._team_library is None:
@@ -1334,10 +1350,13 @@ class WorkflowEngine:
         # Derive LLM provider from parent workflow's agents
         parent_provider = next((a.llm_provider for a in _agents.values() if a.llm_provider), None)
         inner_agents, inner_engine = generator.build(
-            team_config if isinstance(team_config, dict) else team_config,
+            team_config,
             parent_provider,
         )
         inner_engine._team_library = self._team_library
+        # Propagate nesting depth so sub_workflows are bounded across engine
+        # boundaries (each nested engine is a fresh instance).
+        inner_engine._sub_workflow_depth = self._sub_workflow_depth + 1
 
         result = await inner_engine.execute(inner_agents, inner_state)
 
